@@ -1,0 +1,656 @@
+- application [ref=f6e26]:
+  - generic [ref=f6e31]:
+    - generic [ref=f6e35]:
+      - button "Collapse app bar" [ref=f6e38]
+      - search [ref=f6e48]:
+        - button [aria-hidden] [ref=f6e49]
+        - combobox "Type \"in:\" to narrow your search to a chat or channel" [ref=f6e2959]
+      - generic [ref=f6e58]:
+        - button "Settings and more" [ref=f6e60]
+        - button "Your profile, status Offline" [ref=f6e67]:
+          - img "Profile picture of Tamzida Azad." [ref=f6e68]:
+            - generic [ref=f6e69]: TA
+            - img "offline" [ref=f6e71]
+    - group [ref=f6e78]:
+      - generic [ref=f6e82]: Stay in the know. Turn on desktop notifications.
+      - button "Turn on" [ref=f6e84]
+      - button "Close" [ref=f6e86]
+    - generic [ref=f6e93]:
+      - navigation "Apps" [ref=f6e106]:
+        - generic "Chat" [ref=f6e108]:
+          - button "Chat" [pressed] [ref=f6e109]
+        - generic "Meet" [ref=f6e112]:
+          - button "Meet" [ref=f6e113]
+        - generic "People" [ref=f6e116]:
+          - button "People" [ref=f6e117]
+        - generic "Copilot" [ref=f6e120]:
+          - button "Copilot" [ref=f6e121]
+        - generic "Communities" [ref=f6e124]:
+          - button "Communities" [ref=f6e125]
+        - generic "Calendar" [ref=f6e128]:
+          - button "Calendar" [ref=f6e129]
+        - generic "Activity" [ref=f6e132]:
+          - button "Activity" [ref=f6e133]
+      - button "Upgrade" [ref=f6e137]
+    - generic [ref=f6e147]:
+      - generic [ref=f6e148]:
+        - generic [ref=f6e149]:
+          - heading "Chat" [level=1] [ref=f6e150]
+          - toolbar "Rail actions" [ref=f6e151]:
+            - button "Show filter text box (Ctrl+Shift+F)" [ref=f6e153]
+            - button "Meet now" [ref=f6e157]
+            - button "New message (Alt+Shift+N)" [ref=f6e161]
+        - generic "Filter" [ref=f6e166]:
+          - toolbar "Filter options" [ref=f6e168]:
+            - generic [ref=f6e170]:
+              - button "Unread (Ctrl+Alt+U)" [ref=f6e172]: Unread
+              - button "Meeting chats (Ctrl+Alt+B)" [ref=f6e174]: Meeting chats
+              - button "Unmuted (Ctrl+Alt+Q)" [ref=f6e176]: Unmuted
+        - tree "Teams" [ref=f6e178]:
+          - treeitem "Favorites" [expanded] [level=1] [ref=f6e179] [cursor=pointer]:
+            - group [ref=f6e186]:
+              - treeitem "Chat Tamzida Azad (You)" [level=2] [ref=f6e187]:
+                - generic [ref=f6e201]:
+                  - generic [ref=f6e202]: Tamzida Azad (You)
+                  - generic:
+                    - time
+          - treeitem "Chats" [expanded] [level=1] [ref=f6e207] [cursor=pointer]:
+            - group [ref=f6e214]:
+              - 'treeitem "Group chat Calystapro EMR Web Dev Last message Md: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our in… 3:52 PM" [level=2] [ref=f6e215]':
+                - generic [ref=f6e222]:
+                  - generic [ref=f6e223]:
+                    - generic [ref=f6e224]: Calystapro EMR Web Dev
+                    - time [ref=f6e228]: 3:52 PM
+                  - generic [ref=f6e229]: "Md: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our in…"
+              - 'treeitem "Group chat CRM - Live Last message Rajib: Lori Gobert Though its little late for us. Dev team will be available of Thursday at… Muted 3:25 PM" [level=2] [ref=f6e233]':
+                - generic [ref=f6e243]:
+                  - generic [ref=f6e244]:
+                    - generic [ref=f6e245]: CRM - Live
+                    - time [ref=f6e249]: 3:25 PM
+                  - generic [ref=f6e250]: "Rajib: Lori Gobert Though its little late for us. Dev team will be available of Thursday at…"
+              - 'treeitem "Group chat CalystaPro EMR | Rani''s Requests Last message You: Hi Dr Hardik Soni, we require a domain named after Ethos to update the shorten URLs … 12:54 PM" [level=2] [ref=f6e254]':
+                - generic [ref=f6e255]:
+                  - generic [ref=f6e261]:
+                    - generic [ref=f6e262]: CalystaPro EMR | Rani's Requests
+                    - generic [ref=f6e268]: "You: Hi Dr Hardik Soni, we require a domain named after Ethos to update the shorten URLs …"
+                  - toolbar [ref=f6e2960]:
+                    - button "More chat options" [ref=f6e2962]
+              - 'treeitem "Group chat CalystaPro Support Team Last message Jhara: Okay got it. Thank you Tamziuda 9/1" [level=2] [ref=f6e272]':
+                - generic [ref=f6e279]:
+                  - generic [ref=f6e280]:
+                    - generic [ref=f6e281]: CalystaPro Support Team
+                    - time [ref=f6e285]: 9/1
+                  - generic [ref=f6e286]: "Jhara: Okay got it. Thank you Tamziuda"
+              - 'treeitem "Chat Jhara Mae Infante Available Last message You: ok 9/1" [level=2] [ref=f6e290]':
+                - generic [ref=f6e303]:
+                  - generic [ref=f6e304]:
+                    - generic [ref=f6e305]: Jhara Mae Infante
+                    - time [ref=f6e309]: 9/1
+                  - generic [ref=f6e310]: "You: ok"
+              - treeitem "Group chat Calystapro EMR Feature Highlights Last message User added 8/31" [level=2] [ref=f6e314]:
+                - generic [ref=f6e321]:
+                  - generic [ref=f6e322]:
+                    - generic [ref=f6e323]: Calystapro EMR Feature Highlights
+                    - time [ref=f6e327]: 8/31
+                  - generic [ref=f6e328]: User added
+              - 'treeitem "Chat Mahmudur Bhuiyan Offline Last message You: Hello Rima Shah, Most of what you want to test (shorter SMS copy, reward amounts… 8/31" [level=2] [ref=f6e332]':
+                - generic [ref=f6e345]:
+                  - generic [ref=f6e346]:
+                    - generic [ref=f6e347]: Mahmudur Bhuiyan
+                    - time [ref=f6e351]: 8/31
+                  - generic [ref=f6e352]: "You: Hello Rima Shah, Most of what you want to test (shorter SMS copy, reward amounts…"
+              - 'treeitem "Group chat CalystaproEMR - CRM Last message Hardik: Yes but there was no error message when I tried adding my name with a duplicate number 7/19" [level=2] [ref=f6e356]':
+                - generic [ref=f6e363]:
+                  - generic [ref=f6e364]:
+                    - generic [ref=f6e365]: CalystaproEMR - CRM
+                    - time [ref=f6e369]: 7/19
+                  - generic [ref=f6e370]: "Hardik: Yes but there was no error message when I tried adding my name with a duplicate number"
+              - 'treeitem "Chat Rani Houlis Offline Last message You: Here is more details about Last Visit Reports Logic 7/7" [level=2] [ref=f6e374]':
+                - generic [ref=f6e387]:
+                  - generic [ref=f6e388]:
+                    - generic [ref=f6e389]: Rani Houlis
+                    - time [ref=f6e393]: 7/7
+                  - generic [ref=f6e394]: "You: Here is more details about Last Visit Reports Logic"
+              - 'treeitem "Group chat Aaron, Jhara, and Pranav Last message Jhara: Oh yeah2x. Wew 1/31" [level=2] [ref=f6e398]':
+                - generic [ref=f6e405]:
+                  - generic [ref=f6e406]:
+                    - generic [ref=f6e407]: Aaron, Jhara, and Pranav
+                    - time [ref=f6e411]: 1/31
+                  - generic [ref=f6e412]: "Jhara: Oh yeah2x. Wew"
+              - 'treeitem "Group chat Aaron and Jhara Last message Jhara: Thank you Aaron and Tamzida. So far I have uploaded those who are listed in channel.… 1/23" [level=2] [ref=f6e416]':
+                - generic [ref=f6e423]:
+                  - generic [ref=f6e424]:
+                    - generic [ref=f6e425]: Aaron and Jhara
+                    - time [ref=f6e429]: 1/23
+                  - generic [ref=f6e430]: "Jhara: Thank you Aaron and Tamzida. So far I have uploaded those who are listed in channel.…"
+        - status [ref=f6e434]
+        - generic:
+          - generic [aria-hidden] [ref=f6e435]: Unread message
+          - generic [aria-hidden] [ref=f6e436]: Last message
+          - generic [aria-hidden] [ref=f6e437]: Group chat
+          - generic [aria-hidden] [ref=f6e438]: Meeting chat
+          - generic [aria-hidden] [ref=f6e439]: Chat
+          - generic [aria-hidden] [ref=f6e440]: Personal at mention
+          - generic [aria-hidden] [ref=f6e441]: Everyone at mention
+          - generic [aria-hidden] [ref=f6e442]: Important
+          - generic [aria-hidden] [ref=f6e443]: Urgent
+          - generic [aria-hidden] [ref=f6e444]: Draft
+          - generic [aria-hidden] [ref=f6e445]: Draft
+          - generic [aria-hidden] [ref=f6e446]: Muted
+          - generic [aria-hidden] [ref=f6e447]: Meeting in progress
+          - generic [aria-hidden] [ref=f6e448]: Meet now in progress
+          - generic [aria-hidden] [ref=f6e449]: You can't send messages because you are not a member of the chat.
+          - generic [aria-hidden] [ref=f6e450]: You cannot send messages to this bot
+          - generic [aria-hidden] [ref=f6e451]: Private
+          - generic [aria-hidden] [ref=f6e452]: Shared
+          - generic [aria-hidden] [ref=f6e453]: Has context menu
+          - generic [aria-hidden] [ref=f6e454]: Channel at mention
+          - generic [aria-hidden] [ref=f6e455]: Team at mention
+          - generic [aria-hidden] [ref=f6e456]: Personal at mention
+          - generic [aria-hidden] [ref=f6e457]: Unread
+          - generic [aria-hidden] [ref=f6e458]: Unread
+          - generic [aria-hidden] [ref=f6e459]: Meeting in progress
+          - generic [aria-hidden] [ref=f6e460]: Unread
+          - generic [aria-hidden] [ref=f6e461]: Channel
+          - generic [aria-hidden] [ref=f6e462]: Team
+          - generic [aria-hidden] [ref=f6e463]: Has pinned messages
+          - generic [aria-hidden] [ref=f6e464]: See more
+          - generic [aria-hidden] [ref=f6e465]: Community
+          - generic [aria-hidden] [ref=f6e466]: Temporarily shown
+          - generic [aria-hidden] [ref=f6e467]: Has context menu
+          - generic [aria-hidden] [ref=f6e468]: Badged chat
+          - generic [aria-hidden] [ref=f6e469]: Badged chats
+        - generic [aria-hidden] [ref=f6e470]: Has context menu
+      - slider "Resize left panel" [ref=f6e472]
+    - generic [ref=f6e474]:
+      - generic [ref=f6e481]:
+        - generic [ref=f6e482]:
+          - button "Change group chat avatar" [ref=f6e2239]
+          - generic [ref=f6e487]:
+            - generic [ref=f6e489]:
+              - heading "CalystaPro EMR | Rani's Requests" [level=2] [ref=f6e2967]:
+                - generic "CalystaPro EMR | Rani's Requests" [ref=f6e2968]
+              - list "Chat participants" [ref=f6e496]
+            - button "Name group chat" [ref=f6e498]
+        - generic [ref=f6e2969]:
+          - tablist [ref=f6e2970]:
+            - tab "Chat" [selected] [ref=f6e2972] [cursor=pointer]
+            - tab "Files" [ref=f6e2976] [cursor=pointer]
+            - tab "Photos" [ref=f6e2980] [cursor=pointer]
+          - generic [aria-hidden] [ref=f6e2985]: Has context menu
+        - toolbar "Chat actions" [ref=f6e503]:
+          - generic [ref=f6e505]:
+            - button "Meet now" [ref=f6e506]
+            - button "More call options" [ref=f6e511]
+          - button "View and add participants, 12 participants" [ref=f6e2986]: "12"
+          - separator [ref=f6e519]
+          - generic "Sidepane Features" [ref=f6e520]:
+            - button "Find in chat" [ref=f6e521]
+          - button "More chat options" [ref=f6e526]
+      - generic [ref=f6e536]:
+        - generic [ref=f6e537]:
+          - heading [level=2] [aria-hidden] [ref=f6e538]: Message List
+          - generic [ref=f6e541]:
+            - generic [ref=f6e542]:
+              - generic [ref=f6e543]: Invite others to chat
+              - generic [ref=f6e547]:
+                - button "Share link" [ref=f6e548]
+                - button "Dismiss" [ref=f6e549]
+            - generic [ref=f6e558]:
+              - generic [ref=f6e2989]:
+                - heading "The numbers are completely off. I need the... by Hardik Soni" [level=4] [ref=f6e2990]
+                - generic [ref=f6e2992]:
+                  - generic [ref=f6e2993]: Hardik Soni
+                  - group "Hardik Soni The numbers are completely off. I need them by tomorrow Wednesday, August 12, 2026 11:14 PM." [ref=f6e3008]:
+                    - button "More message options" [ref=f6e3009]
+                    - generic "The numbers are completely off. I need them by tomorrow" [ref=f6e3010]
+              - heading "Thursday, August 13 4:47 PM" [level=3] [ref=f6e3015]
+              - generic [ref=f6e3019]:
+                - heading "Begin Reference, The numbers are completely... by Tamzida Azad" [level=4] [ref=f6e3020]
+                - generic [ref=f6e3022]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, The numbers are completely off. I need them by tomorrow, Display Name, 8/12/2026 11:14 PM, End reference yes I am creating a full report and will share Thursday, August 13, 2026 4:47 PM." [ref=f6e3029]:
+                    - button "More message options" [ref=f6e3030]
+                    - generic "Begin Reference, The numbers are completely off. I need them by tomorrow, Display Name, 8/12/2026 11:14 PM, End reference yes I am creating a full report and will share" [ref=f6e3031]:
+                      - group "Begin Reference, The numbers are completely off. I need them by tomorrow, Hardik Soni, 8/12/2026 11:14 PM, End reference" [ref=f6e3032] [cursor=pointer]:
+                        - generic [ref=f6e3035]:
+                          - generic [ref=f6e3036]:
+                            - generic [ref=f6e3037]: Hardik Soni
+                            - generic [ref=f6e3038]: 8/12/2026 11:14 PM
+                          - generic [ref=f6e3039]: The numbers are completely off. I need them by tomorrow
+                      - paragraph [ref=f6e3040]: yes I am creating a full report and will share
+              - heading "Thursday, August 13 7:36 PM" [level=3] [ref=f6e3044]
+              - generic [ref=f6e3048]:
+                - heading "Begin Reference, Realistically, what is the... by Tamzida Azad, has an attachment." [level=4] [ref=f6e3049]
+                - generic [ref=f6e3051]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, Realistically, what is the ETA for this to be fixed?, Display Name, 8/12/2026 9:39 PM, End reference Hi Rani Houlis , Please go through the Monthly Report all are resolved and I am also sharing a PDF with Summit June 2025 to Aug 2026 Liability details. Please let me know if you find any inconsistency The message has an attachment. Thursday, August 13, 2026 7:36 PM." [ref=f6e3058]:
+                    - button "More message options" [ref=f6e3059]
+                    - generic "Begin Reference, Realistically, what is the ETA for this to be fixed?, Display Name, 8/12/2026 9:39 PM, End reference Hi Rani Houlis , Please go through the Monthly Report all are resolved and I am also sharing a PDF with Summit June 2025 to Aug 2026 Liability details. Please let me know if you find any inconsistency" [ref=f6e3060]:
+                      - group "Begin Reference, Realistically, what is the ETA for this to be fixed?, Rani Houlis, 8/12/2026 9:39 PM, End reference" [ref=f6e3061] [cursor=pointer]:
+                        - generic [ref=f6e3064]:
+                          - generic [ref=f6e3065]:
+                            - generic [ref=f6e3066]: Rani Houlis
+                            - generic [ref=f6e3067]: 8/12/2026 9:39 PM
+                          - generic [ref=f6e3068]: Realistically, what is the ETA for this to be fixed?
+                      - paragraph [ref=f6e3069]:
+                        - text: Hi
+                        - button "Mentioned Rani" [ref=f6e3070]: Rani
+                        - button "Mentioned Houlis" [ref=f6e3071]: Houlis
+                        - text: ","
+                      - paragraph [ref=f6e3072]: Please go through the Monthly Report all are resolved and I am also sharing a PDF with Summit June 2025 to Aug 2026 Liability details. Please let me know if you find any inconsistency
+                      - paragraph [ref=f6e3073]
+                    - generic "The message has an attachment." [ref=f6e3074]:
+                      - button "File attachment Ethos_Summit_Liabilities_latest.pdf. Press tab for more options. Press enter or space to open the file" [ref=f6e3076] [cursor=pointer]:
+                        - generic [ref=f6e3084]: Ethos_Summit_Liabilities_latest.pdf
+                        - button "More attachment options" [ref=f6e3087]
+              - generic [ref=f6e3094]:
+                - heading "same data also present in a CSV format by Tamzida Azad, has an attachment." [level=4] [ref=f6e3095]
+                - generic [ref=f6e3097]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad same data also present in a CSV format The message has an attachment. Thursday, August 13, 2026 7:37 PM." [ref=f6e3104]:
+                    - button "More message options" [ref=f6e3105]
+                    - generic "same data also present in a CSV format" [ref=f6e3106]:
+                      - paragraph [ref=f6e3107]: same data also present in a CSV format
+                    - generic "The message has an attachment." [ref=f6e3108]:
+                      - button "File attachment Ethos_Summit_Liabilities_latest 1.csv. Press tab for more options. Press enter or space to open the file" [ref=f6e3110] [cursor=pointer]:
+                        - generic [ref=f6e3124]: Ethos_Summit_Liabilities_latest 1.csv
+                        - button "More attachment options" [ref=f6e3127]
+              - heading "Friday, August 14 2:19 PM" [level=3] [ref=f6e3134]
+              - generic [ref=f6e3138]:
+                - heading "Hi Rani Houlis here you will find all E... by Tamzida Azad" [level=4] [ref=f6e3139]
+                - generic [ref=f6e3141]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Hi Rani Houlis here you will find all Ethos Locatio's Existing Liability from June 2025 to Aug 2026 Link https://docs.google.com/spreadsheets/d/1pQUfMMJrwKam4sJ3accShCKrNdsRnLyjFeJclxoVbus/edit?usp=sharing Please review Friday, August 14, 2026 2:19 PM." [ref=f6e3148]:
+                    - button "More message options" [ref=f6e3149]
+                    - generic "Hi Rani Houlis here you will find all Ethos Locatio's Existing Liability from June 2025 to Aug 2026 Link https://docs.google.com/spreadsheets/d/1pQUfMMJrwKam4sJ3accShCKrNdsRnLyjFeJclxoVbus/edit?usp=sharing Please review" [ref=f6e3150]:
+                      - paragraph [ref=f6e3151]:
+                        - text: Hi
+                        - button "Mentioned Rani" [ref=f6e3152]: Rani
+                        - button "Mentioned Houlis" [ref=f6e3153]: Houlis
+                        - text: here you will find all Ethos Locatio's Existing Liability from June 2025 to Aug 2026
+                      - paragraph [ref=f6e3154]:
+                        - link "Link https://docs.google.com/spreadsheets/d/1pQUfMMJrwKam4sJ3accShCKrNdsRnLyjFeJclxoVbus/edit?usp=sharing" [ref=f6e3155] [cursor=pointer]:
+                          - /url: https://docs.google.com/spreadsheets/d/1pQUfMMJrwKam4sJ3accShCKrNdsRnLyjFeJclxoVbus/edit?usp=sharing
+                          - text: https://docs.google.com/spreadsheets/d/1pQUfMMJrwKam4sJ3accShCKrNdsRnLyjFeJclxoVbus/edit?usp=sharing
+                      - paragraph [ref=f6e3156]
+                      - paragraph [ref=f6e3157]: Please review
+                    - link "Url Preview for Existing Liability of Ethos from 2025 - 2026 - Google スプレッドシート Existing Liability of Ethos from 2025 - 2026 - Google スプレッドシート Remove URL Preview docs.google.com" [ref=f6e3159] [cursor=pointer]:
+                      - /url: https://docs.google.com/spreadsheets/d/1pQUfMMJrwKam4sJ3accShCKrNdsRnLyjFeJclxoVbus/edit?usp=sharing
+                      - generic [ref=f6e3160]:
+                        - img "Url Preview for Existing Liability of Ethos from 2025 - 2026 - Google スプレッドシート" [ref=f6e3162]
+                        - generic [ref=f6e3163]:
+                          - generic [ref=f6e3164]:
+                            - generic "Existing Liability of Ethos from 2025 - 2026 - Google スプレッドシート" [ref=f6e3165]
+                            - button "Remove URL Preview" [ref=f6e3166]
+                          - generic [ref=f6e3170]: docs.google.com
+              - heading "Friday, August 14 7:04 PM" [level=3] [ref=f6e3174]
+              - generic [ref=f6e3178]:
+                - 'heading "Begin Reference, New Feature: Online Bookin... by Tamzida Azad" [level=4] [ref=f6e3179]'
+                - generic [ref=f6e3181]:
+                  - generic: Tamzida Azad
+                  - 'group "Tamzida Azad Begin Reference, New Feature: Online Booking Credit Tracking Online Booking Credit is prepaid money linked to a patient from: • Online booking payments collected via Online Booking page • Manual booking credits ad…, Display Name, 8/6/2026 6:34 PM, End reference Hi Lori Gobert please review Friday, August 14, 2026 7:04 PM." [ref=f6e3188]':
+                    - button "More message options" [ref=f6e3189]
+                    - 'generic "Begin Reference, New Feature: Online Booking Credit Tracking Online Booking Credit is prepaid money linked to a patient from: • Online booking payments collected via Online Booking page • Manual booking credits ad…, Display Name, 8/6/2026 6:34 PM, End reference Hi Lori Gobert please review" [ref=f6e3190]':
+                      - 'group "Begin Reference, New Feature: Online Booking Credit Tracking Online Booking Credit is prepaid money linked to a patient from: • Online booking payments collected via Online Booking page • Manual booking credits ad…, Tamzida Azad, 8/6/2026 6:34 PM, End reference" [ref=f6e3191] [cursor=pointer]':
+                        - generic [ref=f6e3194]:
+                          - generic [ref=f6e3195]:
+                            - generic [ref=f6e3196]: Tamzida Azad
+                            - generic [ref=f6e3197]: 8/6/2026 6:34 PM
+                          - generic [ref=f6e3198]: "New Feature: Online Booking Credit Tracking Online Booking Credit is prepaid money linked to a patient from: • Online booking payments collected via Online Booking page • Manual booking credits ad…"
+                      - paragraph [ref=f6e3199]:
+                        - text: Hi
+                        - button "Mentioned Lori Gobert" [ref=f6e3200]: Lori Gobert
+                        - text: please review
+              - heading "Thursday, August 20 10:56 PM" [level=3] [ref=f6e3204]
+              - generic [ref=f6e3208]:
+                - heading "Image Hi Team - A former employee is receiv... by Rima Shah" [level=4] [ref=f6e3209]
+                - generic [ref=f6e3211]:
+                  - generic [ref=f6e3212]: Rima Shah
+                  - group "Rima Shah Image Hi Team - A former employee is receiving these texts. Do we know what this is and how to stop this? Thursday, August 20, 2026 10:56 PM." [ref=f6e3227]:
+                    - button "More message options" [ref=f6e3228]
+                    - generic "Image Hi Team - A former employee is receiving these texts. Do we know what this is and how to stop this?" [ref=f6e3229]:
+                      - generic [ref=f6e3230]: Hi Team - A former employee is receiving these texts. Do we know what this is and how to stop this?
+                      - img "Image" [ref=f6e3234]
+              - generic [ref=f6e3238]:
+                - heading "Begin Reference, Hi Team - A former employe... by Tamzida Azad" [level=4] [ref=f6e3239]
+                - generic [ref=f6e3241]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, Hi Team - A former employee is receiving these texts. Do we know what this is and how to stop this? 📷, Display Name, 8/20/2026 10:56 PM, End reference Hello Rima, It is because her number is set at Summit for urgent message from patients Thursday, August 20, 2026 10:57 PM." [ref=f6e3248]:
+                    - button "More message options" [ref=f6e3249]
+                    - generic "Begin Reference, Hi Team - A former employee is receiving these texts. Do we know what this is and how to stop this? 📷, Display Name, 8/20/2026 10:56 PM, End reference Hello Rima, It is because her number is set at Summit for urgent message from patients" [ref=f6e3250]:
+                      - group "Begin Reference, Hi Team - A former employee is receiving these texts. Do we know what this is and how to stop this? 📷, Rima Shah, 8/20/2026 10:56 PM, End reference" [ref=f6e3251] [cursor=pointer]:
+                        - generic [ref=f6e3254]:
+                          - generic [ref=f6e3255]:
+                            - generic [ref=f6e3256]: Rima Shah
+                            - generic [ref=f6e3257]: 8/20/2026 10:56 PM
+                          - generic [ref=f6e3258]: Hi Team - A former employee is receiving these texts. Do we know what this is and how to stop this? 📷
+                      - paragraph [ref=f6e3259]: Hello Rima,
+                      - paragraph [ref=f6e3260]: It is because her number is set at Summit for urgent message from patients
+              - generic [ref=f6e3264]:
+                - heading "Steps to Update Urgent Phone Number in EMR ... by Tamzida Azad" [level=4] [ref=f6e3265]
+                - generic [ref=f6e3267]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Steps to Update Urgent Phone Number in EMR (Ethos Summit) Log in to the Ethos Summit EMR system. Navigate to any patient dashboard. Scroll down to locate the SMS tab. Click View Information — this will open the conversation page. Select the Settings tab. Update the Urgent Phone Number field. Click Save to apply the changes. Thursday, August 20, 2026 11:00 PM." [ref=f6e3274]:
+                    - button "More message options" [ref=f6e3275]
+                    - generic "Steps to Update Urgent Phone Number in EMR (Ethos Summit) Log in to the Ethos Summit EMR system. Navigate to any patient dashboard. Scroll down to locate the SMS tab. Click View Information — this will open the conversation page. Select the Settings tab. Update the Urgent Phone Number field. Click Save to apply the changes." [ref=f6e3276]:
+                      - paragraph [ref=f6e3277]: Steps to Update Urgent Phone Number in EMR (Ethos Summit)
+                      - paragraph [ref=f6e3278]
+                      - paragraph [ref=f6e3279]: Log in to the Ethos Summit EMR system.
+                      - paragraph [ref=f6e3280]
+                      - paragraph [ref=f6e3281]: Navigate to any patient dashboard.
+                      - paragraph [ref=f6e3282]
+                      - paragraph [ref=f6e3283]: Scroll down to locate the SMS tab.
+                      - paragraph [ref=f6e3284]
+                      - paragraph [ref=f6e3285]: Click View Information — this will open the conversation page.
+                      - paragraph [ref=f6e3286]
+                      - paragraph [ref=f6e3287]: Select the Settings tab.
+                      - paragraph [ref=f6e3288]
+                      - paragraph [ref=f6e3289]: Update the Urgent Phone Number field.
+                      - paragraph [ref=f6e3290]
+                      - paragraph [ref=f6e3291]: Click Save to apply the changes.
+              - generic [ref=f6e3295]:
+                - heading "Sorry Somerville location by Tamzida Azad" [level=4] [ref=f6e3296]
+                - generic [ref=f6e3298]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Sorry Somerville location Thursday, August 20, 2026 11:00 PM." [ref=f6e3305]:
+                    - button "More message options" [ref=f6e3306]
+                    - generic "Sorry Somerville location" [ref=f6e3307]:
+                      - paragraph [ref=f6e3308]: Sorry Somerville location
+              - heading "Friday, August 21 10:28 AM" [level=3] [ref=f6e3312]
+              - generic [ref=f6e3315]:
+                - heading "Unknown User left the chat." [level=6] [ref=f6e3319]
+                - group "Unknown User left the chat." [ref=f6e3321]:
+                  - generic [ref=f6e3323]:
+                    - button "Unknown User" [ref=f6e3324]:
+                      - button "Unknown User" [ref=f6e3325]
+                    - text: left the chat.
+              - heading "Monday 2:36 AM" [level=3] [ref=f6e3329]
+              - generic [ref=f6e3333]:
+                - heading "Tamzida Azad Hi, We’re not seeing great... by Rima Shah" [level=4] [ref=f6e3334]
+                - generic [ref=f6e3336]:
+                  - generic [ref=f6e3337]: Rima Shah
+                  - generic [ref=f6e3342]:
+                    - group [ref=f6e3352]:
+                      - button "More message options" [ref=f6e3353]
+                      - generic [ref=f6e3354]:
+                        - generic [ref=f6e3355]:
+                          - button "Mentioned you" [ref=f6e3356]: Tamzida Azad
+                          - text: "Hi, We’re not seeing great traction with the current referral program, so I’d like to test a few changes to see if we can improve participation. Are we able to: • Customize the automatic referral program text message? I'd like the ability to test without always having to reach out to you. • Shorten/customize the referral URL? Ideally, the link should include Ethos in the URL. The current link comes across as spam. • Allow the patient to simply share their unique link directly, so the person they refer can click it and fill out their own information? I’d also like to shorten the automated message and make the entire experience feel more personal and professional. Something like:"
+                          - generic [ref=f6e3357]: “Rima, so good having you at Ethos today.
+                          - generic [ref=f6e3358]: Know someone who’d love it too? Send them this, and you’ll both get a $50 Ethos reward once they visit.
+                          - generic [ref=f6e3359]: "Tap to send:"
+                          - text: "‘Just left Ethos and loved it. You should definitely book! Here’s my referral link so we both get $50: {BRANDED ETHOS LINK}’ Ideally, “Tap to send” would open a pre-populated text so the patient can share it immediately. The goal is to make referring someone essentially one click and remove as much friction as possible. Please let me know what we can customize within the current platform, particularly the SMS copy, branded/shortened URL and sharing functionality. Thanks, Rima"
+                    - img "Rima Shah mentioned you." [ref=f6e3361]
+              - heading "Monday 1:00 PM" [level=3] [ref=f6e3366]
+              - generic [ref=f6e3370]:
+                - heading "Begin Reference, Tamzida Azad Hi, We’re n... by Tamzida Azad" [level=4] [ref=f6e3371]
+                - generic [ref=f6e3373]:
+                  - generic: Tamzida Azad
+                  - 'group "Tamzida Azad Begin Reference, Tamzida Azad Hi, We’re not seeing great traction with the current referral program, so I’d like to test a few changes to see if we can improve participation. Are we able to: • Customize the autom…, Display Name, 8/31/2026 2:36 AM, End reference Hi Rima Shah , Thank you for sharing the details. I have informed the team and they will get back to you Monday, August 31, 2026 1:00 PM." [ref=f6e3380]':
+                    - button "More message options" [ref=f6e3381]
+                    - 'generic "Begin Reference, Tamzida Azad Hi, We’re not seeing great traction with the current referral program, so I’d like to test a few changes to see if we can improve participation. Are we able to: • Customize the autom…, Display Name, 8/31/2026 2:36 AM, End reference Hi Rima Shah , Thank you for sharing the details. I have informed the team and they will get back to you" [ref=f6e3382]':
+                      - 'group "Begin Reference, Tamzida Azad Hi, We’re not seeing great traction with the current referral program, so I’d like to test a few changes to see if we can improve participation. Are we able to: • Customize the autom…, Rima Shah, 8/31/2026 2:36 AM, End reference" [ref=f6e3383] [cursor=pointer]':
+                        - generic [ref=f6e3386]:
+                          - generic [ref=f6e3387]:
+                            - generic [ref=f6e3388]: Rima Shah
+                            - generic [ref=f6e3389]: 8/31/2026 2:36 AM
+                          - generic [ref=f6e3390]: "Tamzida Azad Hi, We’re not seeing great traction with the current referral program, so I’d like to test a few changes to see if we can improve participation. Are we able to: • Customize the autom…"
+                      - paragraph [ref=f6e3391]:
+                        - text: Hi
+                        - button "Mentioned Rima" [ref=f6e3392]: Rima
+                        - button "Mentioned Shah" [ref=f6e3393]: Shah
+                        - text: ","
+                      - paragraph [ref=f6e3394]: Thank you for sharing the details. I have informed the team and they will get back to you
+              - heading "Monday 2:59 PM" [level=3] [ref=f6e3398]
+              - generic [ref=f6e3402]:
+                - heading "Begin Reference, Tamzida Azad Hi, We’re n... by Tamzida Azad" [level=4] [ref=f6e3403]
+                - generic [ref=f6e3405]:
+                  - generic: Tamzida Azad
+                  - group [ref=f6e3412]:
+                    - button "More message options" [ref=f6e3413]
+                    - generic [ref=f6e3414]:
+                      - 'group "Begin Reference, Tamzida Azad Hi, We’re not seeing great traction with the current referral program, so I’d like to test a few changes to see if we can improve participation. Are we able to: • Customize the autom…, Rima Shah, 8/31/2026 2:36 AM, End reference" [ref=f6e3415] [cursor=pointer]':
+                        - generic [ref=f6e3418]:
+                          - generic [ref=f6e3419]:
+                            - generic [ref=f6e3420]: Rima Shah
+                            - generic [ref=f6e3421]: 8/31/2026 2:36 AM
+                          - generic [ref=f6e3422]: "Tamzida Azad Hi, We’re not seeing great traction with the current referral program, so I’d like to test a few changes to see if we can improve participation. Are we able to: • Customize the autom…"
+                      - paragraph [ref=f6e3423]:
+                        - text: Hello
+                        - button "Mentioned Rima" [ref=f6e3424]: Rima
+                        - button "Mentioned Shah" [ref=f6e3425]: Shah
+                        - text: ","
+                      - paragraph [ref=f6e3426]: "Here are answers to each part:"
+                      - paragraph [ref=f6e3427]
+                      - paragraph [ref=f6e3428]:
+                        - strong [ref=f6e3430]: Can you customize the automatic referral SMS yourself?
+                      - paragraph [ref=f6e3431]: Yes. As Admin, you can edit the post-checkout referral text without contacting us.
+                      - list [ref=f6e3432]:
+                        - listitem [ref=f6e3433]: Select your Ethos location (facility dropdown at the top).
+                        - listitem [ref=f6e3434]:
+                          - strong [ref=f6e3435]: Referrals → Referral Reward
+                          - text: — set rewards (e.g. $50 / $50) and turn
+                          - strong [ref=f6e3436]: “Allow automated SMS for every patient checkout?”
+                          - text: to
+                          - strong [ref=f6e3437]: "YES"
+                          - text: .
+                        - listitem [ref=f6e3438]: Go to Referrals → Message Templates.
+                        - listitem [ref=f6e3439]: Click on Add Template button
+                        - listitem [ref=f6e3440]: Find “Referral URL SMS (After Checkout)”.
+                        - listitem [ref=f6e3441]: Click Edit (or Add Template if one doesn’t exist yet).
+                        - listitem [ref=f6e3442]: Make sure Status is Active.
+                        - listitem [ref=f6e3443]: "Update the SMS text using these short codes — EMR fills them in for you:"
+                      - list [ref=f6e3444]:
+                        - listitem [ref=f6e3445]:
+                          - code [ref=f6e3446]: "{patient_name}"
+                          - text: — patient’s name
+                        - listitem [ref=f6e3447]:
+                          - code [ref=f6e3448]: "{facility_name}"
+                          - text: — shows as “Ethos” for Ethos locations
+                        - listitem [ref=f6e3449]:
+                          - code [ref=f6e3450]: "{reward_for_referred}"
+                          - text: — reward for the friend (e.g. “a $50 Ethos reward”)
+                        - listitem [ref=f6e3451]:
+                          - code [ref=f6e3452]: "{reward_for_referrer}"
+                          - text: — reward for the referrer (e.g. “a $50 Ethos reward”)
+                        - listitem [ref=f6e3453]:
+                          - code [ref=f6e3454]: "{referral_url}"
+                          - text: — patient’s unique referral link (shortened for SMS)
+                      - paragraph [ref=f6e3455]
+                      - paragraph [ref=f6e3456]:
+                        - text: "Reference:"
+                        - link "Link https://prnt.sc/bAAIHqwxHXe3" [ref=f6e3457] [cursor=pointer]:
+                          - /url: https://prnt.sc/bAAIHqwxHXe3
+                          - text: https://prnt.sc/bAAIHqwxHXe3
+                      - paragraph [ref=f6e3458]
+                      - paragraph [ref=f6e3459]:
+                        - strong [ref=f6e3461]: "Example message you can paste and adjust:"
+                      - paragraph [ref=f6e3462]: "{patient_name}, so good having you at Ethos today."
+                      - paragraph [ref=f6e3463]: "Know someone who'd love it too? Send them your link — you'll both get {reward_for_referrer} once they visit."
+                      - paragraph [ref=f6e3464]: "{referral_url}"
+                      - paragraph [ref=f6e3465]
+                      - list [ref=f6e3466]:
+                        - listitem [ref=f6e3467]:
+                          - text: Click Update Template.
+                          - generic [ref=f6e3468]:
+                            - text: Use
+                            - code [ref=f6e3469]: "{patient_name}"
+                            - text: ","
+                            - code [ref=f6e3470]: "{reward_for_referrer}"
+                            - text: ","
+                            - code [ref=f6e3471]: "{reward_for_referred}"
+                            - text: ", and"
+                            - code [ref=f6e3472]: "{referral_url}"
+                            - text: in the text — EMR fills those in automatically. Repeat for each Ethos location (settings are per facility).
+                      - paragraph [ref=f6e3473]
+                      - paragraph [ref=f6e3474]
+                      - paragraph [ref=f6e3475]:
+                        - strong [ref=f6e3477]: Can you shorten/customize the referral URL so it includes Ethos?
+                      - paragraph [ref=f6e3478]: Currently, all outgoing SMS messages use shortened URLs that begin with spa.guru, which is the domain provided by Dr. Soni. Since this is a system‑wide setup, patients across all facilities receive links with that domain.
+                      - paragraph [ref=f6e3479]
+                      - paragraph [ref=f6e3480]: If you’d like an Ethos‑branded URL for patients at Ethos locations, you would need to discuss with Dr. Soni about setting up a dedicated Ethos domain. Once that domain is available, we can configure the system so that only Ethos facilities use the Ethos‑specific shortened links, while other facilities continue with the existing spa.guru domain.
+                      - paragraph [ref=f6e3481]
+                      - paragraph [ref=f6e3482]
+                      - paragraph [ref=f6e3483]:
+                        - strong [ref=f6e3485]: Can the patient share their link so the friend clicks and fills out their own info?
+                        - generic [ref=f6e3486]:
+                          - text: Yes — this already works. Each patient has a unique link (
+                          - code [ref=f6e3487]: "…/patients/join/{their code}"
+                          - text: ). You’ll see the link on the patient profile under
+                          - strong [ref=f6e3488]: Referral Code
+                          - text: ", and it’s also sent in the automated checkout SMS."
+                      - paragraph [ref=f6e3489]:
+                        - link "Link https://prnt.sc/4cj9MdKkxkmV" [ref=f6e3490] [cursor=pointer]:
+                          - /url: https://prnt.sc/4cj9MdKkxkmV
+                          - text: https://prnt.sc/4cj9MdKkxkmV
+                      - paragraph [ref=f6e3491]
+                      - paragraph [ref=f6e3492]
+                      - paragraph [ref=f6e3493]:
+                        - strong [ref=f6e3494]: "SMS that patients receives now after checkout (includes referral url):"
+                      - paragraph [ref=f6e3495]
+                      - paragraph [ref=f6e3496]: Hi Zensen Shen,
+                      - paragraph [ref=f6e3497]
+                      - paragraph [ref=f6e3498]: We loved seeing you at Ethos! If someone in your life would enjoy the same experience, send them our way. They'll receive a $45 Ethos reward, and once they visit, you'll enjoy a $60 Ethos reward toward any service or product.
+                      - paragraph [ref=f6e3499]: Glow . Reward . Glow . Repeat.
+                      - paragraph [ref=f6e3500]:
+                        - link "Link https://spa.guru/um_hZfe" [ref=f6e3501] [cursor=pointer]:
+                          - /url: https://spa.guru/um_hZfe
+                          - text: https://spa.guru/um_hZfe
+                      - paragraph [ref=f6e3502]
+                      - paragraph [ref=f6e3503]
+                      - paragraph [ref=f6e3504]:
+                        - strong [ref=f6e3506]: Can you shorten the message to something more personal (like your example)?
+                        - generic [ref=f6e3507]:
+                          - text: Yes — via Message Templates (same steps as above). You can use copy very close to what you wrote; just use
+                          - code [ref=f6e3508]: "{patient_name}"
+                          - text: instead of typing “Rima” manually, and
+                          - code [ref=f6e3509]: "{referral_url}"
+                          - text: for the link. Reward amounts come from
+                          - strong [ref=f6e3510]: Referral Reward
+                          - text: ", not hardcoded in the text."
+                      - list [ref=f6e3511]:
+                        - listitem [ref=f6e3512]: "Update the SMS text using these short codes — EMR fills them in for you:"
+                      - list [ref=f6e3513]:
+                        - listitem [ref=f6e3514]:
+                          - code [ref=f6e3515]: "{patient_name}"
+                          - text: — patient’s name
+                        - listitem [ref=f6e3516]:
+                          - code [ref=f6e3517]: "{facility_name}"
+                          - text: — shows as “Ethos” for Ethos locations
+                        - listitem [ref=f6e3518]:
+                          - code [ref=f6e3519]: "{reward_for_referred}"
+                          - text: — reward for the friend (e.g. “a $50 Ethos reward”)
+                        - listitem [ref=f6e3520]:
+                          - code [ref=f6e3521]: "{reward_for_referrer}"
+                          - text: — reward for the referrer (e.g. “a $50 Ethos reward”)
+                        - listitem [ref=f6e3522]:
+                          - code [ref=f6e3523]: "{referral_url}"
+                          - text: — patient’s unique referral link (shortened for SMS)
+                      - paragraph [ref=f6e3524]
+                      - paragraph [ref=f6e3525]: Click on any of the existing message template and update your template using above short codes
+                      - paragraph [ref=f6e3526]:
+                        - link "Link https://prnt.sc/x5cgeWsEbZXI" [ref=f6e3527] [cursor=pointer]:
+                          - /url: https://prnt.sc/x5cgeWsEbZXI
+                          - text: https://prnt.sc/x5cgeWsEbZXI
+                      - paragraph [ref=f6e3528]
+                      - paragraph [ref=f6e3529]
+                      - paragraph [ref=f6e3530]:
+                        - strong [ref=f6e3532]: Can “Tap to send” open a pre-populated text for the patient to forward?
+                        - text: No. The system sends one SMS to the patient after checkout. There’s no button now that opens their Messages app with your forward text ready to send. That one-click share flow would need Dr. Soni’s approval before developer can initiate with the implementation.
+                      - paragraph [ref=f6e3533]
+                      - paragraph [ref=f6e3534]:
+                        - text: Please confirm with Dr. Soni about
+                        - strong [ref=f6e3535]: Ethos-branded domain
+                        - text: to generate shorten URL and one-tap feature for “T
+                        - strong [ref=f6e3536]: ap to send
+                        - text: ” sharing. Let us know if we can help with anything else.
+                      - paragraph [ref=f6e3537]
+                      - paragraph [ref=f6e3538]
+              - heading "Monday 5:23 PM" [level=3] [ref=f6e3542]
+              - generic [ref=f6e3545]:
+                - heading "Tamzida Azad added Tamzida Azad to the chat and shared all chat history." [level=6] [ref=f6e3549]
+                - group "Tamzida Azad added Tamzida Azad to the chat and shared all chat history." [ref=f6e3551]:
+                  - generic [ref=f6e3553]:
+                    - button "Tamzida Azad" [ref=f6e3554]:
+                      - button "Tamzida Azad" [ref=f6e3555]
+                    - text: added
+                    - button "Tamzida Azad" [ref=f6e3556]:
+                      - button "Tamzida Azad" [ref=f6e3557]
+                    - text: to the chat and shared all chat history.
+              - heading "Yesterday 6:11 PM" [level=3] [ref=f6e3561]
+              - generic [ref=f6e3565]:
+                - heading "Rima Shah please set up a call with Ashik ... by Hardik Soni" [level=4] [ref=f6e3566]
+                - generic [ref=f6e3568]:
+                  - generic [ref=f6e3569]: Hardik Soni
+                  - group "Hardik Soni Rima Shah please set up a call with Ashik for your referral request. He can start now Yesterday at 6:11 PM." [ref=f6e3584]:
+                    - button "More message options" [ref=f6e3585]
+                    - generic "Rima Shah please set up a call with Ashik for your referral request. He can start now" [ref=f6e3586]:
+                      - generic [ref=f6e3587]:
+                        - button "Mentioned Rima Shah" [ref=f6e3588]: Rima Shah
+                        - text: please set up a call with Ashik for your referral request. He can start now
+              - heading "Today 5:52 AM" [level=3] [ref=f6e3592]
+              - generic [ref=f6e3596]:
+                - heading "Is Ashik in this chat? If not can you pleas... by Rima Shah" [level=4] [ref=f6e3597]
+                - generic [ref=f6e3599]:
+                  - generic [ref=f6e3600]: Rima Shah
+                  - group "Rima Shah Is Ashik in this chat? If not can you please connect us, I don't have his contact. Thanks! Today at 5:52 AM." [ref=f6e3615]:
+                    - button "More message options" [ref=f6e3616]
+                    - generic "Is Ashik in this chat? If not can you please connect us, I don't have his contact. Thanks!" [ref=f6e3617]
+              - generic [ref=f6e3622]:
+                - heading "Please confirm once the new branded shorten... by Rima Shah" [level=4] [ref=f6e3623]
+                - generic [ref=f6e3625]:
+                  - generic: Rima Shah
+                  - group "Rima Shah Please confirm once the new branded shortened url is updated to all locations. I will then go in and play around with the message itself. Today at 5:53 AM." [ref=f6e3632]:
+                    - button "More message options" [ref=f6e3633]
+                    - generic "Please confirm once the new branded shortened url is updated to all locations. I will then go in and play around with the message itself." [ref=f6e3634]
+              - heading "Today 9:05 AM" [level=3] [ref=f6e3639]
+              - generic [ref=f6e3643]:
+                - heading "Hello Rima Shah Could you please let us ... by Tamzida Azad" [level=4] [ref=f6e3644]
+                - generic [ref=f6e3646]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Hello Rima Shah Could you please let us know if you are available today or tomorrow between 7:00 am and 8:00 am EDT so we can schedule the call accordingly? Today at 9:05 AM." [ref=f6e3653]:
+                    - button "More message options" [ref=f6e3654]
+                    - generic "Hello Rima Shah Could you please let us know if you are available today or tomorrow between 7:00 am and 8:00 am EDT so we can schedule the call accordingly?" [ref=f6e3655]:
+                      - paragraph [ref=f6e3656]:
+                        - text: Hello
+                        - button "Mentioned Rima Shah" [ref=f6e3657]: Rima Shah
+                      - paragraph [ref=f6e3658]: Could you please let us know if you are available today or tomorrow between 7:00 am and 8:00 am EDT so we can schedule the call accordingly?
+              - heading "Today 12:54 PM" [level=3] [ref=f6e3662]
+              - generic [ref=f6e3666]:
+                - heading "Begin Reference, Please confirm once the ne... by Tamzida Azad" [level=4] [ref=f6e3667]
+                - generic [ref=f6e3669]:
+                  - generic: Tamzida Azad
+                  - generic [ref=f6e3674]:
+                    - group "Tamzida Azad Sent Begin Reference, Please confirm once the new branded shortened url is updated to all locations. I will then go in and play around with the message itself., Display Name, 9/2/2026 5:53 AM, End reference Hi Dr Hardik Soni , we require a domain named after Ethos to update the shorten URLs for Ethos location. Could you please provide us that then Ashik can do the rest Today at 12:54 PM." [ref=f6e3676]:
+                      - button "More message options" [ref=f6e3677]
+                      - generic "Begin Reference, Please confirm once the new branded shortened url is updated to all locations. I will then go in and play around with the message itself., Display Name, 9/2/2026 5:53 AM, End reference Hi Dr Hardik Soni , we require a domain named after Ethos to update the shorten URLs for Ethos location. Could you please provide us that then Ashik can do the rest" [ref=f6e3678]:
+                        - group "Begin Reference, Please confirm once the new branded shortened url is updated to all locations. I will then go in and play around with the message itself., Rima Shah, 9/2/2026 5:53 AM, End reference" [ref=f6e3679] [cursor=pointer]:
+                          - generic [ref=f6e3682]:
+                            - generic [ref=f6e3683]:
+                              - generic [ref=f6e3684]: Rima Shah
+                              - generic [ref=f6e3685]: 9/2/2026 5:53 AM
+                            - generic [ref=f6e3686]: Please confirm once the new branded shortened url is updated to all locations. I will then go in and play around with the message itself.
+                        - paragraph [ref=f6e3687]:
+                          - text: Hi Dr
+                          - button "Mentioned Hardik" [ref=f6e3688]: Hardik
+                          - button "Mentioned Soni" [ref=f6e3689]: Soni
+                          - text: ", we require a domain named after Ethos to update the shorten URLs for Ethos location. Could you please provide us that then Ashik can do the rest"
+                    - img "Sent" [ref=f6e3691]
+            - generic [aria-hidden] [ref=f6e1375]: has context menu
+        - generic [ref=f6e1385]:
+          - generic [ref=f6e1386]:
+            - textbox "Type a message" [active] [ref=f6e1387]:
+              - paragraph [ref=f6e1388]: Type a message
+            - generic:
+              - log
+              - log
+          - generic [ref=f6e1389]:
+            - toolbar [ref=f6e1390]:
+              - button "Emoji, GIFs and Stickers" [ref=f6e1392] [cursor=pointer]
+              - button "Attach files" [ref=f6e1396] [cursor=pointer]
+              - button "Attach media" [ref=f6e1400] [cursor=pointer]
+              - button "Loop components (Ctrl+Alt+L)" [ref=f6e1404] [cursor=pointer]
+              - button "Actions and apps" [ref=f6e1409] [cursor=pointer]
+            - toolbar "Actions for new message" [ref=f6e1413]:
+              - button "Send (Ctrl+Enter)" [ref=f6e1415] [cursor=pointer]

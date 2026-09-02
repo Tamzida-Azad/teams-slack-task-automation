@@ -1,0 +1,128 @@
+skill:
+  name: "Calysta Teams Message-to-Task Processor (Browser Edition)"
+  description: "Automates intake of client Teams messages via web browser, categorizes them, and posts prioritized to-do lists into Slack web app."
+  
+  inputs:
+    source: "Microsoft Teams (Web App)"
+    source_url: "https://teams.microsoft.com"
+    channels:
+      - "CalystaPro Support Team"
+      - "CRM - Live"
+      - "Calystapro EMR Web Dev"
+      - "Calystapro EMR Feature Highlights"
+      - "CalystaproEMR - CRM"
+      - "CalystaPro EMR | Rani's Requests"
+    message_types: ["Issues", "Requests", "Problems", "Queries", "Support", "Change Request"]
+    client_members:
+      - "Aaron Yuen"
+      - "Hardik Soni"
+      - "Lori Gobert"
+      - "Rani Houlis"
+      - "Rima Shah"
+      - "Jhara Mae Infante"
+      - "Lucian Lekaj"
+    internal_team:
+      QA: ["Tamzida Azad"]
+      Developers: ["Md Ashikuzzaman", "Rajib Chowdhury", "Rezvi Alauddin"]
+      Manager: ["Akramol Hoque"]
+      PM: ["Pranav Rivankar"]
+
+  processing:
+    steps:
+      - "1. Launch persistent browser context using profile 'claude-browser-profile' and navigate to Teams Web."
+      - "2. Iterate through each specified channel."
+      - "3. Extract unread and recent messages/replies from the target date window."
+      - "4. Analyze text for explicit assignments or relevant context for QA, Developers, and PM."
+      - "5. Categorize into Issues / Requests / Problems / Queries / Support / Change Request."
+      - "6. Assign priority based on keywords ('urgent', 'ASAP', 'immediately')."
+      - "7. Apply Override: Force High priority for messages authored by Hardik Soni or Aaron Yuen."
+      - "8. Map structured tasks to team members (Tamzida, Ashik, Rajib, Rezvi, Pranav). Akramol (Manager) only when explicitly assigned."
+      - "9. Format output payload following the specified daily template."
+      - "10. Navigate to Slack Web (https://app.slack.com), open #calystaproemr, paste payload, and send."
+
+  outputs:
+    destination: "Slack (Web App)"
+    destination_url: "https://app.slack.com"
+    channel: "calystaproemr"
+    schedule: "Daily at 11:00 AM BST"
+    weekend_rule: "Skip Saturday/Sunday; consolidate Friday night–Sunday night tasks into Monday 11:00 AM post"
+
+
+# format_example: |
+#       Date: 31st August 2026
+#       To‑do list shared by client via Microsoft Teams:
+
+#       Tamzida:
+#       Channel: CalystaPro Support Team
+#       1. Support: Delete unwanted SMS reported by Rosa Cataldo of Sono Med Spa.
+#          Priority: Low
+
+#       Ashik:
+#       Channel: CalystaPro EMR | Rani's Requests
+#       1. Investigate ex‑employee of Ethos facility receiving EMR messages.
+#          Priority: High
+
+output_format:
+  example: |
+    Date: 31st August 2026
+    To‑do list shared by client via Microsoft Teams:
+
+    **Tamzida:**
+    **Channel: CalystaPro Support Team**
+    - Support: Delete unwanted SMS reported by Rosa Cataldo of Sono Med Spa.    
+    Priority: Low
+
+
+    **Ashik:**
+    **Channel: CalystaPro EMR | Rani's Requests**
+    - Investigate ex‑employee of Ethos facility receiving EMR messages.    
+    Priority: High
+
+
+    **Rajib:**
+    **Channel: CRM - Live**
+    - Task 1    
+    Priority: Medium
+
+    **Channel: Calystapro EMR Feature Highlights**
+    - Task 2    
+    Priority: Low
+
+
+format_rules:
+  team_member:
+    style: bold
+    line_break_after: true
+  channel_name:
+    style: bold
+    line_break_after: true
+  tasks:
+    style: bullet
+    line_break_before_priority: true
+  priority:
+    style: normal
+    line_break_before: true
+  member_separator:
+    line_breaks: 2
+  multi_channel:
+    structure: |
+      **TeamMember:**
+
+      **ChannelName1**
+      - Task 1
+      Priority: <value>
+
+      **ChannelName2**
+      - Task 2
+      Priority: <value>
+
+      (2 line breaks between members)
+
+
+
+benefits:
+  - "Eliminates manual reading and assignment"
+  - "Provides clarity with structured task lists"
+  - "Ensures faster response to client needs"
+  - "Keeps PMs, QA, and developers aligned"
+

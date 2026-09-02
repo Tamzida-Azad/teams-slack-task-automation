@@ -1,0 +1,583 @@
+- application [ref=f6e26]:
+  - generic [ref=f6e31]:
+    - generic [ref=f6e35]:
+      - button "Collapse app bar" [ref=f6e38]
+      - search [ref=f6e48]:
+        - button [aria-hidden] [ref=f6e49]
+        - combobox "Type \"is:\" to narrow your search to Messages, Files or more" [ref=f6e2231]
+      - generic [ref=f6e58]:
+        - button "Settings and more" [ref=f6e60]
+        - button "Your profile, status Offline" [ref=f6e67]:
+          - img "Profile picture of Tamzida Azad." [ref=f6e68]:
+            - generic [ref=f6e69]: TA
+            - img "offline" [ref=f6e71]
+    - group [ref=f6e78]:
+      - generic [ref=f6e82]: Stay in the know. Turn on desktop notifications.
+      - button "Turn on" [ref=f6e84]
+      - button "Close" [ref=f6e86]
+    - generic [ref=f6e93]:
+      - navigation "Apps" [ref=f6e106]:
+        - generic "Chat" [ref=f6e108]:
+          - button "Chat" [pressed] [ref=f6e109]
+        - generic "Meet" [ref=f6e112]:
+          - button "Meet" [ref=f6e113]
+        - generic "People" [ref=f6e116]:
+          - button "People" [ref=f6e117]
+        - generic "Copilot" [ref=f6e120]:
+          - button "Copilot" [ref=f6e121]
+        - generic "Communities" [ref=f6e124]:
+          - button "Communities" [ref=f6e125]
+        - generic "Calendar" [ref=f6e128]:
+          - button "Calendar" [ref=f6e129]
+        - generic "Activity" [ref=f6e132]:
+          - button "Activity" [ref=f6e133]
+      - button "Upgrade" [ref=f6e137]
+    - generic [ref=f6e147]:
+      - generic [ref=f6e148]:
+        - generic [ref=f6e149]:
+          - heading "Chat" [level=1] [ref=f6e150]
+          - toolbar "Rail actions" [ref=f6e151]:
+            - button "Show filter text box (Ctrl+Shift+F)" [ref=f6e153]
+            - button "Meet now" [ref=f6e157]
+            - button "New message (Alt+Shift+N)" [ref=f6e161]
+        - generic "Filter" [ref=f6e166]:
+          - toolbar "Filter options" [ref=f6e168]:
+            - generic [ref=f6e170]:
+              - button "Unread (Ctrl+Alt+U)" [ref=f6e172]: Unread
+              - button "Meeting chats (Ctrl+Alt+B)" [ref=f6e174]: Meeting chats
+              - button "Unmuted (Ctrl+Alt+Q)" [ref=f6e176]: Unmuted
+        - tree "Teams" [ref=f6e178]:
+          - treeitem "Favorites" [expanded] [level=1] [ref=f6e179] [cursor=pointer]:
+            - group [ref=f6e186]:
+              - treeitem "Chat Tamzida Azad (You)" [level=2] [ref=f6e187]:
+                - generic [ref=f6e201]:
+                  - generic [ref=f6e202]: Tamzida Azad (You)
+                  - generic:
+                    - time
+          - treeitem "Chats" [expanded] [level=1] [ref=f6e207] [cursor=pointer]:
+            - group [ref=f6e214]:
+              - 'treeitem "Group chat Calystapro EMR Web Dev Last message Md: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our in… 3:52 PM" [level=2] [ref=f6e215]':
+                - generic [ref=f6e216]:
+                  - generic [ref=f6e222]:
+                    - generic [ref=f6e223]: Calystapro EMR Web Dev
+                    - generic [ref=f6e229]: "Md: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our in…"
+                  - toolbar [ref=f6e2232]:
+                    - button "More chat options" [ref=f6e2234]
+              - 'treeitem "Group chat CRM - Live Last message Rajib: Lori Gobert Though its little late for us. Dev team will be available of Thursday at… Muted 3:25 PM" [level=2] [ref=f6e233]':
+                - generic [ref=f6e243]:
+                  - generic [ref=f6e244]:
+                    - generic [ref=f6e245]: CRM - Live
+                    - time [ref=f6e249]: 3:25 PM
+                  - generic [ref=f6e250]: "Rajib: Lori Gobert Though its little late for us. Dev team will be available of Thursday at…"
+              - 'treeitem "Group chat CalystaPro EMR | Rani''s Requests Last message You: Hi Dr Hardik Soni, we require a domain named after Ethos to update the shorten URLs … 12:54 PM" [level=2] [ref=f6e254]':
+                - generic [ref=f6e261]:
+                  - generic [ref=f6e262]:
+                    - generic [ref=f6e263]: CalystaPro EMR | Rani's Requests
+                    - time [ref=f6e267]: 12:54 PM
+                  - generic [ref=f6e268]: "You: Hi Dr Hardik Soni, we require a domain named after Ethos to update the shorten URLs …"
+              - 'treeitem "Group chat CalystaPro Support Team Last message Jhara: Okay got it. Thank you Tamziuda 9/1" [level=2] [ref=f6e272]':
+                - generic [ref=f6e279]:
+                  - generic [ref=f6e280]:
+                    - generic [ref=f6e281]: CalystaPro Support Team
+                    - time [ref=f6e285]: 9/1
+                  - generic [ref=f6e286]: "Jhara: Okay got it. Thank you Tamziuda"
+              - 'treeitem "Chat Jhara Mae Infante Available Last message You: ok 9/1" [level=2] [ref=f6e290]':
+                - generic [ref=f6e303]:
+                  - generic [ref=f6e304]:
+                    - generic [ref=f6e305]: Jhara Mae Infante
+                    - time [ref=f6e309]: 9/1
+                  - generic [ref=f6e310]: "You: ok"
+              - treeitem "Group chat Calystapro EMR Feature Highlights Last message User added 8/31" [level=2] [ref=f6e314]:
+                - generic [ref=f6e321]:
+                  - generic [ref=f6e322]:
+                    - generic [ref=f6e323]: Calystapro EMR Feature Highlights
+                    - time [ref=f6e327]: 8/31
+                  - generic [ref=f6e328]: User added
+              - 'treeitem "Chat Mahmudur Bhuiyan Offline Last message You: Hello Rima Shah, Most of what you want to test (shorter SMS copy, reward amounts… 8/31" [level=2] [ref=f6e332]':
+                - generic [ref=f6e345]:
+                  - generic [ref=f6e346]:
+                    - generic [ref=f6e347]: Mahmudur Bhuiyan
+                    - time [ref=f6e351]: 8/31
+                  - generic [ref=f6e352]: "You: Hello Rima Shah, Most of what you want to test (shorter SMS copy, reward amounts…"
+              - 'treeitem "Group chat CalystaproEMR - CRM Last message Hardik: Yes but there was no error message when I tried adding my name with a duplicate number 7/19" [level=2] [ref=f6e356]':
+                - generic [ref=f6e363]:
+                  - generic [ref=f6e364]:
+                    - generic [ref=f6e365]: CalystaproEMR - CRM
+                    - time [ref=f6e369]: 7/19
+                  - generic [ref=f6e370]: "Hardik: Yes but there was no error message when I tried adding my name with a duplicate number"
+              - 'treeitem "Chat Rani Houlis Offline Last message You: Here is more details about Last Visit Reports Logic 7/7" [level=2] [ref=f6e374]':
+                - generic [ref=f6e387]:
+                  - generic [ref=f6e388]:
+                    - generic [ref=f6e389]: Rani Houlis
+                    - time [ref=f6e393]: 7/7
+                  - generic [ref=f6e394]: "You: Here is more details about Last Visit Reports Logic"
+              - 'treeitem "Group chat Aaron, Jhara, and Pranav Last message Jhara: Oh yeah2x. Wew 1/31" [level=2] [ref=f6e398]':
+                - generic [ref=f6e405]:
+                  - generic [ref=f6e406]:
+                    - generic [ref=f6e407]: Aaron, Jhara, and Pranav
+                    - time [ref=f6e411]: 1/31
+                  - generic [ref=f6e412]: "Jhara: Oh yeah2x. Wew"
+              - 'treeitem "Group chat Aaron and Jhara Last message Jhara: Thank you Aaron and Tamzida. So far I have uploaded those who are listed in channel.… 1/23" [level=2] [ref=f6e416]':
+                - generic [ref=f6e423]:
+                  - generic [ref=f6e424]:
+                    - generic [ref=f6e425]: Aaron and Jhara
+                    - time [ref=f6e429]: 1/23
+                  - generic [ref=f6e430]: "Jhara: Thank you Aaron and Tamzida. So far I have uploaded those who are listed in channel.…"
+        - status [ref=f6e434]
+        - generic:
+          - generic [aria-hidden] [ref=f6e435]: Unread message
+          - generic [aria-hidden] [ref=f6e436]: Last message
+          - generic [aria-hidden] [ref=f6e437]: Group chat
+          - generic [aria-hidden] [ref=f6e438]: Meeting chat
+          - generic [aria-hidden] [ref=f6e439]: Chat
+          - generic [aria-hidden] [ref=f6e440]: Personal at mention
+          - generic [aria-hidden] [ref=f6e441]: Everyone at mention
+          - generic [aria-hidden] [ref=f6e442]: Important
+          - generic [aria-hidden] [ref=f6e443]: Urgent
+          - generic [aria-hidden] [ref=f6e444]: Draft
+          - generic [aria-hidden] [ref=f6e445]: Draft
+          - generic [aria-hidden] [ref=f6e446]: Muted
+          - generic [aria-hidden] [ref=f6e447]: Meeting in progress
+          - generic [aria-hidden] [ref=f6e448]: Meet now in progress
+          - generic [aria-hidden] [ref=f6e449]: You can't send messages because you are not a member of the chat.
+          - generic [aria-hidden] [ref=f6e450]: You cannot send messages to this bot
+          - generic [aria-hidden] [ref=f6e451]: Private
+          - generic [aria-hidden] [ref=f6e452]: Shared
+          - generic [aria-hidden] [ref=f6e453]: Has context menu
+          - generic [aria-hidden] [ref=f6e454]: Channel at mention
+          - generic [aria-hidden] [ref=f6e455]: Team at mention
+          - generic [aria-hidden] [ref=f6e456]: Personal at mention
+          - generic [aria-hidden] [ref=f6e457]: Unread
+          - generic [aria-hidden] [ref=f6e458]: Unread
+          - generic [aria-hidden] [ref=f6e459]: Meeting in progress
+          - generic [aria-hidden] [ref=f6e460]: Unread
+          - generic [aria-hidden] [ref=f6e461]: Channel
+          - generic [aria-hidden] [ref=f6e462]: Team
+          - generic [aria-hidden] [ref=f6e463]: Has pinned messages
+          - generic [aria-hidden] [ref=f6e464]: See more
+          - generic [aria-hidden] [ref=f6e465]: Community
+          - generic [aria-hidden] [ref=f6e466]: Temporarily shown
+          - generic [aria-hidden] [ref=f6e467]: Has context menu
+          - generic [aria-hidden] [ref=f6e468]: Badged chat
+          - generic [aria-hidden] [ref=f6e469]: Badged chats
+        - generic [aria-hidden] [ref=f6e470]: Has context menu
+      - slider "Resize left panel" [ref=f6e472]
+    - generic [ref=f6e474]:
+      - generic [ref=f6e481]:
+        - generic [ref=f6e482]:
+          - button "Change group chat avatar" [ref=f6e2239]
+          - generic [ref=f6e487]:
+            - generic [ref=f6e489]:
+              - heading "Calystapro EMR Web Dev" [level=2] [ref=f6e2241]:
+                - generic "Calystapro EMR Web Dev" [ref=f6e2242]
+              - list "Chat participants" [ref=f6e496]
+            - button "Name group chat" [ref=f6e498]
+        - toolbar "Chat actions" [ref=f6e503]:
+          - generic [ref=f6e505]:
+            - button "Meet now" [ref=f6e506]
+            - button "More call options" [ref=f6e511]
+          - button "View and add participants, 23 participants" [ref=f6e2243]: "23"
+          - separator [ref=f6e519]
+          - generic "Sidepane Features" [ref=f6e520]:
+            - button "Find in chat" [ref=f6e521]
+          - button "More chat options" [ref=f6e526]
+      - generic [ref=f6e536]:
+        - generic [ref=f6e537]:
+          - heading [level=2] [aria-hidden] [ref=f6e538]: Message List
+          - generic [ref=f6e541]:
+            - generic [ref=f6e542]:
+              - generic [ref=f6e543]: Invite others to chat
+              - generic [ref=f6e547]:
+                - button "Share link" [ref=f6e548]
+                - button "Dismiss" [ref=f6e549]
+            - generic [ref=f6e558]:
+              - generic [ref=f6e2246]:
+                - heading "You and I. by Hardik Soni" [level=4] [ref=f6e2247]
+                - generic [ref=f6e2249]:
+                  - generic: Hardik Soni
+                  - group "Hardik Soni You and I. Yesterday at 6:07 PM." [ref=f6e2256]:
+                    - button "More message options" [ref=f6e2257]
+                    - generic "You and I." [ref=f6e2258]
+              - generic [ref=f6e2263]:
+                - heading "I am ready by Md Ashikuzzaman" [level=4] [ref=f6e2264]
+                - generic [ref=f6e2266]:
+                  - generic [ref=f6e2267]: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman I am ready Yesterday at 6:07 PM." [ref=f6e2282]:
+                    - button "More message options" [ref=f6e2283]
+                    - generic "I am ready" [ref=f6e2284]:
+                      - paragraph [ref=f6e2285]: I am ready
+              - generic [ref=f6e2289]:
+                - heading "Let’s wrap everything up and start October by Hardik Soni" [level=4] [ref=f6e2290]
+                - generic [ref=f6e2292]:
+                  - generic [ref=f6e2293]: Hardik Soni
+                  - group "Hardik Soni Let’s wrap everything up and start October 1 1 Heart reaction. Yesterday at 6:07 PM." [ref=f6e2308]:
+                    - button "More message options" [ref=f6e2309]
+                    - generic "Let’s wrap everything up and start October 1" [ref=f6e2310]
+                    - toolbar "Reaction summary" [ref=f6e2312]:
+                      - button "1 Heart reaction." [ref=f6e2314]:
+                        - generic [ref=f6e2315]:
+                          - img "❤️" [ref=f6e2317]
+                          - generic [aria-hidden] [ref=f6e2318]: 1 Heart reaction.
+                      - button "More reactions" [ref=f6e2320]
+              - generic [ref=f6e2328]:
+                - heading "That will give us enough time to clean thin... by Hardik Soni" [level=4] [ref=f6e2329]
+                - generic [ref=f6e2331]:
+                  - generic: Hardik Soni
+                  - group "Hardik Soni That will give us enough time to clean things. Evaluate membership and new payment and see how new crm and AI is coming along Yesterday at 6:07 PM." [ref=f6e2338]:
+                    - button "More message options" [ref=f6e2339]
+                    - generic "That will give us enough time to clean things. Evaluate membership and new payment and see how new crm and AI is coming along" [ref=f6e2340]
+              - generic [ref=f6e2345]:
+                - heading "It will be fantastic. by Md Ashikuzzaman" [level=4] [ref=f6e2346]
+                - generic [ref=f6e2348]:
+                  - generic [ref=f6e2349]: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman It will be fantastic. Yesterday at 6:08 PM." [ref=f6e2364]:
+                    - button "More message options" [ref=f6e2365]
+                    - generic "It will be fantastic." [ref=f6e2366]:
+                      - paragraph [ref=f6e2367]: It will be fantastic.
+              - generic [ref=f6e2371]:
+                - heading "Great plan. by Md Ashikuzzaman" [level=4] [ref=f6e2372]
+                - generic [ref=f6e2374]:
+                  - generic: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman Great plan. Yesterday at 6:08 PM." [ref=f6e2381]:
+                    - button "More message options" [ref=f6e2382]
+                    - generic "Great plan." [ref=f6e2383]:
+                      - paragraph [ref=f6e2384]: Great plan.
+                      - paragraph [ref=f6e2385]
+              - generic [ref=f6e2389]:
+                - heading "Great. Thanks by Hardik Soni" [level=4] [ref=f6e2390]
+                - generic [ref=f6e2392]:
+                  - generic [ref=f6e2393]: Hardik Soni
+                  - group "Hardik Soni Great. Thanks 1 Heart reaction. Yesterday at 6:08 PM." [ref=f6e2408]:
+                    - button "More message options" [ref=f6e2409]
+                    - generic "Great. Thanks" [ref=f6e2410]
+                    - toolbar "Reaction summary" [ref=f6e2412]:
+                      - button "1 Heart reaction." [ref=f6e2414]:
+                        - generic [ref=f6e2415]:
+                          - img "❤️" [ref=f6e2417]
+                          - generic [aria-hidden] [ref=f6e2418]: 1 Heart reaction.
+                      - button "More reactions" [ref=f6e2420]
+              - generic [ref=f6e2428]:
+                - heading "So, In the mean time, please provide me the... by Md Ashikuzzaman" [level=4] [ref=f6e2429]
+                - generic [ref=f6e2431]:
+                  - generic [ref=f6e2432]: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman So, In the mean time, please provide me the tasks about the inventory and encounter. I will be taking those things and quick fix of membership issues if tamzida reports. Yesterday at 6:09 PM." [ref=f6e2447]:
+                    - button "More message options" [ref=f6e2448]
+                    - generic "So, In the mean time, please provide me the tasks about the inventory and encounter. I will be taking those things and quick fix of membership issues if tamzida reports." [ref=f6e2449]:
+                      - paragraph [ref=f6e2450]: So, In the mean time, please provide me the tasks about the inventory and encounter.
+                      - paragraph [ref=f6e2451]: I will be taking those things and quick fix of membership issues if tamzida reports.
+              - generic [ref=f6e2455]:
+                - heading "Beautiful. Take up Rima’s referral and make... by Hardik Soni" [level=4] [ref=f6e2456]
+                - generic [ref=f6e2458]:
+                  - generic [ref=f6e2459]: Hardik Soni
+                  - group "Hardik Soni Beautiful. Take up Rima’s referral and make sure you understand what she is asking. I don’t want to spend too much time on it Yesterday at 6:09 PM." [ref=f6e2474]:
+                    - button "More message options" [ref=f6e2475]
+                    - generic "Beautiful. Take up Rima’s referral and make sure you understand what she is asking. I don’t want to spend too much time on it" [ref=f6e2476]
+              - generic [ref=f6e2481]:
+                - heading "I need detailed information about it. by Md Ashikuzzaman" [level=4] [ref=f6e2482]
+                - generic [ref=f6e2484]:
+                  - generic [ref=f6e2485]: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman I need detailed information about it. Yesterday at 6:10 PM." [ref=f6e2500]:
+                    - button "More message options" [ref=f6e2501]
+                    - generic "I need detailed information about it." [ref=f6e2502]:
+                      - paragraph [ref=f6e2503]: I need detailed information about it.
+              - generic [ref=f6e2507]:
+                - heading "So i can start by Md Ashikuzzaman" [level=4] [ref=f6e2508]
+                - generic [ref=f6e2510]:
+                  - generic: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman So i can start Yesterday at 6:10 PM." [ref=f6e2517]:
+                    - button "More message options" [ref=f6e2518]
+                    - generic "So i can start" [ref=f6e2519]:
+                      - paragraph [ref=f6e2520]: So i can start
+              - heading "Yesterday 9:42 PM" [level=3] [ref=f6e2524]
+              - generic [ref=f6e2528]:
+                - heading "Tamzida Azad priority is to be given to me... by Hardik Soni" [level=4] [ref=f6e2529]
+                - generic [ref=f6e2531]:
+                  - generic [ref=f6e2532]: Hardik Soni
+                  - generic [ref=f6e2537]:
+                    - group "Hardik Soni mentioned you. Tamzida Azad priority is to be given to membership issues. This week is all about testing on live facility to next week actually deploying on ethos facility. TOP PRIORITY Hardik Soni 1 Like reaction. Yesterday at 9:42 PM." [ref=f6e2547]:
+                      - button "More message options" [ref=f6e2548]
+                      - generic "Tamzida Azad priority is to be given to membership issues. This week is all about testing on live facility to next week actually deploying on ethos facility. TOP PRIORITY" [ref=f6e2549]:
+                        - generic [ref=f6e2550]:
+                          - button "Mentioned you" [ref=f6e2551]: Tamzida Azad
+                          - text: priority is to be given to membership issues. This week is all about testing on live facility to next week actually deploying on ethos facility. TOP PRIORITY
+                      - toolbar "Reaction summary" [ref=f6e2552]:
+                        - button "1 Like reaction." [ref=f6e2554]:
+                          - generic [ref=f6e2555]:
+                            - img "👍" [ref=f6e2557]
+                            - generic [aria-hidden] [ref=f6e2558]: 1 Like reaction.
+                        - button "More reactions" [ref=f6e2560]
+                    - img "Hardik Soni mentioned you." [ref=f6e2566]
+              - generic [ref=f6e2571]:
+                - heading "Begin Reference, Tamzida Azad priority is t... by Tamzida Azad" [level=4] [ref=f6e2572]
+                - generic [ref=f6e2574]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, Tamzida Azad priority is to be given to membership issues. This week is all about testing on live facility to next week actually deploying on ethos facility. TOP PRIORITY, Hardik Soni, 9/1/2026 9:42 PM, End reference Yes Dr Soni. Today we encountered a error on Elavon API which Ashik has fixed I will resume testing on membership from tomorrow Yesterday at 9:53 PM." [ref=f6e2581]:
+                    - button "More message options" [ref=f6e2582]
+                    - generic "Begin Reference, Tamzida Azad priority is to be given to membership issues. This week is all about testing on live facility to next week actually deploying on ethos facility. TOP PRIORITY, Hardik Soni, 9/1/2026 9:42 PM, End reference Yes Dr Soni. Today we encountered a error on Elavon API which Ashik has fixed I will resume testing on membership from tomorrow" [ref=f6e2583]:
+                      - group "Begin Reference, Tamzida Azad priority is to be given to membership issues. This week is all about testing on live facility to next week actually deploying on ethos facility. TOP PRIORITY, Hardik Soni, 9/1/2026 9:42 PM, End reference" [ref=f6e2584] [cursor=pointer]:
+                        - generic [ref=f6e2587]:
+                          - generic [ref=f6e2588]:
+                            - generic [ref=f6e2589]: Hardik Soni
+                            - generic [ref=f6e2590]: 9/1/2026 9:42 PM
+                          - generic [ref=f6e2591]: Tamzida Azad priority is to be given to membership issues. This week is all about testing on live facility to next week actually deploying on ethos facility. TOP PRIORITY
+                      - paragraph [ref=f6e2592]: Yes Dr Soni. Today we encountered a error on Elavon API which Ashik has fixed I will resume testing on membership from tomorrow
+              - generic [ref=f6e2596]:
+                - heading "Jason is also assisting us solving any kind... by Tamzida Azad" [level=4] [ref=f6e2597]
+                - generic [ref=f6e2599]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Jason is also assisting us solving any kind of problem Yesterday at 9:53 PM." [ref=f6e2606]:
+                    - button "More message options" [ref=f6e2607]
+                    - generic "Jason is also assisting us solving any kind of problem" [ref=f6e2608]:
+                      - paragraph [ref=f6e2609]: Jason is also assisting us solving any kind of problem
+              - heading "Today 4:18 AM" [level=3] [ref=f6e2613]
+              - generic [ref=f6e2617]:
+                - heading "Image by Hardik Soni" [level=4] [ref=f6e2618]
+                - generic [ref=f6e2620]:
+                  - generic [ref=f6e2621]: Hardik Soni
+                  - group "Hardik Soni Image Today at 4:18 AM." [ref=f6e2636]:
+                    - button "More message options" [ref=f6e2637]
+                    - generic "Image" [ref=f6e2638]:
+                      - img "Image" [ref=f6e2642]
+              - generic [ref=f6e2646]:
+                - heading "Patient signed the consent form but then it... by Hardik Soni" [level=4] [ref=f6e2647]
+                - generic [ref=f6e2649]:
+                  - generic: Hardik Soni
+                  - group "Hardik Soni Patient signed the consent form but then it was deleted. Not by any person Today at 4:18 AM." [ref=f6e2656]:
+                    - button "More message options" [ref=f6e2657]
+                    - generic "Patient signed the consent form but then it was deleted. Not by any person" [ref=f6e2658]
+              - generic [ref=f6e2663]:
+                - heading "Juniper Brown in Morristown by Hardik Soni" [level=4] [ref=f6e2664]
+                - generic [ref=f6e2666]:
+                  - generic: Hardik Soni
+                  - group "Hardik Soni Juniper Brown in Morristown Today at 4:19 AM." [ref=f6e2673]:
+                    - button "More message options" [ref=f6e2674]
+                    - generic "Juniper Brown in Morristown" [ref=f6e2675]
+              - heading "Today 9:07 AM" [level=3] [ref=f6e2680]
+              - generic [ref=f6e2684]:
+                - heading "Begin Reference, Patient signed the consent... by Tamzida Azad" [level=4] [ref=f6e2685]
+                - generic [ref=f6e2687]:
+                  - generic: Tamzida Azad
+                  - generic [ref=f6e2692]:
+                    - group "Tamzida Azad Sent Begin Reference, Patient signed the consent form but then it was deleted. Not by any person, Hardik Soni, 9/2/2026 4:18 AM, End reference We will take up it as high priority today Dr Soni Today at 9:07 AM." [ref=f6e2694]:
+                      - button "More message options" [ref=f6e2695]
+                      - generic "Begin Reference, Patient signed the consent form but then it was deleted. Not by any person, Hardik Soni, 9/2/2026 4:18 AM, End reference We will take up it as high priority today Dr Soni" [ref=f6e2696]:
+                        - group "Begin Reference, Patient signed the consent form but then it was deleted. Not by any person, Hardik Soni, 9/2/2026 4:18 AM, End reference" [ref=f6e2697] [cursor=pointer]:
+                          - generic [ref=f6e2700]:
+                            - generic [ref=f6e2701]:
+                              - generic [ref=f6e2702]: Hardik Soni
+                              - generic [ref=f6e2703]: 9/2/2026 4:18 AM
+                            - generic [ref=f6e2704]: Patient signed the consent form but then it was deleted. Not by any person
+                        - paragraph [ref=f6e2705]: We will take up it as high priority today Dr Soni
+                    - img "Sent" [ref=f6e2707]
+              - heading "Today 1:19 PM" [level=3] [ref=f6e2712]
+              - generic [ref=f6e2716]:
+                - heading "Hi Aaron Yuen , I have added new project... by Md Ashikuzzaman, has an attachment." [level=4] [ref=f6e2717]
+                - generic [ref=f6e2719]:
+                  - generic [ref=f6e2720]: Md Ashikuzzaman
+                  - 'group "Md Ashikuzzaman Hi Aaron Yuen , I have added new project and api key on google cloud console for the corn of google calendar with admin@calystaproemr.com. I have added those keys in our system and deployed live. It is working fine. I have logged out the email. Thank you so much for your support. CC: Akramol Hoque , Hardik Soni The message has an attachment. Today at 1:19 PM." [ref=f6e2735]':
+                    - button "More message options" [ref=f6e2736]
+                    - 'generic "Hi Aaron Yuen , I have added new project and api key on google cloud console for the corn of google calendar with admin@calystaproemr.com. I have added those keys in our system and deployed live. It is working fine. I have logged out the email. Thank you so much for your support. CC: Akramol Hoque , Hardik Soni" [ref=f6e2737]':
+                      - paragraph [ref=f6e2738]:
+                        - text: Hi
+                        - button "Mentioned Aaron" [ref=f6e2739]: Aaron
+                        - button "Mentioned Yuen" [ref=f6e2740]: Yuen
+                        - text: ","
+                      - paragraph [ref=f6e2741]: I have added new project and api key on google cloud console for the corn of google calendar with admin@calystaproemr.com.
+                      - paragraph [ref=f6e2742]
+                      - paragraph [ref=f6e2743]: I have added those keys in our system and deployed live.
+                      - paragraph [ref=f6e2744]: It is working fine.
+                      - paragraph [ref=f6e2745]: I have logged out the email.
+                      - paragraph [ref=f6e2746]
+                      - paragraph [ref=f6e2747]: Thank you so much for your support.
+                      - paragraph [ref=f6e2748]
+                      - paragraph [ref=f6e2749]:
+                        - text: "CC:"
+                        - button "Mentioned Akramol" [ref=f6e2750]: Akramol
+                        - button "Mentioned Hoque" [ref=f6e2751]: Hoque
+                        - text: ","
+                        - button "Mentioned Hardik" [ref=f6e2752]: Hardik
+                        - button "Mentioned Soni" [ref=f6e2753]: Soni
+                    - generic "The message has an attachment." [ref=f6e2754]:
+                      - img "Screenshot (130).png" [ref=f6e2757]
+              - heading "Today 3:04 PM" [level=3] [ref=f6e2761]
+              - generic [ref=f6e2765]:
+                - heading "Hi Dr. Hardik Soni , I have reviewed Rim... by Md Ashikuzzaman" [level=4] [ref=f6e2766]
+                - generic [ref=f6e2768]:
+                  - generic [ref=f6e2769]:
+                    - generic [ref=f6e2770]: Md Ashikuzzaman
+                    - generic "Edited Today at 3:14 PM" [ref=f6e2776]: Edited
+                  - group [ref=f6e2787]:
+                    - button "More message options" [ref=f6e2788]
+                    - generic [ref=f6e2789]:
+                      - paragraph [ref=f6e2790]:
+                        - text: Hi Dr.
+                        - button "Mentioned Hardik" [ref=f6e2791]: Hardik
+                        - button "Mentioned Soni" [ref=f6e2792]: Soni
+                        - text: ","
+                      - paragraph [ref=f6e2793]: I have reviewed Rima's request for the referral. Here is the explanation of each request.
+                      - paragraph [ref=f6e2794]
+                      - paragraph [ref=f6e2795]: 1. Shorten/customize the referral URL? Ideally, the link should include Ethos in the URL. The current link comes across as spam.
+                      - paragraph [ref=f6e2796]: "Ans of 1: We can not make the shorten url dynamic. If we want more shorten url, we need to buy more domain. There would be a chance to the spam of the message. This spam is totally generated by the sim operator and twilio. More new domain will not help here."
+                      - paragraph [ref=f6e2797]
+                      - paragraph [ref=f6e2798]: If you want to send the sms with shorten url where ethos will be there, we need to create a short project like spa. Guru and we also buy new domain. Then you can do this. Please take an approval from Dr. Hardik.
+                      - paragraph [ref=f6e2799]
+                      - paragraph [ref=f6e2800]
+                      - paragraph [ref=f6e2801]
+                      - paragraph [ref=f6e2802]
+                      - paragraph [ref=f6e2803]
+                      - paragraph [ref=f6e2804]: 2. Allow the patient to simply share their unique link directly, so the person they refer can click it and fill out their own information?
+                      - paragraph [ref=f6e2805]: "Ans of 2: It can not be dynamic. For each unique link we need to purchase new domain which will be costlier. and we also need to host the short project too which will also have some cost."
+                      - paragraph [ref=f6e2806]
+                      - paragraph [ref=f6e2807]
+                      - paragraph [ref=f6e2808]
+                      - paragraph [ref=f6e2809]
+                      - paragraph [ref=f6e2810]
+                      - paragraph [ref=f6e2811]
+                      - paragraph [ref=f6e2812]: 3. I’d also like to shorten the automated message and make the entire experience feel more personal and professional.
+                      - paragraph [ref=f6e2813]
+                      - paragraph [ref=f6e2814]: "Something like:"
+                      - paragraph [ref=f6e2815]: “Rima, so good having you at Ethos today.
+                      - paragraph [ref=f6e2816]: Know someone who’d love it too? Send them this, and you’ll both get a $50 Ethos reward once they visit.
+                      - paragraph [ref=f6e2817]: "Tap to send:"
+                      - paragraph [ref=f6e2818]: "‘Just left Ethos and loved it. You should definitely book! Here’s my referral link so we both get $50: {BRANDED ETHOS LINK}’"
+                      - paragraph [ref=f6e2819]
+                      - paragraph [ref=f6e2820]
+                      - paragraph [ref=f6e2821]:
+                        - text: "Ans of 3: It is already there. From the"
+                        - link "Link https://www.calystaproemr.com/referral-message-templates/add" [ref=f6e2822] [cursor=pointer]:
+                          - /url: https://www.calystaproemr.com/referral-message-templates/add
+                          - text: https://www.calystaproemr.com/referral-message-templates/add
+                        - text: ", you can use your custom and professional sms."
+                      - paragraph [ref=f6e2823]
+                      - paragraph [ref=f6e2824]
+                      - paragraph [ref=f6e2825]:
+                        - strong [ref=f6e2826]
+                        - text: Yes. As Admin, you can edit the post-checkout referral text without contacting us. 1. Select your Ethos location (facility dropdown at the top). 2.
+                        - strong [ref=f6e2827]: Referrals → Referral Reward
+                        - text: — set rewards (e.g. $50 / $50) and turn
+                        - strong [ref=f6e2828]: “Allow automated SMS for every patient checkout?”
+                        - text: to
+                        - strong [ref=f6e2829]: "YES"
+                        - text: ". 3. Go to Referrals → Message Templates. 4. Click on Add Template button 5. Find “Referral URL SMS (After Checkout)”. 6. Click Edit (or Add Template if one doesn’t exist yet). 7. Make sure Status is Active. 8. Update the SMS text using these short codes — EMR fills them in for you:"
+                      - list [ref=f6e2830]:
+                        - listitem [ref=f6e2831]:
+                          - code [ref=f6e2832]: "{patient_name}"
+                          - text: — patient’s name
+                        - listitem [ref=f6e2833]:
+                          - code [ref=f6e2834]: "{facility_name}"
+                          - text: — shows as “Ethos” for Ethos locations
+                        - listitem [ref=f6e2835]:
+                          - code [ref=f6e2836]: "{reward_for_referred}"
+                          - text: — reward for the friend (e.g. “a $50 Ethos reward”)
+                        - listitem [ref=f6e2837]:
+                          - code [ref=f6e2838]: "{reward_for_referrer}"
+                          - text: — reward for the referrer (e.g. “a $50 Ethos reward”)
+                        - listitem [ref=f6e2839]:
+                          - code [ref=f6e2840]: "{referral_url}"
+                          - text: — patient’s unique referral link (shortened for SMS)
+                      - paragraph [ref=f6e2841]:
+                        - text: "Reference:"
+                        - link "Link https://prnt.sc/bAAIHqwxHXe3" [ref=f6e2842] [cursor=pointer]:
+                          - /url: https://prnt.sc/bAAIHqwxHXe3
+                          - text: https://prnt.sc/bAAIHqwxHXe3
+                        - strong [ref=f6e2843]: "Example message you can paste and adjust:"
+                        - text: "{patient_name}, so good having you at Ethos today. Know someone who'd love it too? Send them your link — you'll both get {reward_for_referrer} once they visit. {referral_url}"
+              - generic [ref=f6e2847]:
+                - heading "If she wants to send the sms from a separat... by Md Ashikuzzaman" [level=4] [ref=f6e2848]
+                - generic [ref=f6e2850]:
+                  - generic [ref=f6e2851]:
+                    - generic [ref=f6e2852]: Md Ashikuzzaman
+                    - generic "Edited Today at 3:11 PM" [ref=f6e2858]: Edited
+                  - group "Md Ashikuzzaman If she wants to send the sms from a separate domain instead of spa. Guru, we need to buy a domain as per her suggestion. I will update the logic and for only ethos location it will use rima's shorten domain instead of spa. Guru. And we need to deploy a small project like spa.guru Today at 3:11 PM. Edited" [ref=f6e2869]:
+                    - button "More message options" [ref=f6e2870]
+                    - generic "If she wants to send the sms from a separate domain instead of spa. Guru, we need to buy a domain as per her suggestion. I will update the logic and for only ethos location it will use rima's shorten domain instead of spa. Guru. And we need to deploy a small project like spa.guru" [ref=f6e2871]:
+                      - paragraph [ref=f6e2872]: If she wants to send the sms from a separate domain instead of spa. Guru, we need to buy a domain as per her suggestion.
+                      - paragraph [ref=f6e2873]: I will update the logic and for only ethos location it will use rima's shorten domain instead of spa. Guru.
+                      - paragraph [ref=f6e2874]: And we need to deploy a small project like spa.guru
+              - generic [ref=f6e2878]:
+                - heading "Begin Reference, Patient signed the consent... by Md Ashikuzzaman" [level=4] [ref=f6e2879]
+                - generic [ref=f6e2881]:
+                  - generic [ref=f6e2882]: Md Ashikuzzaman
+                  - group [ref=f6e2897]:
+                    - button "More message options" [ref=f6e2898]
+                    - generic [ref=f6e2899]:
+                      - group "Begin Reference, Patient signed the consent form but then it was deleted. Not by any person, Hardik Soni, 9/2/2026 4:18 AM, End reference" [ref=f6e2900] [cursor=pointer]:
+                        - generic [ref=f6e2903]:
+                          - generic [ref=f6e2904]:
+                            - generic [ref=f6e2905]: Hardik Soni
+                            - generic [ref=f6e2906]: 9/2/2026 4:18 AM
+                          - generic [ref=f6e2907]: Patient signed the consent form but then it was deleted. Not by any person
+                      - paragraph [ref=f6e2908]: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our investigation and wanted to share what we found.
+                      - paragraph [ref=f6e2909]:
+                        - strong [ref=f6e2911]: What happened
+                      - paragraph [ref=f6e2912]:
+                        - generic [ref=f6e2913]:
+                          - text: Juniper completed and signed her forms correctly. Our system logged both consent form signatures on
+                          - strong [ref=f6e2914]: September 1 at 10:36 AM
+                          - text: ", shortly after her appointment was confirmed at 10:35 AM."
+                      - paragraph [ref=f6e2915]:
+                        - generic [ref=f6e2916]:
+                          - text: About an hour later, at
+                          - strong [ref=f6e2917]: 11:32 AM
+                          - text: ", the system created a"
+                          - strong [ref=f6e2918]: new service record
+                          - text: for the same appointment and removed the original one that held her signed forms. After that, the signed consent records were also removed from the database. When staff opened her profile, it showed the new, empty service record — which is why HIPAA and consent appeared missing even though she had signed everything.
+                      - paragraph [ref=f6e2919]:
+                        - generic [ref=f6e2920]:
+                          - strong [ref=f6e2921]: "Important:"
+                          - text: This was
+                          - strong [ref=f6e2922]: not
+                          - text: caused by anything Juniper or your team did wrong. Her forms were signed successfully; the system failed to keep them linked to her profile afterward.
+                      - paragraph [ref=f6e2923]:
+                        - strong [ref=f6e2925]: Intake forms
+                      - paragraph [ref=f6e2926]:
+                        - generic [ref=f6e2927]:
+                          - text: Her intake information is
+                          - strong [ref=f6e2928]: still in the system
+                          - text: . It can be found under
+                          - strong [ref=f6e2929]: Encounter History
+                          - text: for that visit (Consultation and Laser Hair Removal encounters from September 1). Only the consent/HIPAA section on the profile appeared empty due to this system issue.
+                      - paragraph [ref=f6e2930]:
+                        - strong [ref=f6e2932]: What we’re doing next
+                      - paragraph [ref=f6e2933]: We are reviewing and updating the parts of the system that handle service records and consent forms during check-in and appointment updates, so signed forms cannot be lost when a service record is changed. We will let you know once those changes are in place.
+                      - paragraph [ref=f6e2934]:
+                        - strong [ref=f6e2936]: For Juniper’s chart
+                      - paragraph [ref=f6e2937]:
+                        - generic [ref=f6e2938]:
+                          - text: For now, we recommend
+                          - strong [ref=f6e2939]: re-sending the consent forms
+                          - text: for her to sign again, unless you have copies from the signing notification emails sent at 10:36 AM. We’re sorry for the extra step and the confusion this caused.
+                      - paragraph [ref=f6e2940]: We understand this has happened more than once, and we’re treating it as a priority. We’ll follow up with you as soon as we have an update on the fix.
+                      - paragraph [ref=f6e2941]: Please reach out if you have any questions or if you notice anything similar with another patient.
+                      - paragraph [ref=f6e2942]
+                      - paragraph [ref=f6e2943]: "Here is the time of the actions:"
+                      - paragraph [ref=f6e2944]: 10:35 AM Appointment confirmed (SMS) 10:36 AM Juniper signs 2 consent forms → saved on patient_service 920224 (pcf ids 345247489, 345247490)
+                      - paragraph [ref=f6e2945]
+                      - paragraph [ref=f6e2946]: 11:00 AM Appointment time
+                      - paragraph [ref=f6e2947]
+                      - paragraph [ref=f6e2948]: 11:32 AM NEW patient_service 920223 created for same appointment → 920224 replaced/removed → Signed consent left orphaned on deleted service 920224
+                      - paragraph [ref=f6e2949]
+                      - paragraph [ref=f6e2950]: Later Consent rows 345247489 & 345247490 hard-deleted 22:05 PM Service 920223 last modified (likely check-out / end of day)
+                      - paragraph [ref=f6e2951]
+                      - paragraph [ref=f6e2952]:
+                        - generic [ref=f6e2953]:
+                          - text: We are checking and updating the parts of the system that cause this so it doesn’t happen again.
+                          - strong [ref=f6e2954]: We will let you know
+                          - text: once those changes are complete.
+            - generic [aria-hidden] [ref=f6e1375]: has context menu
+        - generic [ref=f6e1385]:
+          - generic [ref=f6e1386]:
+            - textbox "Type a message" [active] [ref=f6e1387]:
+              - paragraph [ref=f6e1388]: Type a message
+            - generic:
+              - log
+              - log
+          - generic [ref=f6e1389]:
+            - toolbar [ref=f6e1390]:
+              - button "Emoji, GIFs and Stickers" [ref=f6e1392] [cursor=pointer]
+              - button "Attach files" [ref=f6e1396] [cursor=pointer]
+              - button "Attach media" [ref=f6e1400] [cursor=pointer]
+              - button "Loop components (Ctrl+Alt+L)" [ref=f6e1404] [cursor=pointer]
+              - button "Actions and apps" [ref=f6e1409] [cursor=pointer]
+            - toolbar "Actions for new message" [ref=f6e1413]:
+              - button "Send (Ctrl+Enter)" [ref=f6e1415] [cursor=pointer]

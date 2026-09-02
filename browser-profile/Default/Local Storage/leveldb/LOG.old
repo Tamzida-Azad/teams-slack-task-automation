@@ -1,0 +1,5 @@
+2026/08/31-18:31:08.001 8548 Creating DB C:\Users\TAMZIDA\claude-browser-profile\Default\Local Storage\leveldb since it was missing.
+2026/08/31-18:31:08.022 8548 Reusing MANIFEST C:\Users\TAMZIDA\claude-browser-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/08/31-18:33:54.869 4ef4 Level-0 table #5: started
+2026/08/31-18:33:54.874 4ef4 Level-0 table #5: 111169 bytes OK
+2026/08/31-18:33:54.875 4ef4 Delete type=0 #3

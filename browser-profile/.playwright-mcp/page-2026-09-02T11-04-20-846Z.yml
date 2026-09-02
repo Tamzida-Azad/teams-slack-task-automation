@@ -1,0 +1,360 @@
+- generic [ref=e5]:
+  - generic [ref=e8]:
+    - application [ref=e10]
+    - toolbar "History Navigation" [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - button "Back in history" [disabled] [ref=e19]
+            - button "Forward in history" [disabled] [ref=e22]
+          - button "Show history" [ref=e26] [cursor=pointer]
+        - button "Search" [ref=e31] [cursor=pointer]:
+          - generic [ref=e35]: Search SJ Innovation
+        - generic [ref=e36]:
+          - button "Chat with Slackbot AI" [ref=e42] [cursor=pointer]
+          - button "Help" [ref=e48] [cursor=pointer]
+    - tabpanel "SJ Innovation" [ref=e52]:
+      - generic [ref=e53]:
+        - button "Switch workspaces… (SJ Innovation)" [ref=e56] [cursor=pointer]
+        - tablist "SJ Innovation" [ref=e60]:
+          - tab "Home" [selected] [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]:
+              - generic [ref=e70]: Home
+              - generic [aria-hidden]: "1"
+          - tab "DMs" [ref=e71] [cursor=pointer]:
+            - generic [ref=e72]:
+              - generic [ref=e77]: DMs
+              - generic [aria-hidden]: "2"
+          - tab "Activity" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]:
+              - generic [ref=e86]: Activity
+              - generic [aria-hidden]: "3"
+          - tab "Files" [ref=e87] [cursor=pointer]:
+            - generic [ref=e88]:
+              - generic [ref=e93]: Files
+              - generic [aria-hidden]: "4"
+          - tab "Later" [ref=e95] [cursor=pointer]:
+            - generic [ref=e96]:
+              - generic [ref=e101]: Later
+              - generic [aria-hidden]: "5"
+          - tab "More…" [ref=e103] [cursor=pointer]:
+            - generic [ref=e104]:
+              - generic [ref=e109]: More
+              - generic [aria-hidden]: "0"
+      - generic [ref=e113]:
+        - tabpanel "Home" [ref=e114]:
+          - generic [ref=e116]:
+            - group "Home" [ref=e117]:
+              - generic [ref=e119]:
+                - toolbar "Actions" [ref=e120]:
+                  - button "SJ Innovation Actions" [ref=e123] [cursor=pointer]:
+                    - generic [ref=e124]: SJ Innovation
+                    - img "caret-down" [ref=e125]
+                  - generic [ref=e127]:
+                    - button "Manage my sidebar" [ref=e128] [cursor=pointer]
+                    - button "New message" [ref=e132] [cursor=pointer]
+                - generic [ref=e136]:
+                  - searchbox "Channel or user name" [ref=e139]
+                  - generic: 
+                - tree "Channels and direct messages" [ref=e142]:
+                  - treeitem "Slackbot" [level=1] [ref=e143] [cursor=pointer]
+                  - treeitem "Threads" [level=1] [ref=e149] [cursor=pointer]
+                  - treeitem "Huddles" [level=1] [ref=e155] [cursor=pointer]:
+                    - generic [ref=e158]:
+                      - generic [aria-hidden] [ref=e159]: 
+                      - generic [ref=e160]: Huddles
+                  - treeitem "Drafts & sent" [level=1] [ref=e161] [cursor=pointer]
+                  - treeitem "Directories" [level=1] [ref=e168] [cursor=pointer]
+                  - treeitem "Starred" [expanded] [level=1] [ref=e177]:
+                    - button [aria-hidden] [ref=e181] [cursor=pointer]:
+                      - generic [ref=e189]: Starred
+                    - group:
+                      - treeitem "calystaproemr" [level=2] [ref=e215] [cursor=pointer]
+                      - treeitem "daily-head-start" [level=2] [ref=e191] [cursor=pointer]
+                      - treeitem "all-office-general" [level=2] [ref=e197] [cursor=pointer]
+                      - treeitem "sj-qa" [level=2] [ref=e203] [cursor=pointer]
+                      - treeitem "all-office-notice" [level=2] [ref=e209] [cursor=pointer]
+                      - treeitem "crm-internal" [level=2] [ref=e221] [cursor=pointer]
+                      - treeitem "sj-dhaka" [level=2] [ref=e227] [cursor=pointer]
+                  - treeitem "Channels" [expanded] [level=1] [ref=e233]:
+                    - button [aria-hidden] [ref=e237] [cursor=pointer]:
+                      - generic [ref=e245]: Channels
+                    - group:
+                      - treeitem "code_knights" [level=2] [ref=e247] [cursor=pointer]
+                      - treeitem "internal-learning-brain" [level=2] [ref=e253] [cursor=pointer]
+                      - treeitem "calysta-eod" [level=2] [ref=e259] [cursor=pointer]
+                      - treeitem "jnjqa_internal_coordination" [level=2] [ref=e265] [cursor=pointer]
+                      - treeitem "collabai" [level=2] [ref=e271] [cursor=pointer]
+                      - treeitem "sj-qa-team" [level=2] [ref=e277] [cursor=pointer]
+                      - treeitem "sji-general" [level=2] [ref=e283] [cursor=pointer]
+                  - treeitem "Direct Messages" [expanded] [level=1] [ref=e289]:
+                    - button [aria-hidden] [ref=e293] [cursor=pointer]:
+                      - generic [ref=e301]: Direct messages
+                    - group:
+                      - treeitem "Active Alauddin Rezvi" [level=2] [ref=e303] [cursor=pointer]:
+                        - generic [ref=e304]:
+                          - img "Active" [ref=e311]
+                          - generic [ref=e313]: Alauddin Rezvi
+                      - treeitem "Away Amol Bhandari" [level=2] [ref=e314] [cursor=pointer]:
+                        - generic [ref=e315]:
+                          - img "Away" [ref=e322]
+                          - generic [ref=e324]: Amol Bhandari
+                      - treeitem "Active Arafat Hossain" [level=2] [ref=e325] [cursor=pointer]:
+                        - generic [ref=e326]:
+                          - img "Active" [ref=e333]
+                          - generic [ref=e335]: Arafat Hossain
+                      - treeitem "Active Faysal Uddin sji emoji" [level=2] [ref=e336] [cursor=pointer]:
+                        - generic [ref=e337]:
+                          - img "Active" [ref=e344]
+                          - generic [ref=e346]: Faysal Uddin
+                          - img "sji emoji" [ref=e349]
+                      - treeitem "Away Madhav Ranganekar wrench emoji" [level=2] [ref=e350] [cursor=pointer]:
+                        - generic [ref=e351]:
+                          - img "Away" [ref=e358]
+                          - generic [ref=e360]: Madhav Ranganekar
+                          - img "wrench emoji" [ref=e363]
+                      - treeitem "Active Mahmudur Bhuiyan" [level=2] [ref=e364] [cursor=pointer]:
+                        - generic [ref=e365]:
+                          - img "Active" [ref=e372]
+                          - generic [ref=e374]: Mahmudur Bhuiyan
+                      - treeitem "Active Rajib Chowdhury" [level=2] [ref=e375] [cursor=pointer]:
+                        - generic [ref=e376]:
+                          - img "Active" [ref=e383]
+                          - generic [ref=e385]: Rajib Chowdhury
+                      - treeitem "Away Sangida Kashem" [level=2] [ref=e386] [cursor=pointer]:
+                        - generic [ref=e387]:
+                          - img "Away" [ref=e394]
+                          - generic [ref=e396]: Sangida Kashem
+                      - treeitem "Active Shibly Ahmed" [level=2] [ref=e397] [cursor=pointer]:
+                        - generic [ref=e398]:
+                          - img "Active" [ref=e405]
+                          - generic [ref=e407]: Shibly Ahmed
+                      - treeitem "Active Mohammad Ashikuzzaman sji emoji" [level=2] [ref=e408] [cursor=pointer]:
+                        - generic [ref=e409]:
+                          - img "Active" [ref=e416]
+                          - generic [ref=e418]: Mohammad Ashikuzzaman
+                          - img "sji emoji" [ref=e421]
+                      - treeitem "Active Richard Fernandes" [level=2] [ref=e422] [cursor=pointer]:
+                        - generic [ref=e423]:
+                          - img "Active" [ref=e430]
+                          - generic [ref=e432]: Richard Fernandes
+                      - treeitem "Active Sadman Zaman Khan" [level=2] [ref=e433] [cursor=pointer]:
+                        - generic [ref=e434]:
+                          - img "Active" [ref=e441]
+                          - generic [ref=e443]: Sadman Zaman Khan
+                      - treeitem "Active, notifications snoozed Tamzida Azadyou sji emoji" [level=2] [ref=e444] [cursor=pointer]:
+                        - generic [ref=e445]:
+                          - img "Active, notifications snoozed" [ref=e452]
+                          - generic [ref=e454]: Tamzida Azadyou
+                          - img "sji emoji" [ref=e457]
+                  - treeitem "Agents & apps" [expanded] [level=1] [ref=e458]:
+                    - button [aria-hidden] [ref=e462] [cursor=pointer]:
+                      - generic [ref=e470]: Agents & apps
+                    - group
+            - slider "Sidebar width" [ref=e473]: "400"
+          - group "Channel calystaproemr (private)" [ref=e477]:
+            - generic [ref=e478]:
+              - toolbar "Primary view actions" [ref=e479]:
+                - button "Unstar channel" [ref=e480] [cursor=pointer]
+                - button "Channel details for calystaproemr" [ref=e484] [cursor=pointer]:
+                  - generic [ref=e485]: calystaproemr
+                - generic [ref=e490]:
+                  - button "View all 27 members. Includes Mohammad Ashikuzzaman, Nadeem Ahamed Agadi, and Abhishek Naik." [ref=e492] [cursor=pointer]:
+                    - generic [ref=e493]: "27"
+                  - generic [ref=e506]:
+                    - button "Start huddle in calystaproemr" [ref=e508] [cursor=pointer]
+                    - button "More Huddles options" [ref=e512] [cursor=pointer]
+                  - button "Edit notifications" [ref=e515] [cursor=pointer]
+                  - button "Search in channel" [ref=e519] [cursor=pointer]
+                  - button "More channel actions" [ref=e522] [cursor=pointer]
+              - tablist "calystaproemr views" [ref=e528]:
+                - tab "Messages" [selected] [ref=e529] [cursor=pointer]
+                - tab "Files & links" [ref=e538] [cursor=pointer]
+                - tab "Bookmarks" [ref=e547] [cursor=pointer]
+                - tab "Pins" [ref=e556] [cursor=pointer]
+                - button "Add and Edit Channel Tabs" [ref=e565] [cursor=pointer]
+              - generic [ref=e571]: Canvas
+              - generic [ref=e572]: List
+              - generic [ref=e573]: Folder
+              - generic [ref=e575]:
+                - generic [ref=e577]:
+                  - generic:
+                    - generic [ref=e578]: Loading history…
+                    - listitem [ref=e906]:
+                      - button "Jump to date" [ref=e907] [cursor=pointer]: Yesterday
+                    - listitem [ref=e911]:
+                      - document [ref=e912]:
+                        - generic [ref=e914]:
+                          - button [aria-hidden] [ref=e915] [cursor=pointer]
+                          - generic [ref=e918]:
+                            - button "Tamzida Azad" [ref=e919] [cursor=pointer]
+                            - img "sji emoji" [ref=e922]
+                          - link "Yesterday at 6:38:55 PM" [ref=e923] [cursor=pointer]:
+                            - /url: https://sjinnovation.slack.com/archives/GGWTSNWTC/p1788266335719259
+                            - text: 6:38 PM
+                          - generic [ref=e929]:
+                            - text: "#3062: Change request for the membership revamp with Elavon"
+                            - link "pm.sjinnovation.us/projects/1819/tasks/453323" [ref=e936] [cursor=pointer]:
+                              - /url: https://pm.sjinnovation.us/projects/1819/tasks/453323
+                            - link "@Ashik" [ref=e937] [cursor=pointer]:
+                              - /url: https://sjinnovation.slack.com/team/U06CGT7VDH6
+                            - text: vai please review the current isseu will continue testing again
+                    - listitem [ref=e938]:
+                      - document [ref=e939]:
+                        - generic [ref=e941]:
+                          - button [aria-hidden] [ref=e942] [cursor=pointer]
+                          - generic [ref=e945]:
+                            - button "Mohammad Ashikuzzaman" [ref=e946] [cursor=pointer]
+                            - img "sji emoji" [ref=e949]
+                          - link "Yesterday at 7:31:08 PM" [ref=e950] [cursor=pointer]:
+                            - /url: https://sjinnovation.slack.com/archives/GGWTSNWTC/p1788269468461779
+                            - text: 7:31 PM
+                          - generic [ref=e956]:
+                            - link "@Tamzida" [ref=e957] [cursor=pointer]:
+                              - /url: https://sjinnovation.slack.com/team/U03JR0Q2AAG
+                            - text: "apu, They have updated their SDK and test card.I have deployed the changes to live.Now it will work.For sandbox use this: Card: 4546341111111119 Expiry: 12/2030 CVV: 123 ZIP: 21234 Amount: 1.00"
+                          - generic [ref=e962] [cursor=pointer]
+                          - generic [ref=e965] [cursor=pointer]
+                          - button "10 replies" [ref=e968] [cursor=pointer]
+                          - generic [ref=e969] [cursor=pointer]:
+                            - text: Last reply today at 11:57 AM
+                            - generic [ref=e970]: View thread
+                          - generic [ref=e971] [cursor=pointer]
+                    - listitem [ref=e974]:
+                      - document [ref=e975]:
+                        - generic [ref=e977]:
+                          - button [aria-hidden] [ref=e978] [cursor=pointer]
+                          - generic [ref=e981]:
+                            - button "Mohammad Ashikuzzaman" [ref=e982] [cursor=pointer]
+                            - img "sji emoji" [ref=e985]
+                          - link "Yesterday at 8:01:30 PM" [ref=e986] [cursor=pointer]:
+                            - /url: https://sjinnovation.slack.com/archives/GGWTSNWTC/p1788271290480319
+                            - text: 8:01 PM
+                          - generic [ref=e992]:
+                            - link "pm.sjinnovation.us/projects/1819/notes/272309" [ref=e999] [cursor=pointer]:
+                              - /url: https://pm.sjinnovation.us/projects/1819/notes/272309
+                            - text: Here you will get the test card info
+                          - group "Reactions" [ref=e1000]:
+                            - generic [ref=e1001]:
+                              - button "1 reaction, react with white check mark emoji" [pressed] [ref=e1002] [cursor=pointer]:
+                                - img "white check mark emoji" [ref=e1003]
+                                - generic [ref=e1004]: "1"
+                              - button "Add reaction…" [ref=e1005] [cursor=pointer]
+                    - listitem [ref=e655]:
+                      - button "Jump to date" [ref=e656] [cursor=pointer]: Today
+                    - listitem [ref=e1009]
+                    - listitem [ref=e1012]:
+                      - document [ref=e664]:
+                        - generic [ref=e666]:
+                          - button [aria-hidden] [ref=e667] [cursor=pointer]
+                          - generic [ref=e670]:
+                            - button "Tamzida Azad" [ref=e671] [cursor=pointer]
+                            - img "sji emoji" [ref=e674]
+                          - link "Today at 12:56:52 PM" [ref=e675] [cursor=pointer]:
+                            - /url: https://sjinnovation.slack.com/archives/GGWTSNWTC/p1788332212336999
+                            - text: 12:56 PM
+                          - generic [ref=e681]:
+                            - link "@Ashik" [ref=e682] [cursor=pointer]:
+                              - /url: https://sjinnovation.slack.com/team/U06CGT7VDH6
+                            - text: "vaiA high priority issue sent by Dr SoniPatient name: Juniper Brown Facility: Any of Ethos location“I have an LHR patient named Juniper Brown who completed and signed her HIPAA, consent, and intake forms, but Calysta removed everything from the patient’s profile afterward. This has happened multiple times, so I wanted to bring it to attention.”"
+                          - generic [ref=e687]:
+                            - generic [ref=e688]: image.png
+                            - button "Toggle file" [expanded] [ref=e689] [cursor=pointer]
+                          - generic [ref=e693]:
+                            - link [ref=e1013]:
+                              - /url: https://files.slack.com/files-pri/T0285LK1G-F0BUAPHQFFY/image.png
+                              - img "image.png" [ref=e697]
+                              - button "Add description" [ref=e1014] [cursor=pointer]: ALT
+                            - generic "More actions" [ref=e1017]:
+                              - link "Download image.png" [ref=e1018] [cursor=pointer]:
+                                - /url: https://files.slack.com/files-pri/T0285LK1G-F0BUAPHQFFY/download/image.png?origin_team=T0285LK1G
+                              - button "More actions" [ref=e1021] [cursor=pointer]
+                          - group "Reactions" [ref=e698]:
+                            - generic [ref=e699]:
+                              - button "1 reaction, react with white check mark emoji" [ref=e700] [cursor=pointer]:
+                                - img "white check mark emoji" [ref=e701]
+                                - generic [ref=e702]: "1"
+                              - button "Add reaction…" [ref=e703] [cursor=pointer]
+                          - generic [ref=e707] [cursor=pointer]
+                          - button "2 replies" [ref=e710] [cursor=pointer]
+                          - generic [ref=e711] [cursor=pointer]:
+                            - text: Last reply today at 1:00 PM
+                            - generic [ref=e712]: View thread
+                          - generic [ref=e713] [cursor=pointer]
+                    - listitem [ref=e1024]:
+                      - document [ref=e1025]:
+                        - generic [ref=e1027]:
+                          - button [aria-hidden] [ref=e1028] [cursor=pointer]
+                          - generic [ref=e1031]:
+                            - button "Tamzida Azad" [ref=e1032] [cursor=pointer]
+                            - img "sji emoji" [ref=e1035]
+                          - link "Today at 5:04:19 PM" [ref=e1036] [cursor=pointer]:
+                            - /url: https://sjinnovation.slack.com/archives/GGWTSNWTC/p1788347059654189
+                            - text: 5:04 PM
+                          - generic [ref=e1037]: "Date: 2nd September 2026 To-do list shared by client via Microsoft Teams:Tamzida: Channel: Calystapro EMR Web Dev 1. Issue: Once the consent-retention fix is deployed, verify and regression-test that signed consent/HIPAA forms survive appointment confirmation, service-record regeneration and check-out (ref: Juniper Brown, Morristown - signed forms were hard-deleted after a new patient_service record replaced the original). Immediate: arrange re-send of Juniper Brown's consent forms for re-signing. Priority: High Channel: Calystapro EMR Web Dev 2. Query: Continue membership testing on the live facility this week ahead of next week's Ethos-facility deployment (Dr. Soni: TOP PRIORITY). Elavon API error fixed by Ashik - resume recurring-payment / freeze / unfreeze testing. Priority: HighAshik: Channel: Calystapro EMR Web Dev 1. Issue: Fix service-record and consent handling during check-in and appointment updates so signed consent/HIPAA forms are never orphaned or deleted when a patient_service record is regenerated (RCA done: new patient_service 920223 replaced 920224 at 11:32 AM, signed consent rows then hard-deleted). Recurring, HIPAA-sensitive. Priority: High Channel: Calystapro EMR Web Dev / CalystaPro EMR | Rani's Requests 2. Change Request: Ethos-branded shortened referral URL. Not possible on the shared spa.guru domain - needs a dedicated Ethos domain plus a small spa.guru-style short-link service, then logic so only Ethos locations use it. Blocked pending Dr. Hardik Soni providing the Ethos domain + approval to build. After that: stand up the service, update referral logic, confirm to Rima across all locations. Priority: MediumRajib: Channel: CRM - Live 1. Problem: Diagnose why agents (\"the ladies\") are not hearing inbound calls and the high missed-call volume - run the live test with agent Jenna, verify round-robin ring timing (2nd call ~4s), check Edge browser / secondary-window handling, cross-check Twilio logs; share findings. Dr. Soni escalated (\"system has to be consistent and reliable\"). Priority: High Channel: CRM - Live 2. Problem: Fix the incoming-call screen showing the wrong patient/contact on answer (recurring - Lori confirmed \"seeing a different contact\"). Priority: HighRezvi: Channel: CRM - Live 1. Support: Post daily EOD updates in the calysta-eod group without fail (yesterday's EOD failed to post due to a network issue). Requested directly by Dr. Hardik Soni. Priority: HighPranav: Channel: CRM - Live 1. Support: Lock in the Thursday 11:00 AM EST call between the dev team and Rima / Calysta team; confirm attendees (Rajib, Rezvi, Ashik, Hardik). Priority: Medium Channel: CalystaPro EMR | Rani's Requests 2. Support: (a) Get Dr. Hardik Soni to provide/purchase the Ethos-branded domain and approve the \"Tap to send\" one-tap share build; (b) connect Rima with Ashik and schedule their referral call - Rima has no contact for Ashik; proposed 7:00-8:00 AM EDT today/tomorrow. Priority: Medium"
+                    - listitem [ref=e765]
+                    - list "calystaproemr (private channel)" [ref=e767]
+                - generic [ref=e771]:
+                  - group "composer" [ref=e773]:
+                    - generic [ref=e775]:
+                      - toolbar "Formatting" [ref=e776]:
+                        - generic [ref=e777]:
+                          - generic:
+                            - generic:
+                              - button "Bold" [ref=e876] [cursor=pointer]
+                              - button "Italic" [ref=e879] [cursor=pointer]
+                              - button "Underline" [ref=e882] [cursor=pointer]
+                              - button "Strikethrough" [ref=e885] [cursor=pointer]
+                              - button "Link" [ref=e888] [cursor=pointer]
+                              - button "Ordered list" [ref=e891] [cursor=pointer]
+                              - button "Bulleted list" [ref=e894] [cursor=pointer]
+                              - button "Blockquote" [ref=e897] [cursor=pointer]
+                              - button "Code" [ref=e900] [cursor=pointer]
+                              - button "Code block" [ref=e903] [cursor=pointer]
+                      - generic [ref=e781]:
+                        - textbox "Message to calystaproemr" [active] [ref=e782]:
+                          - paragraph [ref=e1048]
+                        - generic [aria-hidden]:
+                          - generic:
+                            - generic:
+                              - text: Message
+                              - generic:
+                                - generic [aria-hidden]: 
+                                - text: calystaproemr
+                      - toolbar "Composer actions" [ref=e784]:
+                        - generic [ref=e786]:
+                          - button "Attach" [ref=e787] [cursor=pointer]
+                          - button [aria-hidden] [ref=e790]
+                        - generic [ref=e792]:
+                          - button "Show formatting" [pressed] [ref=e793] [cursor=pointer]
+                          - button "Emoji" [ref=e796] [cursor=pointer]
+                          - button "Mention someone" [ref=e800] [cursor=pointer]
+                          - button "Record video clip" [ref=e804] [cursor=pointer]
+                          - button "Record audio clip" [ref=e807] [cursor=pointer]
+                          - button "Run shortcut" [ref=e811] [cursor=pointer]
+                        - generic [ref=e815]:
+                          - button "Send now" [disabled]
+                          - button "Schedule for later" [disabled]
+                  - generic [ref=e816]:
+                    - generic:
+                      - generic [aria-hidden]:
+                        - button: Shift + Enter to add a new line
+        - toolbar "Control strip" [ref=e822]:
+          - button "Create new" [ref=e823] [cursor=pointer]
+          - button "Exit focus mode" [ref=e831] [cursor=pointer]
+          - 'button "User: Tamzida Azad" [ref=e840] [cursor=pointer]':
+            - generic [ref=e841]:
+              - img "sji emoji" [ref=e844]
+              - img "Active, notifications snoozed" [ref=e850]
+        - dialog "Huddle" [ref=e854]:
+          - status [ref=e855]
+      - dialog "Information" [ref=e859]:
+        - generic [ref=e861]:
+          - img "bell emoji" [ref=e863]
+          - generic [ref=e864]:
+            - text: Slack needs your permission to enable notifications.
+            - button "Enable notifications" [ref=e865] [cursor=pointer]
+        - button "Close" [ref=e866] [cursor=pointer]
+  - generic [ref=e872]:
+    - alert [ref=e873]
+    - log [ref=e874]

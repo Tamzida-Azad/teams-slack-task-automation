@@ -1,0 +1,598 @@
+- application [active] [ref=f6e26]:
+  - generic [ref=f6e31]:
+    - generic [ref=f6e35]:
+      - button "Collapse app bar" [ref=f6e38]
+      - search [ref=f6e48]:
+        - button [aria-hidden] [ref=f6e49]
+        - combobox "Press Ctrl+Alt+G to go right to a chat or channel" [ref=f6e56]
+      - generic [ref=f6e58]:
+        - button "Settings and more" [ref=f6e60]
+        - button "Your profile, status Offline" [ref=f6e67]:
+          - img "Profile picture of Tamzida Azad." [ref=f6e68]:
+            - generic [ref=f6e69]: TA
+            - img "offline" [ref=f6e71]
+    - group [ref=f6e78]:
+      - generic [ref=f6e82]: Stay in the know. Turn on desktop notifications.
+      - button "Turn on" [ref=f6e84]
+      - button "Close" [ref=f6e86]
+    - generic [ref=f6e93]:
+      - navigation "Apps" [ref=f6e106]:
+        - generic "Chat" [ref=f6e108]:
+          - button "Chat" [pressed] [ref=f6e109]
+        - generic "Meet" [ref=f6e112]:
+          - button "Meet" [ref=f6e113]
+        - generic "People" [ref=f6e116]:
+          - button "People" [ref=f6e117]
+        - generic "Copilot" [ref=f6e120]:
+          - button "Copilot" [ref=f6e121]
+        - generic "Communities" [ref=f6e124]:
+          - button "Communities" [ref=f6e125]
+        - generic "Calendar" [ref=f6e128]:
+          - button "Calendar" [ref=f6e129]
+        - generic "Activity" [ref=f6e132]:
+          - button "Activity" [ref=f6e133]
+      - button "Upgrade" [ref=f6e137]
+    - generic [ref=f6e147]:
+      - generic [ref=f6e148]:
+        - generic [ref=f6e149]:
+          - heading "Chat" [level=1] [ref=f6e150]
+          - toolbar "Rail actions" [ref=f6e151]:
+            - button "Show filter text box (Ctrl+Shift+F)" [ref=f6e153]
+            - button "Meet now" [ref=f6e157]
+            - button "New message (Alt+Shift+N)" [ref=f6e161]
+        - generic "Filter" [ref=f6e166]:
+          - toolbar "Filter options" [ref=f6e168]:
+            - generic [ref=f6e170]:
+              - button "Unread (Ctrl+Alt+U)" [ref=f6e172]: Unread
+              - button "Meeting chats (Ctrl+Alt+B)" [ref=f6e174]: Meeting chats
+              - button "Unmuted (Ctrl+Alt+Q)" [ref=f6e176]: Unmuted
+        - tree "Teams" [ref=f6e178]:
+          - treeitem "Favorites" [expanded] [level=1] [ref=f6e179] [cursor=pointer]:
+            - group [ref=f6e186]:
+              - treeitem "Chat Tamzida Azad (You)" [level=2] [ref=f6e187]:
+                - generic [ref=f6e201]:
+                  - generic [ref=f6e202]: Tamzida Azad (You)
+                  - generic:
+                    - time
+          - treeitem "Chats" [expanded] [level=1] [ref=f6e207] [cursor=pointer]:
+            - group [ref=f6e214]:
+              - 'treeitem "Group chat Calystapro EMR Web Dev Last message Md: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our in… 3:52 PM" [level=2] [ref=f6e215]':
+                - generic [ref=f6e222]:
+                  - generic [ref=f6e223]:
+                    - generic [ref=f6e224]: Calystapro EMR Web Dev
+                    - time [ref=f6e228]: 3:52 PM
+                  - generic [ref=f6e229]: "Md: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our in…"
+              - 'treeitem "Group chat CRM - Live Last message Rajib: Lori Gobert Though its little late for us. Dev team will be available of Thursday at… Muted 3:25 PM" [level=2] [ref=f6e233]':
+                - generic [ref=f6e243]:
+                  - generic [ref=f6e244]:
+                    - generic [ref=f6e245]: CRM - Live
+                    - time [ref=f6e249]: 3:25 PM
+                  - generic [ref=f6e250]: "Rajib: Lori Gobert Though its little late for us. Dev team will be available of Thursday at…"
+              - 'treeitem "Group chat CalystaPro EMR | Rani''s Requests Last message You: Hi Dr Hardik Soni, we require a domain named after Ethos to update the shorten URLs … 12:54 PM" [level=2] [ref=f6e254]':
+                - generic [ref=f6e261]:
+                  - generic [ref=f6e262]:
+                    - generic [ref=f6e263]: CalystaPro EMR | Rani's Requests
+                    - time [ref=f6e267]: 12:54 PM
+                  - generic [ref=f6e268]: "You: Hi Dr Hardik Soni, we require a domain named after Ethos to update the shorten URLs …"
+              - 'treeitem "Group chat CalystaPro Support Team Last message Jhara: Okay got it. Thank you Tamziuda 9/1" [level=2] [ref=f6e272]':
+                - generic [ref=f6e279]:
+                  - generic [ref=f6e280]:
+                    - generic [ref=f6e281]: CalystaPro Support Team
+                    - time [ref=f6e285]: 9/1
+                  - generic [ref=f6e286]: "Jhara: Okay got it. Thank you Tamziuda"
+              - 'treeitem "Chat Jhara Mae Infante Available Last message You: ok 9/1" [level=2] [ref=f6e290]':
+                - generic [ref=f6e303]:
+                  - generic [ref=f6e304]:
+                    - generic [ref=f6e305]: Jhara Mae Infante
+                    - time [ref=f6e309]: 9/1
+                  - generic [ref=f6e310]: "You: ok"
+              - treeitem "Group chat Calystapro EMR Feature Highlights Last message User added 8/31" [level=2] [ref=f6e314]:
+                - generic [ref=f6e321]:
+                  - generic [ref=f6e322]:
+                    - generic [ref=f6e323]: Calystapro EMR Feature Highlights
+                    - time [ref=f6e327]: 8/31
+                  - generic [ref=f6e328]: User added
+              - 'treeitem "Chat Mahmudur Bhuiyan Offline Last message You: Hello Rima Shah, Most of what you want to test (shorter SMS copy, reward amounts… 8/31" [level=2] [ref=f6e332]':
+                - generic [ref=f6e345]:
+                  - generic [ref=f6e346]:
+                    - generic [ref=f6e347]: Mahmudur Bhuiyan
+                    - time [ref=f6e351]: 8/31
+                  - generic [ref=f6e352]: "You: Hello Rima Shah, Most of what you want to test (shorter SMS copy, reward amounts…"
+              - 'treeitem "Group chat CalystaproEMR - CRM Last message Hardik: Yes but there was no error message when I tried adding my name with a duplicate number 7/19" [level=2] [ref=f6e356]':
+                - generic [ref=f6e363]:
+                  - generic [ref=f6e364]:
+                    - generic [ref=f6e365]: CalystaproEMR - CRM
+                    - time [ref=f6e369]: 7/19
+                  - generic [ref=f6e370]: "Hardik: Yes but there was no error message when I tried adding my name with a duplicate number"
+              - 'treeitem "Chat Rani Houlis Offline Last message You: Here is more details about Last Visit Reports Logic 7/7" [level=2] [ref=f6e374]':
+                - generic [ref=f6e387]:
+                  - generic [ref=f6e388]:
+                    - generic [ref=f6e389]: Rani Houlis
+                    - time [ref=f6e393]: 7/7
+                  - generic [ref=f6e394]: "You: Here is more details about Last Visit Reports Logic"
+              - 'treeitem "Group chat Aaron, Jhara, and Pranav Last message Jhara: Oh yeah2x. Wew 1/31" [level=2] [ref=f6e398]':
+                - generic [ref=f6e405]:
+                  - generic [ref=f6e406]:
+                    - generic [ref=f6e407]: Aaron, Jhara, and Pranav
+                    - time [ref=f6e411]: 1/31
+                  - generic [ref=f6e412]: "Jhara: Oh yeah2x. Wew"
+              - 'treeitem "Group chat Aaron and Jhara Last message Jhara: Thank you Aaron and Tamzida. So far I have uploaded those who are listed in channel.… 1/23" [level=2] [ref=f6e416]':
+                - generic [ref=f6e423]:
+                  - generic [ref=f6e424]:
+                    - generic [ref=f6e425]: Aaron and Jhara
+                    - time [ref=f6e429]: 1/23
+                  - generic [ref=f6e430]: "Jhara: Thank you Aaron and Tamzida. So far I have uploaded those who are listed in channel.…"
+        - status [ref=f6e434]
+        - generic:
+          - generic [aria-hidden] [ref=f6e435]: Unread message
+          - generic [aria-hidden] [ref=f6e436]: Last message
+          - generic [aria-hidden] [ref=f6e437]: Group chat
+          - generic [aria-hidden] [ref=f6e438]: Meeting chat
+          - generic [aria-hidden] [ref=f6e439]: Chat
+          - generic [aria-hidden] [ref=f6e440]: Personal at mention
+          - generic [aria-hidden] [ref=f6e441]: Everyone at mention
+          - generic [aria-hidden] [ref=f6e442]: Important
+          - generic [aria-hidden] [ref=f6e443]: Urgent
+          - generic [aria-hidden] [ref=f6e444]: Draft
+          - generic [aria-hidden] [ref=f6e445]: Draft
+          - generic [aria-hidden] [ref=f6e446]: Muted
+          - generic [aria-hidden] [ref=f6e447]: Meeting in progress
+          - generic [aria-hidden] [ref=f6e448]: Meet now in progress
+          - generic [aria-hidden] [ref=f6e449]: You can't send messages because you are not a member of the chat.
+          - generic [aria-hidden] [ref=f6e450]: You cannot send messages to this bot
+          - generic [aria-hidden] [ref=f6e451]: Private
+          - generic [aria-hidden] [ref=f6e452]: Shared
+          - generic [aria-hidden] [ref=f6e453]: Has context menu
+          - generic [aria-hidden] [ref=f6e454]: Channel at mention
+          - generic [aria-hidden] [ref=f6e455]: Team at mention
+          - generic [aria-hidden] [ref=f6e456]: Personal at mention
+          - generic [aria-hidden] [ref=f6e457]: Unread
+          - generic [aria-hidden] [ref=f6e458]: Unread
+          - generic [aria-hidden] [ref=f6e459]: Meeting in progress
+          - generic [aria-hidden] [ref=f6e460]: Unread
+          - generic [aria-hidden] [ref=f6e461]: Channel
+          - generic [aria-hidden] [ref=f6e462]: Team
+          - generic [aria-hidden] [ref=f6e463]: Has pinned messages
+          - generic [aria-hidden] [ref=f6e464]: See more
+          - generic [aria-hidden] [ref=f6e465]: Community
+          - generic [aria-hidden] [ref=f6e466]: Temporarily shown
+          - generic [aria-hidden] [ref=f6e467]: Has context menu
+          - generic [aria-hidden] [ref=f6e468]: Badged chat
+          - generic [aria-hidden] [ref=f6e469]: Badged chats
+        - generic [aria-hidden] [ref=f6e470]: Has context menu
+      - slider "Resize left panel" [ref=f6e472]
+    - generic [ref=f6e474]:
+      - generic [ref=f6e481]:
+        - generic [ref=f6e482]:
+          - button "Change group chat avatar" [ref=f6e484]
+          - generic [ref=f6e487]:
+            - generic [ref=f6e489]:
+              - heading "CalystaPro Support Team" [level=2] [ref=f6e491]:
+                - generic "CalystaPro Support Team" [ref=f6e493]
+              - list "Chat participants" [ref=f6e496]
+            - button "Name group chat" [ref=f6e498]
+        - toolbar "Chat actions" [ref=f6e503]:
+          - generic [ref=f6e505]:
+            - button "Meet now" [ref=f6e506]
+            - button "More call options" [ref=f6e511]
+          - button "View and add participants, 13 participants" [ref=f6e515]: "13"
+          - separator [ref=f6e519]
+          - generic "Sidepane Features" [ref=f6e520]:
+            - button "Find in chat" [ref=f6e521]
+          - button "More chat options" [ref=f6e526]
+      - generic [ref=f6e536]:
+        - generic [ref=f6e537]:
+          - heading [level=2] [aria-hidden] [ref=f6e538]: Message List
+          - generic [ref=f6e541]:
+            - generic [ref=f6e542]:
+              - generic [ref=f6e543]: Invite others to chat
+              - generic [ref=f6e547]:
+                - button "Share link" [ref=f6e548]
+                - button "Dismiss" [ref=f6e549]
+            - generic [ref=f6e558]:
+              - generic [ref=f6e561]:
+                - heading "Link https://docs.google.com/spreadsheets/d... by Jhara Mae Infante" [level=4] [ref=f6e562]
+                - generic [ref=f6e564]:
+                  - generic [ref=f6e565]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Link https://docs.google.com/spreadsheets/d/1ONl1M0Kme2oI-X6cfV7uv0bbTJBD7n3A4xxs9OFh-bU/edit?pli=1&gid=786577038#gid=786577038 Wednesday, August 26, 2026 8:47 PM." [ref=f6e580]:
+                    - button "More message options" [ref=f6e581]
+                    - generic "Link https://docs.google.com/spreadsheets/d/1ONl1M0Kme2oI-X6cfV7uv0bbTJBD7n3A4xxs9OFh-bU/edit?pli=1&gid=786577038#gid=786577038" [ref=f6e582]:
+                      - paragraph [ref=f6e583]:
+                        - link "Link https://docs.google.com/spreadsheets/d/1ONl1M0Kme2oI-X6cfV7uv0bbTJBD7n3A4xxs9OFh-bU/edit?pli=1&gid=786577038#gid=786577038" [ref=f6e584] [cursor=pointer]:
+                          - /url: https://docs.google.com/spreadsheets/d/1ONl1M0Kme2oI-X6cfV7uv0bbTJBD7n3A4xxs9OFh-bU/edit?pli=1&gid=786577038#gid=786577038
+                          - text: https://docs.google.com/spreadsheets/d/1ONl1M0Kme2oI-X6cfV7uv0bbTJBD7n3A4xxs9OFh-bU/edit?pli=1&gid=786577038#gid=786577038
+              - heading "Thursday 11:51 AM" [level=3] [ref=f6e588]
+              - generic [ref=f6e592]:
+                - heading "Begin Reference, hi teAM, Calysta needs pho... by Tamzida Azad" [level=4] [ref=f6e593]
+                - generic [ref=f6e595]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, hi teAM, Calysta needs phone numbers for new users. I need 1 today is it possible?, Jhara Mae Infante, 8/26/2026 8:35 PM, End reference Hi Jhara Mae Infante , I have informed the team to purchase new numbers Thursday, August 27, 2026 11:51 AM." [ref=f6e602]:
+                    - button "More message options" [ref=f6e603]
+                    - generic "Begin Reference, hi teAM, Calysta needs phone numbers for new users. I need 1 today is it possible?, Jhara Mae Infante, 8/26/2026 8:35 PM, End reference Hi Jhara Mae Infante , I have informed the team to purchase new numbers" [ref=f6e604]:
+                      - group "Begin Reference, hi teAM, Calysta needs phone numbers for new users. I need 1 today is it possible?, Jhara Mae Infante, 8/26/2026 8:35 PM, End reference" [ref=f6e605] [cursor=pointer]:
+                        - generic [ref=f6e608]:
+                          - generic [ref=f6e609]:
+                            - generic [ref=f6e610]: Jhara Mae Infante
+                            - generic [ref=f6e611]: 8/26/2026 8:35 PM
+                          - generic [ref=f6e612]: hi teAM, Calysta needs phone numbers for new users. I need 1 today is it possible?
+                      - paragraph [ref=f6e613]:
+                        - text: Hi
+                        - button "Mentioned Jhara" [ref=f6e614]: Jhara
+                        - button "Mentioned Mae" [ref=f6e615]: Mae
+                        - button "Mentioned Infante" [ref=f6e616]: Infante
+                        - text: ", I have informed the team to purchase new numbers"
+              - heading "Thursday 12:54 PM" [level=3] [ref=f6e620]
+              - generic [ref=f6e624]:
+                - heading "thank you Tamzida:) by Jhara Mae Infante" [level=4] [ref=f6e625]
+                - generic [ref=f6e627]:
+                  - generic [ref=f6e628]: Jhara Mae Infante
+                  - group "Jhara Mae Infante thank you Tamzida:) Thursday, August 27, 2026 12:54 PM." [ref=f6e643]:
+                    - button "More message options" [ref=f6e644]
+                    - generic "thank you Tamzida:)" [ref=f6e645]:
+                      - paragraph [ref=f6e646]: thank you Tamzida:)
+              - generic [ref=f6e650]:
+                - heading "image Hi Team, we have Stephanie Wilhot of ... by Jhara Mae Infante" [level=4] [ref=f6e651]
+                - generic [ref=f6e653]:
+                  - generic [ref=f6e654]:
+                    - generic [ref=f6e655]: Jhara Mae Infante
+                    - generic "Edited Thursday, August 27, 2026 12:58 PM" [ref=f6e661]: Edited
+                  - group "Jhara Mae Infante image Hi Team, we have Stephanie Wilhot of Smithville med spa here who has an issue with merging patient data. she said she didn't receive the charts of the patient after merging. Please advise if we can reactivate the 3 and investigate what happened. Thanks 1 Like reaction. Thursday, August 27, 2026 12:57 PM. Edited" [ref=f6e664]:
+                    - button "More message options" [ref=f6e665]
+                    - generic "image Hi Team, we have Stephanie Wilhot of Smithville med spa here who has an issue with merging patient data. she said she didn't receive the charts of the patient after merging. Please advise if we can reactivate the 3 and investigate what happened. Thanks" [ref=f6e666]:
+                      - paragraph [ref=f6e667]: Hi Team, we have Stephanie Wilhot of Smithville med spa here who has an issue with merging patient data. she said she didn't receive the charts of the patient after merging. Please advise if we can reactivate the 3 and investigate what happened. Thanks
+                      - img "image" [ref=f6e671]
+                    - toolbar "Reaction summary" [ref=f6e672]:
+                      - button "1 Like reaction." [pressed] [ref=f6e674]:
+                        - generic [ref=f6e675]:
+                          - img "👍" [ref=f6e677]
+                          - generic [aria-hidden] [ref=f6e678]: 1 Like reaction.
+                      - button "More reactions" [ref=f6e680]
+              - heading "Thursday 6:03 PM" [level=3] [ref=f6e688]
+              - generic [ref=f6e692]:
+                - heading "Begin Reference, hi teAM, Calysta needs pho... by Tamzida Azad" [level=4] [ref=f6e693]
+                - generic [ref=f6e695]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, hi teAM, Calysta needs phone numbers for new users. I need 1 today is it possible?, Jhara Mae Infante, 8/26/2026 8:35 PM, End reference Hi Jhara Mae Infante , these 2 numbers are ready to use. I have also added on sheet +17087344162 +19129158023 1 Heart reaction. Thursday, August 27, 2026 6:03 PM." [ref=f6e702]:
+                    - button "More message options" [ref=f6e703]
+                    - generic "Begin Reference, hi teAM, Calysta needs phone numbers for new users. I need 1 today is it possible?, Jhara Mae Infante, 8/26/2026 8:35 PM, End reference Hi Jhara Mae Infante , these 2 numbers are ready to use. I have also added on sheet +17087344162 +19129158023" [ref=f6e704]:
+                      - group "Begin Reference, hi teAM, Calysta needs phone numbers for new users. I need 1 today is it possible?, Jhara Mae Infante, 8/26/2026 8:35 PM, End reference" [ref=f6e705] [cursor=pointer]:
+                        - generic [ref=f6e708]:
+                          - generic [ref=f6e709]:
+                            - generic [ref=f6e710]: Jhara Mae Infante
+                            - generic [ref=f6e711]: 8/26/2026 8:35 PM
+                          - generic [ref=f6e712]: hi teAM, Calysta needs phone numbers for new users. I need 1 today is it possible?
+                      - paragraph [ref=f6e713]:
+                        - text: Hi
+                        - button "Mentioned Jhara" [ref=f6e714]: Jhara
+                        - button "Mentioned Mae" [ref=f6e715]: Mae
+                        - button "Mentioned Infante" [ref=f6e716]: Infante
+                        - text: ", these 2 numbers are ready to use. I have also added on sheet"
+                      - paragraph [ref=f6e717]
+                      - paragraph [ref=f6e718]: "+17087344162"
+                      - paragraph [ref=f6e719]: "+19129158023"
+                    - toolbar "Reaction summary" [ref=f6e720]:
+                      - button "1 Heart reaction." [ref=f6e722]:
+                        - generic [ref=f6e723]:
+                          - img "❤️" [ref=f6e725]
+                          - generic [aria-hidden] [ref=f6e726]: 1 Heart reaction.
+                      - button "More reactions" [ref=f6e728]
+              - generic [ref=f6e736]:
+                - heading "Begin Reference, Hi Team, we have Stephanie... by Tamzida Azad" [level=4] [ref=f6e737]
+                - generic [ref=f6e739]:
+                  - generic: Tamzida Azad
+                  - group [ref=f6e746]:
+                    - button "More message options" [ref=f6e747]
+                    - generic [ref=f6e748]:
+                      - group "Begin Reference, Hi Team, we have Stephanie Wilhot of Smithville med spa here who has an issue with merging patient data. she said she didn't receive the charts of the patient after merging. Please advise if we can reactivate the 3 and investigate what happened. Thanks 📷, Jhara Mae Infante, 8/27/2026 12:57 PM, End reference" [ref=f6e749] [cursor=pointer]:
+                        - generic [ref=f6e752]:
+                          - generic [ref=f6e753]:
+                            - generic [ref=f6e754]: Jhara Mae Infante
+                            - generic [ref=f6e755]: 8/27/2026 12:57 PM
+                          - generic [ref=f6e756]: Hi Team, we have Stephanie Wilhot of Smithville med spa here who has an issue with merging patient data. she said she didn't receive the charts of the patient after merging. Please advise if we can reactivate the 3 and investigate what happened. Thanks 📷
+                      - paragraph [ref=f6e757]:
+                        - text: Hello
+                        - button "Mentioned Jhara" [ref=f6e758]: Jhara
+                        - button "Mentioned Mae" [ref=f6e759]: Mae
+                        - button "Mentioned Infante" [ref=f6e760]: Infante
+                        - text: After merging, all data is stored under the common patient record. I also see that the encounters have been moved to the new patient ID. Please review this by navigating to Patient Dashboard -> Encounter History. Some Consent and Encounter mightn't appear as linked to each services under Patient Dashboard -> Services -> Encounter and Consent Column
+                      - paragraph [ref=f6e761]:
+                        - link "Link https://prnt.sc/TnDIxQmoVZPN" [ref=f6e762] [cursor=pointer]:
+                          - /url: https://prnt.sc/TnDIxQmoVZPN
+                          - text: https://prnt.sc/TnDIxQmoVZPN
+                      - paragraph [ref=f6e763]
+                      - paragraph [ref=f6e764]: However there is no data loss, she can find everything by navigating to each card and click on View More Information
+                      - paragraph [ref=f6e765]:
+                        - link "Link https://prnt.sc/6Xgesdm3hF85" [ref=f6e766] [cursor=pointer]:
+                          - /url: https://prnt.sc/6Xgesdm3hF85
+                          - text: https://prnt.sc/6Xgesdm3hF85
+                      - paragraph [ref=f6e767]
+                      - paragraph [ref=f6e768]:
+                        - text: "I am also attaching the direct link so it is easy to check. Let me know her response after review. Patient Name: Andrea Kennison Dashboard link:"
+                        - link "Link https://www.calystaproemr.com/patients/global-view/277064" [ref=f6e769] [cursor=pointer]:
+                          - /url: https://www.calystaproemr.com/patients/global-view/277064
+                          - text: https://www.calystaproemr.com/patients/global-view/277064
+                        - text: "Encounter History Link:"
+                        - link "Link https://www.calystaproemr.com/patient-encounters/encounter_history/277064/global_view" [ref=f6e770] [cursor=pointer]:
+                          - /url: https://www.calystaproemr.com/patient-encounters/encounter_history/277064/global_view
+                          - text: https://www.calystaproemr.com/patient-encounters/encounter_history/277064/global_view
+                      - paragraph [ref=f6e771]:
+                        - text: "Consent Form:"
+                        - link "Link https://www.calystaproemr.com/patients/list-consent-documents/277064" [ref=f6e772] [cursor=pointer]:
+                          - /url: https://www.calystaproemr.com/patients/list-consent-documents/277064
+                          - text: https://www.calystaproemr.com/patients/list-consent-documents/277064
+              - generic [ref=f6e776]:
+                - heading "Thank you Tamzida by Jhara Mae Infante" [level=4] [ref=f6e777]
+                - generic [ref=f6e779]:
+                  - generic [ref=f6e780]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Thank you Tamzida Thursday, August 27, 2026 6:39 PM." [ref=f6e795]:
+                    - button "More message options" [ref=f6e796]
+                    - generic "Thank you Tamzida" [ref=f6e797]:
+                      - paragraph [ref=f6e798]: Thank you Tamzida
+              - heading "Friday 10:52 PM" [level=3] [ref=f6e802]
+              - generic [ref=f6e806]:
+                - heading "Begin Reference, Hello Team, we have Sarah ... by Jhara Mae Infante" [level=4] [ref=f6e807]
+                - generic [ref=f6e809]:
+                  - generic [ref=f6e810]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Begin Reference, Hello Team, we have Sarah of Alabaster Beauty here who wants to know if its possible for you to allow her facility to have different sales tax to different products?, Jhara Mae Infante, 7/17/2026 7:25 PM, End reference Hello Team, do we have an update if we can have this as a custom request? Friday, August 28, 2026 10:52 PM." [ref=f6e825]:
+                    - button "More message options" [ref=f6e826]
+                    - generic "Begin Reference, Hello Team, we have Sarah of Alabaster Beauty here who wants to know if its possible for you to allow her facility to have different sales tax to different products?, Jhara Mae Infante, 7/17/2026 7:25 PM, End reference Hello Team, do we have an update if we can have this as a custom request?" [ref=f6e827]:
+                      - group "Begin Reference, Hello Team, we have Sarah of Alabaster Beauty here who wants to know if its possible for you to allow her facility to have different sales tax to different products?, Jhara Mae Infante, 7/17/2026 7:25 PM, End reference" [ref=f6e828] [cursor=pointer]:
+                        - generic [ref=f6e831]:
+                          - generic [ref=f6e832]:
+                            - generic [ref=f6e833]: Jhara Mae Infante
+                            - generic [ref=f6e834]: 7/17/2026 7:25 PM
+                          - generic [ref=f6e835]: Hello Team, we have Sarah of Alabaster Beauty here who wants to know if its possible for you to allow her facility to have different sales tax to different products?
+                      - paragraph [ref=f6e836]: Hello Team, do we have an update if we can have this as a custom request?
+              - generic [ref=f6e840]:
+                - heading "They've been with us for years and they pla... by Jhara Mae Infante" [level=4] [ref=f6e841]
+                - generic [ref=f6e843]:
+                  - generic: Jhara Mae Infante
+                  - group "Jhara Mae Infante They've been with us for years and they plan to cancel if we can't have this feature Sad Friday, August 28, 2026 10:53 PM." [ref=f6e850]:
+                    - button "More message options" [ref=f6e851]
+                    - generic "They've been with us for years and they plan to cancel if we can't have this feature Sad" [ref=f6e852]:
+                      - paragraph [ref=f6e853]:
+                        - text: They've been with us for years and they plan to cancel if we can't have this feature
+                        - generic "Sad" [ref=f6e854]:
+                          - img "🙁" [ref=f6e855]
+              - generic [ref=f6e859]:
+                - heading "Begin Reference, Hello Team, do we have an ... by Tamzida Azad" [level=4] [ref=f6e860]
+                - generic [ref=f6e862]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, Hello Team, do we have an update if we can have this as a custom request?, Jhara Mae Infante, 8/28/2026 10:52 PM, End reference Current feature doesn't allow it to be product specific different tax amounts. Friday, August 28, 2026 11:04 PM." [ref=f6e869]:
+                    - button "More message options" [ref=f6e870]
+                    - generic "Begin Reference, Hello Team, do we have an update if we can have this as a custom request?, Jhara Mae Infante, 8/28/2026 10:52 PM, End reference Current feature doesn't allow it to be product specific different tax amounts." [ref=f6e871]:
+                      - group "Begin Reference, Hello Team, do we have an update if we can have this as a custom request?, Jhara Mae Infante, 8/28/2026 10:52 PM, End reference" [ref=f6e872] [cursor=pointer]:
+                        - generic [ref=f6e875]:
+                          - generic [ref=f6e876]:
+                            - generic [ref=f6e877]: Jhara Mae Infante
+                            - generic [ref=f6e878]: 8/28/2026 10:52 PM
+                          - generic [ref=f6e879]: Hello Team, do we have an update if we can have this as a custom request?
+                      - paragraph [ref=f6e880]: Current feature doesn't allow it to be product specific different tax amounts.
+              - generic [ref=f6e884]:
+                - heading "Md Ashikuzzaman vai please confirm if it c... by Tamzida Azad" [level=4] [ref=f6e885]
+                - generic [ref=f6e887]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Md Ashikuzzaman vai please confirm if it can customise for their facility under custom requests Friday, August 28, 2026 11:04 PM." [ref=f6e894]:
+                    - button "More message options" [ref=f6e895]
+                    - generic "Md Ashikuzzaman vai please confirm if it can customise for their facility under custom requests" [ref=f6e896]:
+                      - paragraph [ref=f6e897]:
+                        - button "Mentioned Md Ashikuzzaman" [ref=f6e898]: Md Ashikuzzaman
+                        - text: vai please confirm if it can customise for their facility under custom requests
+              - generic [ref=f6e902]:
+                - heading "Thank you Tamzida by Jhara Mae Infante" [level=4] [ref=f6e903]
+                - generic [ref=f6e905]:
+                  - generic [ref=f6e906]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Thank you Tamzida Friday, August 28, 2026 11:08 PM." [ref=f6e921]:
+                    - button "More message options" [ref=f6e922]
+                    - generic "Thank you Tamzida" [ref=f6e923]:
+                      - paragraph [ref=f6e924]: Thank you Tamzida
+              - generic [ref=f6e928]:
+                - heading "Begin Reference, Md Ashikuzzaman vai please... by Md Ashikuzzaman" [level=4] [ref=f6e929]
+                - generic [ref=f6e931]:
+                  - generic [ref=f6e932]: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman Begin Reference, Md Ashikuzzaman vai please confirm if it can customise for their facility under custom requests, Tamzida Azad , 8/28/2026 11:04 PM, End reference It should be custom request. Because we provide same tax rate as per facility. 1 Heart reaction. Friday, August 28, 2026 11:19 PM." [ref=f6e947]:
+                    - button "More message options" [ref=f6e948]
+                    - generic "Begin Reference, Md Ashikuzzaman vai please confirm if it can customise for their facility under custom requests, Tamzida Azad , 8/28/2026 11:04 PM, End reference It should be custom request. Because we provide same tax rate as per facility." [ref=f6e949]:
+                      - generic [ref=f6e950]:
+                        - group "Begin Reference, Md Ashikuzzaman vai please confirm if it can customise for their facility under custom requests, Tamzida Azad, 8/28/2026 11:04 PM, End reference" [ref=f6e951] [cursor=pointer]:
+                          - generic [ref=f6e954]:
+                            - generic [ref=f6e955]:
+                              - generic [ref=f6e956]: Tamzida Azad
+                              - generic [ref=f6e957]: 8/28/2026 11:04 PM
+                            - generic [ref=f6e958]: Md Ashikuzzaman vai please confirm if it can customise for their facility under custom requests
+                        - text: It should be custom request. Because we provide same tax rate as per facility.
+                    - toolbar "Reaction summary" [ref=f6e959]:
+                      - button "1 Heart reaction." [ref=f6e961]:
+                        - generic [ref=f6e962]:
+                          - img "❤️" [ref=f6e964]
+                          - generic [aria-hidden] [ref=f6e965]: 1 Heart reaction.
+                      - button "More reactions" [ref=f6e967]
+              - generic [ref=f6e975]:
+                - heading "It can be added but as custom request by Md Ashikuzzaman" [level=4] [ref=f6e976]
+                - generic [ref=f6e978]:
+                  - generic: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman It can be added but as custom request 1 Heart reaction. Friday, August 28, 2026 11:19 PM." [ref=f6e985]:
+                    - button "More message options" [ref=f6e986]
+                    - generic "It can be added but as custom request" [ref=f6e987]
+                    - toolbar "Reaction summary" [ref=f6e989]:
+                      - button "1 Heart reaction." [ref=f6e991]:
+                        - generic [ref=f6e992]:
+                          - img "❤️" [ref=f6e994]
+                          - generic [aria-hidden] [ref=f6e995]: 1 Heart reaction.
+                      - button "More reactions" [ref=f6e997]
+              - generic [ref=f6e1005]:
+                - heading "Yey thank you Ashik. Can I send an email to... by Jhara Mae Infante" [level=4] [ref=f6e1006]
+                - generic [ref=f6e1008]:
+                  - generic [ref=f6e1009]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Yey thank you Ashik. Can I send an email to her and cc you so you can send her the quote and timeline? Friday, August 28, 2026 11:29 PM." [ref=f6e1024]:
+                    - button "More message options" [ref=f6e1025]
+                    - generic "Yey thank you Ashik. Can I send an email to her and cc you so you can send her the quote and timeline?" [ref=f6e1026]:
+                      - paragraph [ref=f6e1027]: Yey thank you Ashik. Can I send an email to her and cc you so you can send her the quote and timeline?
+              - generic [ref=f6e1031]:
+                - heading "Yes please by Md Ashikuzzaman" [level=4] [ref=f6e1032]
+                - generic [ref=f6e1034]:
+                  - generic [ref=f6e1035]: Md Ashikuzzaman
+                  - group "Md Ashikuzzaman Yes please Friday, August 28, 2026 11:29 PM." [ref=f6e1050]:
+                    - button "More message options" [ref=f6e1051]
+                    - generic "Yes please" [ref=f6e1052]
+              - generic [ref=f6e1057]:
+                - heading "Thank you! by Jhara Mae Infante" [level=4] [ref=f6e1058]
+                - generic [ref=f6e1060]:
+                  - generic [ref=f6e1061]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Thank you! Friday, August 28, 2026 11:29 PM." [ref=f6e1076]:
+                    - button "More message options" [ref=f6e1077]
+                    - generic "Thank you!" [ref=f6e1078]:
+                      - paragraph [ref=f6e1079]: Thank you!
+              - generic [ref=f6e1083]:
+                - heading "image Hi Team, how can we delete an SMS? We... by Jhara Mae Infante" [level=4] [ref=f6e1084]
+                - generic [ref=f6e1086]:
+                  - generic [ref=f6e1087]: Jhara Mae Infante
+                  - group "Jhara Mae Infante image Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 1 Sad reaction. Friday, August 28, 2026 11:46 PM." [ref=f6e1102]:
+                    - button "More message options" [ref=f6e1103]
+                    - generic "image Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol" [ref=f6e1104]:
+                      - paragraph [ref=f6e1105]: Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol
+                      - img "image" [ref=f6e1109]
+                    - toolbar "Reaction summary" [ref=f6e1110]:
+                      - button "1 Sad reaction." [pressed] [ref=f6e1112]:
+                        - generic [ref=f6e1113]:
+                          - img "🙁" [ref=f6e1115]
+                          - generic [aria-hidden] [ref=f6e1116]: 1 Sad reaction.
+                      - button "More reactions" [ref=f6e1118]
+              - generic [ref=f6e1126]:
+                - heading "Begin Reference, Hi Team, how can we delete... by Tamzida Azad" [level=4] [ref=f6e1127]
+                - generic [ref=f6e1129]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 📷, Jhara Mae Infante, 8/28/2026 11:46 PM, End reference Sorry it gets sent instantly no way to delete or undo Friday, August 28, 2026 11:47 PM." [ref=f6e1136]:
+                    - button "More message options" [ref=f6e1137]
+                    - generic "Begin Reference, Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 📷, Jhara Mae Infante, 8/28/2026 11:46 PM, End reference Sorry it gets sent instantly no way to delete or undo" [ref=f6e1138]:
+                      - group "Begin Reference, Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 📷, Jhara Mae Infante, 8/28/2026 11:46 PM, End reference" [ref=f6e1139] [cursor=pointer]:
+                        - generic [ref=f6e1142]:
+                          - generic [ref=f6e1143]:
+                            - generic [ref=f6e1144]: Jhara Mae Infante
+                            - generic [ref=f6e1145]: 8/28/2026 11:46 PM
+                          - generic [ref=f6e1146]: Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 📷
+                      - paragraph [ref=f6e1147]: Sorry it gets sent instantly no way to delete or undo
+              - generic [ref=f6e1151]:
+                - heading "Thank you Tamzida. How about in the backend... by Jhara Mae Infante" [level=4] [ref=f6e1152]
+                - generic [ref=f6e1154]:
+                  - generic [ref=f6e1155]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Thank you Tamzida. How about in the backend can you delete it? Friday, August 28, 2026 11:50 PM." [ref=f6e1170]:
+                    - button "More message options" [ref=f6e1171]
+                    - generic "Thank you Tamzida. How about in the backend can you delete it?" [ref=f6e1172]:
+                      - paragraph [ref=f6e1173]: Thank you Tamzida. How about in the backend can you delete it?
+              - generic [ref=f6e1177]:
+                - heading "Begin Reference, Thank you Tamzida. How abo... by Tamzida Azad" [level=4] [ref=f6e1178]
+                - generic [ref=f6e1180]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Begin Reference, Thank you Tamzida. How about in the backend can you delete it?, Jhara Mae Infante, 8/28/2026 11:50 PM, End reference I will have database access on Monday Friday, August 28, 2026 11:50 PM." [ref=f6e1187]:
+                    - button "More message options" [ref=f6e1188]
+                    - generic "Begin Reference, Thank you Tamzida. How about in the backend can you delete it?, Jhara Mae Infante, 8/28/2026 11:50 PM, End reference I will have database access on Monday" [ref=f6e1189]:
+                      - group "Begin Reference, Thank you Tamzida. How about in the backend can you delete it?, Jhara Mae Infante, 8/28/2026 11:50 PM, End reference" [ref=f6e1190] [cursor=pointer]:
+                        - generic [ref=f6e1193]:
+                          - generic [ref=f6e1194]:
+                            - generic [ref=f6e1195]: Jhara Mae Infante
+                            - generic [ref=f6e1196]: 8/28/2026 11:50 PM
+                          - generic [ref=f6e1197]: Thank you Tamzida. How about in the backend can you delete it?
+                      - paragraph [ref=f6e1198]: I will have database access on Monday
+              - generic [ref=f6e1202]:
+                - heading "Yeah no problem. I can inform her it will b... by Jhara Mae Infante" [level=4] [ref=f6e1203]
+                - generic [ref=f6e1205]:
+                  - generic [ref=f6e1206]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Yeah no problem. I can inform her it will be deleted next week. 1 Like reaction. Friday, August 28, 2026 11:50 PM." [ref=f6e1221]:
+                    - button "More message options" [ref=f6e1222]
+                    - generic "Yeah no problem. I can inform her it will be deleted next week." [ref=f6e1223]:
+                      - paragraph [ref=f6e1224]: Yeah no problem. I can inform her it will be deleted next week.
+                    - toolbar "Reaction summary" [ref=f6e1225]:
+                      - button "1 Like reaction." [pressed] [ref=f6e1227]:
+                        - generic [ref=f6e1228]:
+                          - img "👍" [ref=f6e1230]
+                          - generic [aria-hidden] [ref=f6e1231]: 1 Like reaction.
+                      - button "More reactions" [ref=f6e1233]
+              - generic [ref=f6e1241]:
+                - heading "Please share the patient name and facility ... by Tamzida Azad" [level=4] [ref=f6e1242]
+                - generic [ref=f6e1244]:
+                  - generic: Tamzida Azad
+                  - group "Tamzida Azad Please share the patient name and facility name Friday, August 28, 2026 11:51 PM." [ref=f6e1251]:
+                    - button "More message options" [ref=f6e1252]
+                    - generic "Please share the patient name and facility name" [ref=f6e1253]:
+                      - paragraph [ref=f6e1254]: Please share the patient name and facility name
+              - generic [ref=f6e1258]:
+                - heading "Will ask for patient name one moment by Jhara Mae Infante" [level=4] [ref=f6e1259]
+                - generic [ref=f6e1261]:
+                  - generic [ref=f6e1262]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Will ask for patient name one moment Friday, August 28, 2026 11:55 PM." [ref=f6e1277]:
+                    - button "More message options" [ref=f6e1278]
+                    - generic "Will ask for patient name one moment" [ref=f6e1279]:
+                      - paragraph [ref=f6e1280]: Will ask for patient name one moment
+              - heading "Monday 12:55 PM" [level=3] [ref=f6e1284]
+              - generic [ref=f6e1288]:
+                - heading "Begin Reference, Hi Team, how can we delete... by Tamzida Azad" [level=4] [ref=f6e1289]
+                - generic [ref=f6e1291]:
+                  - generic: Tamzida Azad
+                  - generic [ref=f6e1296]:
+                    - group "Tamzida Azad Sent Begin Reference, Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 📷, Jhara Mae Infante, 8/28/2026 11:46 PM, End reference Hi Jhara Mae Infante , I located patient Erin Barrett from Sono Med Spa who had that message on SMS Log. While the message has been deleted from the database, it will still remain visible in the patient’s phone. Link https://prnt.sc/nZuvFfgh_A1n Monday, August 31, 2026 12:55 PM." [ref=f6e1298]:
+                      - button "More message options" [ref=f6e1299]
+                      - generic "Begin Reference, Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 📷, Jhara Mae Infante, 8/28/2026 11:46 PM, End reference Hi Jhara Mae Infante , I located patient Erin Barrett from Sono Med Spa who had that message on SMS Log. While the message has been deleted from the database, it will still remain visible in the patient’s phone. Link https://prnt.sc/nZuvFfgh_A1n" [ref=f6e1300]:
+                        - group "Begin Reference, Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 📷, Jhara Mae Infante, 8/28/2026 11:46 PM, End reference" [ref=f6e1301] [cursor=pointer]:
+                          - generic [ref=f6e1304]:
+                            - generic [ref=f6e1305]:
+                              - generic [ref=f6e1306]: Jhara Mae Infante
+                              - generic [ref=f6e1307]: 8/28/2026 11:46 PM
+                            - generic [ref=f6e1308]: Hi Team, how can we delete an SMS? We have Rosa Cataldo of Sono Med Spa here who has this issue. lol 📷
+                        - paragraph [ref=f6e1309]:
+                          - text: Hi
+                          - button "Mentioned Jhara" [ref=f6e1310]: Jhara
+                          - button "Mentioned Mae" [ref=f6e1311]: Mae
+                          - button "Mentioned Infante" [ref=f6e1312]: Infante
+                          - text: ","
+                        - paragraph [ref=f6e1313]:
+                          - text: I located patient
+                          - strong [ref=f6e1314]: Erin Barrett
+                          - text: from Sono Med Spa who had that message on SMS Log. While the message has been deleted from the database, it will still remain visible in the patient’s phone.
+                        - paragraph [ref=f6e1315]:
+                          - link "Link https://prnt.sc/nZuvFfgh_A1n" [ref=f6e1316] [cursor=pointer]:
+                            - /url: https://prnt.sc/nZuvFfgh_A1n
+                            - text: https://prnt.sc/nZuvFfgh_A1n
+                    - img "Sent" [ref=f6e1318]
+              - heading "Monday 5:24 PM" [level=3] [ref=f6e1323]
+              - generic [ref=f6e1326]:
+                - heading "Tamzida Azad added Tamzida Azad to the chat and shared all chat history." [level=6] [ref=f6e1330]
+                - group "Tamzida Azad added Tamzida Azad to the chat and shared all chat history." [ref=f6e1332]:
+                  - generic [ref=f6e1334]:
+                    - button "Tamzida Azad" [ref=f6e1335]:
+                      - button "Tamzida Azad" [ref=f6e1336]
+                    - text: added
+                    - button "Tamzida Azad" [ref=f6e1337]:
+                      - button "Tamzida Azad" [ref=f6e1338]
+                    - text: to the chat and shared all chat history.
+              - generic [ref=f6e1342]:
+                - heading "Begin Reference, Hi Jhara Mae Infante, I... by Jhara Mae Infante" [level=4] [ref=f6e1343]
+                - generic [ref=f6e1345]:
+                  - generic [ref=f6e1346]: Jhara Mae Infante
+                  - group "Jhara Mae Infante Begin Reference, Hi Jhara Mae Infante, I located patient Erin Barrett from Sono Med Spa who had that message on SMS Log. While the message has been deleted from the database, it will still remain visible in the patient’s phone. https://prnt.sc/nZuvFfgh_A1n, Tamzida Azad, 8/31/2026 12:55 PM, End reference Thank you Tamzida. I will inform the user Monday, August 31, 2026 6:03 PM." [ref=f6e1361]:
+                    - button "More message options" [ref=f6e1362]
+                    - generic "Begin Reference, Hi Jhara Mae Infante, I located patient Erin Barrett from Sono Med Spa who had that message on SMS Log. While the message has been deleted from the database, it will still remain visible in the patient’s phone. https://prnt.sc/nZuvFfgh_A1n, Tamzida Azad, 8/31/2026 12:55 PM, End reference Thank you Tamzida. I will inform the user" [ref=f6e1363]:
+                      - group "Begin Reference, Hi Jhara Mae Infante, I located patient Erin Barrett from Sono Med Spa who had that message on SMS Log. While the message has been deleted from the database, it will still remain visible in the patient’s phone. https://prnt.sc/nZuvFfgh_A1n, Tamzida Azad, 8/31/2026 12:55 PM, End reference" [ref=f6e1364] [cursor=pointer]:
+                        - generic [ref=f6e1367]:
+                          - generic [ref=f6e1368]:
+                            - generic [ref=f6e1369]: Tamzida Azad
+                            - generic [ref=f6e1370]: 8/31/2026 12:55 PM
+                          - generic [ref=f6e1371]: Hi Jhara Mae Infante, I located patient Erin Barrett from Sono Med Spa who had that message on SMS Log. While the message has been deleted from the database, it will still remain visible in the patient’s phone. https://prnt.sc/nZuvFfgh_A1n
+                      - paragraph [ref=f6e1372]: Thank you Tamzida. I will inform the user
+            - generic [aria-hidden] [ref=f6e1375]: has context menu
+        - generic [ref=f6e1385]:
+          - generic [ref=f6e1386]:
+            - textbox "Type a message" [ref=f6e1387]:
+              - paragraph [ref=f6e1388]: Type a message
+            - generic:
+              - log
+              - log
+          - generic [ref=f6e1389]:
+            - toolbar [ref=f6e1390]:
+              - button "Emoji, GIFs and Stickers" [ref=f6e1392] [cursor=pointer]
+              - button "Attach files" [ref=f6e1396] [cursor=pointer]
+              - button "Attach media" [ref=f6e1400] [cursor=pointer]
+              - button "Loop components (Ctrl+Alt+L)" [ref=f6e1404] [cursor=pointer]
+              - button "Actions and apps" [ref=f6e1409] [cursor=pointer]
+            - toolbar "Actions for new message" [ref=f6e1413]:
+              - button "Send (Ctrl+Enter)" [ref=f6e1415] [cursor=pointer]

@@ -1,0 +1,22 @@
+2026/09/02-16:25:59.618 7104 Reusing MANIFEST C:\Users\TAMZIDA\claude-browser-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/09/02-16:25:59.627 7104 Recovering log #4
+2026/09/02-16:25:59.629 7104 Level-0 table #7: started
+2026/09/02-16:25:59.634 7104 Level-0 table #7: 146860 bytes OK
+2026/09/02-16:25:59.642 7104 Delete type=0 #4
+2026/09/02-16:28:12.064 8740 Level-0 table #10: started
+2026/09/02-16:28:12.069 8740 Level-0 table #10: 76608 bytes OK
+2026/09/02-16:28:12.071 8740 Delete type=0 #8
+2026/09/02-16:53:53.045 8740 Level-0 table #12: started
+2026/09/02-16:53:53.050 8740 Level-0 table #12: 107458 bytes OK
+2026/09/02-16:53:53.051 8740 Delete type=0 #9
+2026/09/02-17:04:24.266 8740 Level-0 table #14: started
+2026/09/02-17:04:24.271 8740 Level-0 table #14: 113408 bytes OK
+2026/09/02-17:04:24.273 8740 Delete type=0 #11
+2026/09/02-17:04:24.274 8740 Compacting 4@0 + 0@1 files
+2026/09/02-17:04:24.280 8740 Generated table #15@0: 266 keys, 215169 bytes
+2026/09/02-17:04:24.280 8740 Compacted 4@0 + 0@1 files => 215169 bytes
+2026/09/02-17:04:24.281 8740 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/09/02-17:04:24.281 8740 Delete type=2 #7
+2026/09/02-17:04:24.281 8740 Delete type=2 #10
+2026/09/02-17:04:24.281 8740 Delete type=2 #12
+2026/09/02-17:04:24.281 8740 Delete type=2 #14

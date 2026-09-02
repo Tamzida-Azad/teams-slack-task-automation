@@ -1,0 +1,14 @@
+2026/09/02-16:25:59.750 7104 Creating DB C:\Users\TAMZIDA\claude-browser-profile\Default\Session Storage since it was missing.
+2026/09/02-16:25:59.771 7104 Reusing MANIFEST C:\Users\TAMZIDA\claude-browser-profile\Default\Session Storage/MANIFEST-000001
+2026/09/02-16:31:12.065 8740 Level-0 table #5: started
+2026/09/02-16:31:12.069 8740 Level-0 table #5: 23174 bytes OK
+2026/09/02-16:31:12.070 8740 Delete type=0 #3
+2026/09/02-16:40:05.153 8740 Level-0 table #7: started
+2026/09/02-16:40:05.161 8740 Level-0 table #7: 16167 bytes OK
+2026/09/02-16:40:05.164 8740 Delete type=0 #4
+2026/09/02-16:54:01.103 8740 Level-0 table #9: started
+2026/09/02-16:54:01.110 8740 Level-0 table #9: 14174 bytes OK
+2026/09/02-16:54:01.114 8740 Delete type=0 #6
+2026/09/02-17:03:34.418 8740 Level-0 table #11: started
+2026/09/02-17:03:34.422 8740 Level-0 table #11: 12723 bytes OK
+2026/09/02-17:03:34.424 8740 Delete type=0 #8

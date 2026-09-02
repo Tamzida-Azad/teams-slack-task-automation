@@ -1,0 +1,39 @@
+2026/09/02-16:26:12.037 6f44 Reusing MANIFEST C:\Users\TAMZIDA\claude-browser-profile\Default\IndexedDB\https_teams.live.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/09/02-16:26:12.038 6f44 Recovering log #21
+2026/09/02-16:26:12.040 6f44 Reusing old log C:\Users\TAMZIDA\claude-browser-profile\Default\IndexedDB\https_teams.live.com_0.indexeddb.leveldb/000021.log 
+2026/09/02-16:26:25.116 6f44 Level-0 table #27: started
+2026/09/02-16:26:25.136 6f44 Level-0 table #27: 1617675 bytes OK
+2026/09/02-16:26:25.138 6f44 Delete type=0 #21
+2026/09/02-16:26:26.767 6f44 Compacting 1@1 + 2@2 files
+2026/09/02-16:26:26.798 6f44 Generated table #28@1: 2167 keys, 2137276 bytes
+2026/09/02-16:26:26.824 6f44 Generated table #29@1: 13980 keys, 1283231 bytes
+2026/09/02-16:26:26.824 6f44 Compacted 1@1 + 2@2 files => 3420507 bytes
+2026/09/02-16:26:26.825 6f44 compacted to: files[ 0 0 2 0 0 0 0 ]
+2026/09/02-16:26:26.825 6f44 Delete type=2 #23
+2026/09/02-16:26:26.826 6f44 Delete type=2 #24
+2026/09/02-16:26:26.826 6f44 Delete type=2 #27
+2026/09/02-16:26:35.662 6f44 Level-0 table #31: started
+2026/09/02-16:26:35.679 6f44 Level-0 table #31: 1561480 bytes OK
+2026/09/02-16:26:35.680 6f44 Delete type=0 #26
+2026/09/02-16:26:35.683 6f44 Compacting 1@1 + 2@2 files
+2026/09/02-16:26:35.711 6f44 Generated table #32@1: 2913 keys, 2137817 bytes
+2026/09/02-16:26:35.742 6f44 Generated table #33@1: 14785 keys, 1729046 bytes
+2026/09/02-16:26:35.742 6f44 Compacted 1@1 + 2@2 files => 3866863 bytes
+2026/09/02-16:26:35.742 6f44 compacted to: files[ 0 0 2 0 0 0 0 ]
+2026/09/02-16:26:35.742 6f44 Delete type=2 #28
+2026/09/02-16:26:35.743 6f44 Delete type=2 #29
+2026/09/02-16:26:35.743 6f44 Delete type=2 #31
+2026/09/02-16:29:25.690 5828 Level-0 table #35: started
+2026/09/02-16:29:25.727 5828 Level-0 table #35: 1528923 bytes OK
+2026/09/02-16:29:25.729 5828 Delete type=0 #30
+2026/09/02-16:30:15.610 26ac Compacting 1@1 + 2@2 files
+2026/09/02-16:30:15.649 26ac Generated table #36@1: 2128 keys, 2138029 bytes
+2026/09/02-16:30:15.687 26ac Generated table #37@1: 14830 keys, 1576398 bytes
+2026/09/02-16:30:15.687 26ac Compacted 1@1 + 2@2 files => 3714427 bytes
+2026/09/02-16:30:15.687 26ac compacted to: files[ 0 0 2 0 0 0 0 ]
+2026/09/02-16:30:15.688 26ac Delete type=2 #32
+2026/09/02-16:30:15.688 26ac Delete type=2 #33
+2026/09/02-16:30:15.688 26ac Delete type=2 #35
+2026/09/02-17:33:26.820 6f44 Level-0 table #39: started
+2026/09/02-17:33:26.841 6f44 Level-0 table #39: 1613471 bytes OK
+2026/09/02-17:33:26.842 6f44 Delete type=0 #34

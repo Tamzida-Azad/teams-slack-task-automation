@@ -1,0 +1,533 @@
+- application [ref=f6e26]:
+  - generic [ref=f6e31]:
+    - generic [ref=f6e35]:
+      - button "Collapse app bar" [ref=f6e38]
+      - search [ref=f6e48]:
+        - button [aria-hidden] [ref=f6e49]
+        - combobox "Press Ctrl+Alt+G to go right to a chat or channel" [ref=f6e56]
+      - generic [ref=f6e58]:
+        - button "Settings and more" [ref=f6e60]
+        - button "Your profile, status Offline" [ref=f6e67]:
+          - img "Profile picture of Tamzida Azad." [ref=f6e68]:
+            - generic [ref=f6e69]: TA
+            - img "offline" [ref=f6e71]
+    - group [ref=f6e78]:
+      - generic [ref=f6e82]: Stay in the know. Turn on desktop notifications.
+      - button "Turn on" [ref=f6e84]
+      - button "Close" [ref=f6e86]
+    - generic [ref=f6e93]:
+      - navigation "Apps" [ref=f6e106]:
+        - generic "Chat" [ref=f6e108]:
+          - button "Chat" [pressed] [ref=f6e109]
+        - generic "Meet" [ref=f6e112]:
+          - button "Meet" [ref=f6e113]
+        - generic "People" [ref=f6e116]:
+          - button "People" [ref=f6e117]
+        - generic "Copilot" [ref=f6e120]:
+          - button "Copilot" [ref=f6e121]
+        - generic "Communities" [ref=f6e124]:
+          - button "Communities" [ref=f6e125]
+        - generic "Calendar" [ref=f6e128]:
+          - button "Calendar" [ref=f6e129]
+        - generic "Activity" [ref=f6e132]:
+          - button "Activity" [ref=f6e133]
+      - button "Upgrade" [ref=f6e137]
+    - generic [ref=f6e147]:
+      - generic [ref=f6e148]:
+        - generic [ref=f6e149]:
+          - heading "Chat" [level=1] [ref=f6e150]
+          - toolbar "Rail actions" [ref=f6e151]:
+            - button "Show filter text box (Ctrl+Shift+F)" [ref=f6e153]
+            - button "Meet now" [ref=f6e157]
+            - button "New message (Alt+Shift+N)" [ref=f6e161]
+        - generic "Filter" [ref=f6e166]:
+          - toolbar "Filter options" [ref=f6e168]:
+            - generic [ref=f6e170]:
+              - button "Unread (Ctrl+Alt+U)" [ref=f6e172]: Unread
+              - button "Meeting chats (Ctrl+Alt+B)" [ref=f6e174]: Meeting chats
+              - button "Unmuted (Ctrl+Alt+Q)" [ref=f6e176]: Unmuted
+        - tree "Teams" [ref=f6e178]:
+          - treeitem "Favorites" [expanded] [level=1] [ref=f6e179] [cursor=pointer]:
+            - group [ref=f6e186]:
+              - treeitem "Chat Tamzida Azad (You)" [level=2] [ref=f6e187]:
+                - generic [ref=f6e201]:
+                  - generic [ref=f6e202]: Tamzida Azad (You)
+                  - generic:
+                    - time
+          - treeitem "Chats" [expanded] [level=1] [ref=f6e207] [cursor=pointer]:
+            - group [ref=f6e214]:
+              - 'treeitem "Group chat Calystapro EMR Web Dev Last message Md: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our in… 3:52 PM" [level=2] [ref=f6e215]':
+                - generic [ref=f6e222]:
+                  - generic [ref=f6e223]:
+                    - generic [ref=f6e224]: Calystapro EMR Web Dev
+                    - time [ref=f6e228]: 3:52 PM
+                  - generic [ref=f6e229]: "Md: Thank you for reporting the issue with Juniper Brown’s chart. We’ve completed our in…"
+              - 'treeitem "Group chat CRM - Live Last message Rajib: Lori Gobert Though its little late for us. Dev team will be available of Thursday at… Muted 3:25 PM" [level=2] [ref=f6e233]':
+                - generic [ref=f6e234]:
+                  - generic [ref=f6e243]:
+                    - generic [ref=f6e244]: CRM - Live
+                    - generic [ref=f6e250]: "Rajib: Lori Gobert Though its little late for us. Dev team will be available of Thursday at…"
+                  - toolbar [ref=f6e1425]:
+                    - button "More chat options" [ref=f6e1427]
+              - 'treeitem "Group chat CalystaPro EMR | Rani''s Requests Last message You: Hi Dr Hardik Soni, we require a domain named after Ethos to update the shorten URLs … 12:54 PM" [level=2] [ref=f6e254]':
+                - generic [ref=f6e261]:
+                  - generic [ref=f6e262]:
+                    - generic [ref=f6e263]: CalystaPro EMR | Rani's Requests
+                    - time [ref=f6e267]: 12:54 PM
+                  - generic [ref=f6e268]: "You: Hi Dr Hardik Soni, we require a domain named after Ethos to update the shorten URLs …"
+              - 'treeitem "Group chat CalystaPro Support Team Last message Jhara: Okay got it. Thank you Tamziuda 9/1" [level=2] [ref=f6e272]':
+                - generic [ref=f6e279]:
+                  - generic [ref=f6e280]:
+                    - generic [ref=f6e281]: CalystaPro Support Team
+                    - time [ref=f6e285]: 9/1
+                  - generic [ref=f6e286]: "Jhara: Okay got it. Thank you Tamziuda"
+              - 'treeitem "Chat Jhara Mae Infante Available Last message You: ok 9/1" [level=2] [ref=f6e290]':
+                - generic [ref=f6e303]:
+                  - generic [ref=f6e304]:
+                    - generic [ref=f6e305]: Jhara Mae Infante
+                    - time [ref=f6e309]: 9/1
+                  - generic [ref=f6e310]: "You: ok"
+              - treeitem "Group chat Calystapro EMR Feature Highlights Last message User added 8/31" [level=2] [ref=f6e314]:
+                - generic [ref=f6e321]:
+                  - generic [ref=f6e322]:
+                    - generic [ref=f6e323]: Calystapro EMR Feature Highlights
+                    - time [ref=f6e327]: 8/31
+                  - generic [ref=f6e328]: User added
+              - 'treeitem "Chat Mahmudur Bhuiyan Offline Last message You: Hello Rima Shah, Most of what you want to test (shorter SMS copy, reward amounts… 8/31" [level=2] [ref=f6e332]':
+                - generic [ref=f6e345]:
+                  - generic [ref=f6e346]:
+                    - generic [ref=f6e347]: Mahmudur Bhuiyan
+                    - time [ref=f6e351]: 8/31
+                  - generic [ref=f6e352]: "You: Hello Rima Shah, Most of what you want to test (shorter SMS copy, reward amounts…"
+              - 'treeitem "Group chat CalystaproEMR - CRM Last message Hardik: Yes but there was no error message when I tried adding my name with a duplicate number 7/19" [level=2] [ref=f6e356]':
+                - generic [ref=f6e363]:
+                  - generic [ref=f6e364]:
+                    - generic [ref=f6e365]: CalystaproEMR - CRM
+                    - time [ref=f6e369]: 7/19
+                  - generic [ref=f6e370]: "Hardik: Yes but there was no error message when I tried adding my name with a duplicate number"
+              - 'treeitem "Chat Rani Houlis Offline Last message You: Here is more details about Last Visit Reports Logic 7/7" [level=2] [ref=f6e374]':
+                - generic [ref=f6e387]:
+                  - generic [ref=f6e388]:
+                    - generic [ref=f6e389]: Rani Houlis
+                    - time [ref=f6e393]: 7/7
+                  - generic [ref=f6e394]: "You: Here is more details about Last Visit Reports Logic"
+              - 'treeitem "Group chat Aaron, Jhara, and Pranav Last message Jhara: Oh yeah2x. Wew 1/31" [level=2] [ref=f6e398]':
+                - generic [ref=f6e405]:
+                  - generic [ref=f6e406]:
+                    - generic [ref=f6e407]: Aaron, Jhara, and Pranav
+                    - time [ref=f6e411]: 1/31
+                  - generic [ref=f6e412]: "Jhara: Oh yeah2x. Wew"
+              - 'treeitem "Group chat Aaron and Jhara Last message Jhara: Thank you Aaron and Tamzida. So far I have uploaded those who are listed in channel.… 1/23" [level=2] [ref=f6e416]':
+                - generic [ref=f6e423]:
+                  - generic [ref=f6e424]:
+                    - generic [ref=f6e425]: Aaron and Jhara
+                    - time [ref=f6e429]: 1/23
+                  - generic [ref=f6e430]: "Jhara: Thank you Aaron and Tamzida. So far I have uploaded those who are listed in channel.…"
+        - status [ref=f6e434]
+        - generic:
+          - generic [aria-hidden] [ref=f6e435]: Unread message
+          - generic [aria-hidden] [ref=f6e436]: Last message
+          - generic [aria-hidden] [ref=f6e437]: Group chat
+          - generic [aria-hidden] [ref=f6e438]: Meeting chat
+          - generic [aria-hidden] [ref=f6e439]: Chat
+          - generic [aria-hidden] [ref=f6e440]: Personal at mention
+          - generic [aria-hidden] [ref=f6e441]: Everyone at mention
+          - generic [aria-hidden] [ref=f6e442]: Important
+          - generic [aria-hidden] [ref=f6e443]: Urgent
+          - generic [aria-hidden] [ref=f6e444]: Draft
+          - generic [aria-hidden] [ref=f6e445]: Draft
+          - generic [aria-hidden] [ref=f6e446]: Muted
+          - generic [aria-hidden] [ref=f6e447]: Meeting in progress
+          - generic [aria-hidden] [ref=f6e448]: Meet now in progress
+          - generic [aria-hidden] [ref=f6e449]: You can't send messages because you are not a member of the chat.
+          - generic [aria-hidden] [ref=f6e450]: You cannot send messages to this bot
+          - generic [aria-hidden] [ref=f6e451]: Private
+          - generic [aria-hidden] [ref=f6e452]: Shared
+          - generic [aria-hidden] [ref=f6e453]: Has context menu
+          - generic [aria-hidden] [ref=f6e454]: Channel at mention
+          - generic [aria-hidden] [ref=f6e455]: Team at mention
+          - generic [aria-hidden] [ref=f6e456]: Personal at mention
+          - generic [aria-hidden] [ref=f6e457]: Unread
+          - generic [aria-hidden] [ref=f6e458]: Unread
+          - generic [aria-hidden] [ref=f6e459]: Meeting in progress
+          - generic [aria-hidden] [ref=f6e460]: Unread
+          - generic [aria-hidden] [ref=f6e461]: Channel
+          - generic [aria-hidden] [ref=f6e462]: Team
+          - generic [aria-hidden] [ref=f6e463]: Has pinned messages
+          - generic [aria-hidden] [ref=f6e464]: See more
+          - generic [aria-hidden] [ref=f6e465]: Community
+          - generic [aria-hidden] [ref=f6e466]: Temporarily shown
+          - generic [aria-hidden] [ref=f6e467]: Has context menu
+          - generic [aria-hidden] [ref=f6e468]: Badged chat
+          - generic [aria-hidden] [ref=f6e469]: Badged chats
+        - generic [aria-hidden] [ref=f6e470]: Has context menu
+      - slider "Resize left panel" [ref=f6e472]
+    - generic [ref=f6e474]:
+      - generic [ref=f6e481]:
+        - generic [ref=f6e487]:
+          - generic [ref=f6e489]:
+            - heading "CRM - Live" [level=2] [ref=f6e1434]:
+              - generic "CRM - Live" [ref=f6e1435]
+            - list "Chat participants" [ref=f6e496]
+          - button "Name group chat" [ref=f6e498]
+        - generic [ref=f6e1436]:
+          - tablist [ref=f6e1437]:
+            - tab "Chat" [selected] [ref=f6e1439] [cursor=pointer]
+            - tab "Files" [ref=f6e1443] [cursor=pointer]
+            - tab "Photos" [ref=f6e1447] [cursor=pointer]
+          - generic [aria-hidden] [ref=f6e1452]: Has context menu
+        - toolbar "Chat actions" [ref=f6e503]:
+          - generic [ref=f6e505]:
+            - button "Meet now" [ref=f6e506]
+            - button "More call options" [ref=f6e511]
+          - button "View and add participants, 13 participants" [ref=f6e515]: "13"
+          - separator [ref=f6e519]
+          - generic "Sidepane Features" [ref=f6e520]:
+            - button "Find in chat" [ref=f6e521]
+          - button "More chat options" [ref=f6e526]
+      - generic [ref=f6e536]:
+        - generic [ref=f6e537]:
+          - heading [level=2] [aria-hidden] [ref=f6e538]: Message List
+          - generic [ref=f6e541]:
+            - generic [ref=f6e542]:
+              - generic [ref=f6e543]: Invite others to chat
+              - generic [ref=f6e547]:
+                - button "Share link" [ref=f6e548]
+                - button "Dismiss" [ref=f6e549]
+            - generic [ref=f6e558]:
+              - heading "Yesterday 7:33 PM" [level=3] [ref=f6e1455]
+              - generic [ref=f6e1459]:
+                - heading "Is there a way to ascertain cost without ma... by Hardik Soni" [level=4] [ref=f6e1460]
+                - generic [ref=f6e1462]:
+                  - generic [ref=f6e1463]: Hardik Soni
+                  - group "Hardik Soni Is there a way to ascertain cost without manually entering it though integration with google ads to track source from specific paid campaign Yesterday at 7:33 PM." [ref=f6e1478]:
+                    - button "More message options" [ref=f6e1479]
+                    - generic "Is there a way to ascertain cost without manually entering it though integration with google ads to track source from specific paid campaign" [ref=f6e1480]
+              - generic [ref=f6e1485]:
+                - heading "Same for Facebook and IG by Hardik Soni" [level=4] [ref=f6e1486]
+                - generic [ref=f6e1488]:
+                  - generic: Hardik Soni
+                  - group "Hardik Soni Same for Facebook and IG Yesterday at 7:34 PM." [ref=f6e1495]:
+                    - button "More message options" [ref=f6e1496]
+                    - generic "Same for Facebook and IG" [ref=f6e1497]
+              - generic [ref=f6e1502]:
+                - heading "I will check by Rajib Chowdhury" [level=4] [ref=f6e1503]
+                - generic [ref=f6e1505]:
+                  - generic [ref=f6e1506]: Rajib Chowdhury
+                  - group "Rajib Chowdhury I will check Yesterday at 7:59 PM." [ref=f6e1521]:
+                    - button "More message options" [ref=f6e1522]
+                    - generic "I will check" [ref=f6e1523]:
+                      - paragraph [ref=f6e1524]: I will check
+              - generic [ref=f6e1528]:
+                - heading "Could we please merge opportunities? Perhap... by Lori Gobert" [level=4] [ref=f6e1529]
+                - generic [ref=f6e1531]:
+                  - generic [ref=f6e1532]: Lori Gobert
+                  - group "Lori Gobert Could we please merge opportunities? Perhaps one Opportunity for managing the patient’s current journey, plus campaign tags/custom fields for reporting each promotion. Yesterday at 8:15 PM." [ref=f6e1547]:
+                    - button "More message options" [ref=f6e1548]
+                    - generic "Could we please merge opportunities? Perhaps one Opportunity for managing the patient’s current journey, plus campaign tags/custom fields for reporting each promotion." [ref=f6e1549]
+              - generic [ref=f6e1554]:
+                - heading "Would this work? by Lori Gobert" [level=4] [ref=f6e1555]
+                - generic [ref=f6e1557]:
+                  - generic: Lori Gobert
+                  - group "Lori Gobert Would this work? Yesterday at 8:15 PM." [ref=f6e1564]:
+                    - button "More message options" [ref=f6e1565]
+                    - generic "Would this work?" [ref=f6e1566]
+              - generic [ref=f6e1571]:
+                - heading "Would this Thursday at 11:00 AM EST work fo... by Lori Gobert" [level=4] [ref=f6e1572]
+                - generic [ref=f6e1574]:
+                  - generic: Lori Gobert
+                  - group "Lori Gobert Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima? Yesterday at 8:18 PM." [ref=f6e1581]:
+                    - button "More message options" [ref=f6e1582]
+                    - generic "Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?" [ref=f6e1583]
+              - generic [ref=f6e1588]:
+                - heading "Begin Reference, Could we please merge oppo... by Rajib Chowdhury" [level=4] [ref=f6e1589]
+                - generic [ref=f6e1591]:
+                  - generic [ref=f6e1592]: Rajib Chowdhury
+                  - group "Rajib Chowdhury Begin Reference, Could we please merge opportunities? Perhaps one Opportunity for managing the patient’s current journey, plus campaign tags/custom fields for reporting each promotion., Display Name, 9/1/2026 8:15 PM, End reference Merge opportunity possible if at least one opportunity dont have associated appointment . Opportunity ticket stage (consultation schedule , won and ticket movement is automated as align with appointment of emr ) . And an opportunity could have max 1 associated appointment. Yesterday at 8:21 PM." [ref=f6e1607]:
+                    - button "More message options" [ref=f6e1608]
+                    - generic "Begin Reference, Could we please merge opportunities? Perhaps one Opportunity for managing the patient’s current journey, plus campaign tags/custom fields for reporting each promotion., Display Name, 9/1/2026 8:15 PM, End reference Merge opportunity possible if at least one opportunity dont have associated appointment . Opportunity ticket stage (consultation schedule , won and ticket movement is automated as align with appointment of emr ) . And an opportunity could have max 1 associated appointment." [ref=f6e1609]:
+                      - group "Begin Reference, Could we please merge opportunities? Perhaps one Opportunity for managing the patient’s current journey, plus campaign tags/custom fields for reporting each promotion., Lori Gobert, 9/1/2026 8:15 PM, End reference" [ref=f6e1610] [cursor=pointer]:
+                        - generic [ref=f6e1613]:
+                          - generic [ref=f6e1614]:
+                            - generic [ref=f6e1615]: Lori Gobert
+                            - generic [ref=f6e1616]: 9/1/2026 8:15 PM
+                          - generic [ref=f6e1617]: Could we please merge opportunities? Perhaps one Opportunity for managing the patient’s current journey, plus campaign tags/custom fields for reporting each promotion.
+                      - paragraph [ref=f6e1618]: Merge opportunity possible if at least one opportunity dont have associated appointment . Opportunity ticket stage (consultation schedule , won and ticket movement is automated as align with appointment of emr ) . And an opportunity could have max 1 associated appointment.
+                      - paragraph [ref=f6e1619]
+              - generic [ref=f6e1623]:
+                - heading "Begin Reference, Would this Thursday at 11:... by Rajib Chowdhury" [level=4] [ref=f6e1624]
+                - generic [ref=f6e1626]:
+                  - generic: Rajib Chowdhury
+                  - group "Rajib Chowdhury Begin Reference, Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?, Display Name, 9/1/2026 8:18 PM, End reference I will check with other developer availability and let you know tomorrow Yesterday at 8:23 PM." [ref=f6e1633]:
+                    - button "More message options" [ref=f6e1634]
+                    - generic "Begin Reference, Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?, Display Name, 9/1/2026 8:18 PM, End reference I will check with other developer availability and let you know tomorrow" [ref=f6e1635]:
+                      - group "Begin Reference, Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?, Lori Gobert, 9/1/2026 8:18 PM, End reference" [ref=f6e1636] [cursor=pointer]:
+                        - generic [ref=f6e1639]:
+                          - generic [ref=f6e1640]:
+                            - generic [ref=f6e1641]: Lori Gobert
+                            - generic [ref=f6e1642]: 9/1/2026 8:18 PM
+                          - generic [ref=f6e1643]: Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?
+                      - paragraph [ref=f6e1644]: I will check with other developer availability and let you know tomorrow
+              - generic [ref=f6e1648]:
+                - heading "Thank you! by Lori Gobert" [level=4] [ref=f6e1649]
+                - generic [ref=f6e1651]:
+                  - generic [ref=f6e1652]: Lori Gobert
+                  - group "Lori Gobert Thank you! Yesterday at 8:36 PM." [ref=f6e1667]:
+                    - button "More message options" [ref=f6e1668]
+                    - generic "Thank you!" [ref=f6e1669]
+              - heading "Today 12:09 AM" [level=3] [ref=f6e1674]
+              - generic [ref=f6e1678]:
+                - heading "rezvi alauddin I need daily updates from y... by Hardik Soni" [level=4] [ref=f6e1679]
+                - generic [ref=f6e1681]:
+                  - generic [ref=f6e1682]: Hardik Soni
+                  - group "Hardik Soni rezvi alauddin I need daily updates from you please as well Today at 12:09 AM." [ref=f6e1697]:
+                    - button "More message options" [ref=f6e1698]
+                    - generic "rezvi alauddin I need daily updates from you please as well" [ref=f6e1699]:
+                      - generic [ref=f6e1700]:
+                        - button "Mentioned rezvi alauddin" [ref=f6e1701]: rezvi alauddin
+                        - text: I need daily updates from you please as well
+              - generic [ref=f6e1705]:
+                - heading "image Hi Team. I'm looking into how we coul... by Lori Gobert" [level=4] [ref=f6e1706]
+                - generic [ref=f6e1708]:
+                  - generic [ref=f6e1709]: Lori Gobert
+                  - group "Lori Gobert image Hi Team. I'm looking into how we could have so many missed calls. That's one of the reasons that I wanted to see who is logged into the CRM. We just had two missed calls (same contact) Today at 12:53 AM." [ref=f6e1724]:
+                    - button "More message options" [ref=f6e1725]
+                    - generic "image Hi Team. I'm looking into how we could have so many missed calls. That's one of the reasons that I wanted to see who is logged into the CRM. We just had two missed calls (same contact)" [ref=f6e1726]:
+                      - paragraph [ref=f6e1727]: Hi Team. I'm looking into how we could have so many missed calls. That's one of the reasons that I wanted to see who is logged into the CRM. We just had two missed calls (same contact)
+                      - img "image" [ref=f6e1731]
+              - generic [ref=f6e1735]:
+                - heading "The ladies are saying that they are not hea... by Lori Gobert" [level=4] [ref=f6e1736]
+                - generic [ref=f6e1738]:
+                  - generic [ref=f6e1739]: Lori Gobert
+                  - group "Lori Gobert The ladies are saying that they are not hearing any calls. Today at 12:58 AM." [ref=f6e1754]:
+                    - button "More message options" [ref=f6e1755]
+                    - generic "The ladies are saying that they are not hearing any calls." [ref=f6e1756]:
+                      - paragraph [ref=f6e1757]: The ladies are saying that they are not hearing any calls.
+              - generic [ref=f6e1761]:
+                - heading "20 sec then 4 sec call, so caller quit. Ca... by Rajib Chowdhury" [level=4] [ref=f6e1762]
+                - generic [ref=f6e1764]:
+                  - generic [ref=f6e1765]: Rajib Chowdhury
+                  - group "Rajib Chowdhury 20 sec then 4 sec call, so caller quit. Caller dont give enough tine to pick by second available resource. 1 Like reaction. Today at 12:58 AM." [ref=f6e1780]:
+                    - button "More message options" [ref=f6e1781]
+                    - generic "20 sec then 4 sec call, so caller quit. Caller dont give enough tine to pick by second available resource." [ref=f6e1782]:
+                      - paragraph [ref=f6e1783]: 20 sec then 4 sec call, so caller quit. Caller dont give enough tine to pick by second available resource.
+                    - toolbar "Reaction summary" [ref=f6e1784]:
+                      - button "1 Like reaction." [ref=f6e1786]:
+                        - generic [ref=f6e1787]:
+                          - img "👍" [ref=f6e1789]
+                          - generic [aria-hidden] [ref=f6e1790]: 1 Like reaction.
+                      - button "More reactions" [ref=f6e1792]
+              - generic [ref=f6e1800]:
+                - heading "I will share more details tomorrow by Rajib Chowdhury" [level=4] [ref=f6e1801]
+                - generic [ref=f6e1803]:
+                  - generic: Rajib Chowdhury
+                  - group "Rajib Chowdhury I will share more details tomorrow Today at 12:59 AM." [ref=f6e1810]:
+                    - button "More message options" [ref=f6e1811]
+                    - generic "I will share more details tomorrow" [ref=f6e1812]:
+                      - paragraph [ref=f6e1813]: I will share more details tomorrow
+              - generic [ref=f6e1817]:
+                - heading "2nd call is 4 sec so it is difficult to pic by Rajib Chowdhury" [level=4] [ref=f6e1818]
+                - generic [ref=f6e1820]:
+                  - generic: Rajib Chowdhury
+                  - group "Rajib Chowdhury 2nd call is 4 sec so it is difficult to pick Today at 12:59 AM." [ref=f6e1827]:
+                    - button "More message options" [ref=f6e1828]
+                    - generic "2nd call is 4 sec so it is difficult to pick" [ref=f6e1829]:
+                      - paragraph [ref=f6e1830]: 2nd call is 4 sec so it is difficult to pick
+              - generic [ref=f6e1834]:
+                - heading "We have also twillio logs so we can cross c... by Rajib Chowdhury" [level=4] [ref=f6e1835]
+                - generic [ref=f6e1837]:
+                  - generic: Rajib Chowdhury
+                  - group "Rajib Chowdhury We have also twillio logs so we can cross check. 1 Like reaction. Today at 1:00 AM." [ref=f6e1844]:
+                    - button "More message options" [ref=f6e1845]
+                    - generic "We have also twillio logs so we can cross check." [ref=f6e1846]:
+                      - paragraph [ref=f6e1847]: We have also twillio logs so we can cross check.
+                    - toolbar "Reaction summary" [ref=f6e1848]:
+                      - button "1 Like reaction." [ref=f6e1850]:
+                        - generic [ref=f6e1851]:
+                          - img "👍" [ref=f6e1853]
+                          - generic [aria-hidden] [ref=f6e1854]: 1 Like reaction.
+                      - button "More reactions" [ref=f6e1856]
+              - generic [ref=f6e1864]:
+                - heading "Thank you, Rajib. Is there any reason that ... by Lori Gobert" [level=4] [ref=f6e1865]
+                - generic [ref=f6e1867]:
+                  - generic [ref=f6e1868]: Lori Gobert
+                  - group "Lori Gobert Thank you, Rajib. Is there any reason that you can think of where the girls are not able to hear these calls. I personally am not having any problems. Today at 1:07 AM." [ref=f6e1883]:
+                    - button "More message options" [ref=f6e1884]
+                    - generic "Thank you, Rajib. Is there any reason that you can think of where the girls are not able to hear these calls. I personally am not having any problems." [ref=f6e1885]
+              - generic [ref=f6e1890]:
+                - heading "What I am still having a problem with thoug... by Lori Gobert" [level=4] [ref=f6e1891]
+                - generic [ref=f6e1893]:
+                  - generic [ref=f6e1894]:
+                    - generic [ref=f6e1895]: Lori Gobert
+                    - generic "Edited Today at 8:09 AM" [ref=f6e1901]: Edited
+                  - group "Lori Gobert What I am still having a problem with though is that the wrong patient pulled up again on the call screen when I answered Today at 1:08 AM. Edited" [ref=f6e1904]:
+                    - button "More message options" [ref=f6e1905]
+                    - generic "What I am still having a problem with though is that the wrong patient pulled up again on the call screen when I answered" [ref=f6e1906]
+              - generic [ref=f6e1911]:
+                - heading "Begin Reference, Thank you, Rajib. Is there... by Rajib Chowdhury" [level=4] [ref=f6e1912]
+                - generic [ref=f6e1914]:
+                  - generic [ref=f6e1915]: Rajib Chowdhury
+                  - group "Rajib Chowdhury Begin Reference, Thank you, Rajib. Is there any reason that you can think of where the girls are not able to hear these calls. I personally am not having any problems., Display Name, 9/2/2026 1:07 AM, End reference If they use edge browser If they on secondary window close primary one Today at 1:20 AM." [ref=f6e1930]:
+                    - button "More message options" [ref=f6e1931]
+                    - generic "Begin Reference, Thank you, Rajib. Is there any reason that you can think of where the girls are not able to hear these calls. I personally am not having any problems., Display Name, 9/2/2026 1:07 AM, End reference If they use edge browser If they on secondary window close primary one" [ref=f6e1932]:
+                      - group "Begin Reference, Thank you, Rajib. Is there any reason that you can think of where the girls are not able to hear these calls. I personally am not having any problems., Lori Gobert, 9/2/2026 1:07 AM, End reference" [ref=f6e1933] [cursor=pointer]:
+                        - generic [ref=f6e1936]:
+                          - generic [ref=f6e1937]:
+                            - generic [ref=f6e1938]: Lori Gobert
+                            - generic [ref=f6e1939]: 9/2/2026 1:07 AM
+                          - generic [ref=f6e1940]: Thank you, Rajib. Is there any reason that you can think of where the girls are not able to hear these calls. I personally am not having any problems.
+                      - paragraph [ref=f6e1941]: If they use edge browser
+                      - paragraph [ref=f6e1942]: If they on secondary window close primary one
+              - generic [ref=f6e1946]:
+                - heading "Begin Reference, What I am still having a p... by Rajib Chowdhury" [level=4] [ref=f6e1947]
+                - generic [ref=f6e1949]:
+                  - generic: Rajib Chowdhury
+                  - group "Rajib Chowdhury Begin Reference, What I am still having a problem with though is that the wrong patient pulled up again on the Khall screen when I answered, Display Name, 9/2/2026 1:08 AM, End reference When you are connected is it showing wrong user. It should replace if even we have past text. When you are connected are you seeing wrong text! 1 Like reaction. Today at 1:24 AM." [ref=f6e1956]:
+                    - button "More message options" [ref=f6e1957]
+                    - generic "Begin Reference, What I am still having a problem with though is that the wrong patient pulled up again on the Khall screen when I answered, Display Name, 9/2/2026 1:08 AM, End reference When you are connected is it showing wrong user. It should replace if even we have past text. When you are connected are you seeing wrong text!" [ref=f6e1958]:
+                      - group "Begin Reference, What I am still having a problem with though is that the wrong patient pulled up again on the Khall screen when I answered, Lori Gobert, 9/2/2026 1:08 AM, End reference" [ref=f6e1959] [cursor=pointer]:
+                        - generic [ref=f6e1962]:
+                          - generic [ref=f6e1963]:
+                            - generic [ref=f6e1964]: Lori Gobert
+                            - generic [ref=f6e1965]: 9/2/2026 1:08 AM
+                          - generic [ref=f6e1966]: What I am still having a problem with though is that the wrong patient pulled up again on the Khall screen when I answered
+                      - paragraph [ref=f6e1967]: When you are connected is it showing wrong user. It should replace if even we have past text.
+                      - paragraph [ref=f6e1968]: When you are connected are you seeing wrong text!
+                    - toolbar "Reaction summary" [ref=f6e1969]:
+                      - button "1 Like reaction." [ref=f6e1971]:
+                        - generic [ref=f6e1972]:
+                          - img "👍" [ref=f6e1974]
+                          - generic [aria-hidden] [ref=f6e1975]: 1 Like reaction.
+                      - button "More reactions" [ref=f6e1977]
+              - generic [ref=f6e1985]:
+                - heading "I am seeing a different contact by Lori Gobert" [level=4] [ref=f6e1986]
+                - generic [ref=f6e1988]:
+                  - generic [ref=f6e1989]: Lori Gobert
+                  - group "Lori Gobert I am seeing a different contact Today at 1:52 AM." [ref=f6e2004]:
+                    - button "More message options" [ref=f6e2005]
+                    - generic "I am seeing a different contact" [ref=f6e2006]
+              - heading "Today 4:29 AM" [level=3] [ref=f6e2011]
+              - generic [ref=f6e2015]:
+                - heading "These issues have to be resolved. System h... by Hardik Soni" [level=4] [ref=f6e2016]
+                - generic [ref=f6e2018]:
+                  - generic [ref=f6e2019]: Hardik Soni
+                  - group "Hardik Soni These issues have to be resolved. System has to be consistent and reliable. These glitches do not help Today at 4:29 AM." [ref=f6e2034]:
+                    - button "More message options" [ref=f6e2035]
+                    - generic "These issues have to be resolved. System has to be consistent and reliable. These glitches do not help" [ref=f6e2036]
+              - heading "Today 11:15 AM" [level=3] [ref=f6e2041]
+              - generic [ref=f6e2045]:
+                - heading "image Begin Reference, Hi Team. I'm looking... by Rajib Chowdhury" [level=4] [ref=f6e2046]
+                - generic [ref=f6e2048]:
+                  - generic [ref=f6e2049]:
+                    - generic [ref=f6e2050]: Rajib Chowdhury
+                    - generic "Edited Today at 11:17 AM" [ref=f6e2056]: Edited
+                  - group [ref=f6e2067]:
+                    - button "More message options" [ref=f6e2068]
+                    - generic [ref=f6e2069]:
+                      - group "Begin Reference, Hi Team. I'm looking into how we could have so many missed calls. That's one of the reasons that I wanted to see who is logged into the CRM. We just had two missed calls (same contact) 📷, Lori Gobert, 9/2/2026 12:53 AM, End reference" [ref=f6e2070] [cursor=pointer]:
+                        - generic [ref=f6e2073]:
+                          - generic [ref=f6e2074]:
+                            - generic [ref=f6e2075]: Lori Gobert
+                            - generic [ref=f6e2076]: 9/2/2026 12:53 AM
+                          - generic [ref=f6e2077]: Hi Team. I'm looking into how we could have so many missed calls. That's one of the reasons that I wanted to see who is logged into the CRM. We just had two missed calls (same contact) 📷
+                      - paragraph [ref=f6e2078]: Yesterday QA have tested from 16467292513 which generate some additional miss call
+                      - paragraph [ref=f6e2079]: Your screen shot +19295171189 initially come to Jenna then Nicole.
+                      - paragraph [ref=f6e2080]: Then same +19295171189 user called and Jenna's side there was no answer and user drop the call the was also minimal .
+                      - paragraph [ref=f6e2081]:
+                        - text: So if you we remove Jenna for incoming call, round robin will not consider Jenna.
+                        - link "Link https://crm.calystaproemr.com/settings/user/69c410627c84176b2274995e" [ref=f6e2082] [cursor=pointer]:
+                          - /url: https://crm.calystaproemr.com/settings/user/69c410627c84176b2274995e
+                          - text: https://crm.calystaproemr.com/settings/user/69c410627c84176b2274995e
+                      - paragraph [ref=f6e2083]: I can see Jenna fairly active for receive incoming all.
+                      - paragraph [ref=f6e2084]
+                      - paragraph [ref=f6e2085]: You can do a test with her . While she is on and you are calling. if it works then nothing we can do.
+                      - paragraph [ref=f6e2086]: If she face issue to see call, we can go for a call with her and check whether there is any other issue like anti virus or firewall
+                      - paragraph [ref=f6e2087]
+                      - paragraph [ref=f6e2088]: I got the log from twillo and 69c410627c84176b2274995e this is her id.
+                      - img "image" [ref=f6e2092]
+              - heading "Today 2:46 PM" [level=3] [ref=f6e2096]
+              - generic [ref=f6e2100]:
+                - heading "Begin Reference, rezvi alauddin I need dail... by rezvi alauddin" [level=4] [ref=f6e2101]
+                - generic [ref=f6e2103]:
+                  - generic [ref=f6e2104]:
+                    - generic [ref=f6e2105]: rezvi alauddin
+                    - generic "Edited Today at 2:47 PM" [ref=f6e2111]: Edited
+                  - group "rezvi alauddin Begin Reference, rezvi alauddin I need daily updates from you please as well, Display Name, 9/2/2026 12:09 AM, End reference Sorry ,Dr. Hardik Soni , I wrote the EOD yesterday on calysta-eod group but it was not posted for network issue, sorry for that. Next time i will check so that the EOD gets posted correctly. Today at 2:46 PM. Edited" [ref=f6e2122]:
+                    - button "More message options" [ref=f6e2123]
+                    - generic "Begin Reference, rezvi alauddin I need daily updates from you please as well, Display Name, 9/2/2026 12:09 AM, End reference Sorry ,Dr. Hardik Soni , I wrote the EOD yesterday on calysta-eod group but it was not posted for network issue, sorry for that. Next time i will check so that the EOD gets posted correctly." [ref=f6e2124]:
+                      - group "Begin Reference, rezvi alauddin I need daily updates from you please as well, Hardik Soni, 9/2/2026 12:09 AM, End reference" [ref=f6e2125] [cursor=pointer]:
+                        - generic [ref=f6e2128]:
+                          - generic [ref=f6e2129]:
+                            - generic [ref=f6e2130]: Hardik Soni
+                            - generic [ref=f6e2131]: 9/2/2026 12:09 AM
+                          - generic [ref=f6e2132]: rezvi alauddin I need daily updates from you please as well
+                      - paragraph [ref=f6e2133]:
+                        - text: Sorry ,Dr.
+                        - button "Mentioned Hardik" [ref=f6e2134]: Hardik
+                        - button "Mentioned Soni" [ref=f6e2135]: Soni
+                        - text: ", I wrote the EOD yesterday on calysta-eod group but it was not posted for network issue, sorry for that. Next time i will check so that the EOD gets posted correctly."
+              - generic [ref=f6e2139]:
+                - heading "Dr. Hardik Soni , Right now ,I am worki... by rezvi alauddin" [level=4] [ref=f6e2140]
+                - generic [ref=f6e2142]:
+                  - generic [ref=f6e2143]: rezvi alauddin
+                  - group "rezvi alauddin Dr. Hardik Soni , Right now ,I am working on Appointment Based functionalities via AI Calling Today at 3:16 PM." [ref=f6e2158]:
+                    - button "More message options" [ref=f6e2159]
+                    - generic "Dr. Hardik Soni , Right now ,I am working on Appointment Based functionalities via AI Calling" [ref=f6e2160]:
+                      - paragraph [ref=f6e2161]:
+                        - text: Dr.
+                        - button "Mentioned Hardik" [ref=f6e2162]: Hardik
+                        - button "Mentioned Soni" [ref=f6e2163]: Soni
+                        - text: ", Right now ,I am working on Appointment Based functionalities via AI Calling"
+              - generic [ref=f6e2167]:
+                - heading "Begin Reference, Would this Thursday at 11:... by Rajib Chowdhury" [level=4] [ref=f6e2168]
+                - generic [ref=f6e2170]:
+                  - generic [ref=f6e2171]:
+                    - generic [ref=f6e2172]: Rajib Chowdhury
+                    - generic "Edited Today at 3:28 PM" [ref=f6e2178]: Edited
+                  - 'group "Rajib Chowdhury Begin Reference, Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?, Display Name, 9/1/2026 8:18 PM, End reference Lori Gobert Though its little late for us. Dev team will be available of Thursday at 11:00 AM EST for meeting CC: Akramol Hoque rezvi alauddin Md Ashikuzzaman Hardik Soni 1 Like reaction. Today at 3:25 PM. Edited" [ref=f6e2189]':
+                    - button "More message options" [ref=f6e2190]
+                    - 'generic "Begin Reference, Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?, Display Name, 9/1/2026 8:18 PM, End reference Lori Gobert Though its little late for us. Dev team will be available of Thursday at 11:00 AM EST for meeting CC: Akramol Hoque rezvi alauddin Md Ashikuzzaman Hardik Soni" [ref=f6e2191]':
+                      - group "Begin Reference, Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?, Lori Gobert, 9/1/2026 8:18 PM, End reference" [ref=f6e2192] [cursor=pointer]:
+                        - generic [ref=f6e2195]:
+                          - generic [ref=f6e2196]:
+                            - generic [ref=f6e2197]: Lori Gobert
+                            - generic [ref=f6e2198]: 9/1/2026 8:18 PM
+                          - generic [ref=f6e2199]: Would this Thursday at 11:00 AM EST work for the Calysta team to meet with Rima?
+                      - paragraph [ref=f6e2200]:
+                        - button "Mentioned Lori" [ref=f6e2201]: Lori
+                        - button "Mentioned Gobert" [ref=f6e2202]: Gobert
+                      - paragraph [ref=f6e2203]: Though its little late for us.
+                      - paragraph [ref=f6e2204]: Dev team will be available of Thursday at 11:00 AM EST for meeting
+                      - paragraph [ref=f6e2205]:
+                        - text: "CC:"
+                        - button "Mentioned Akramol" [ref=f6e2206]: Akramol
+                        - button "Mentioned Hoque" [ref=f6e2207]: Hoque
+                        - button "Mentioned rezvi" [ref=f6e2208]: rezvi
+                        - button "Mentioned alauddin" [ref=f6e2209]: alauddin
+                        - button "Mentioned Md" [ref=f6e2210]: Md
+                        - button "Mentioned Ashikuzzaman" [ref=f6e2211]: Ashikuzzaman
+                        - button "Mentioned Hardik" [ref=f6e2212]: Hardik
+                        - button "Mentioned Soni" [ref=f6e2213]: Soni
+                    - toolbar "Reaction summary" [ref=f6e2214]:
+                      - button "1 Like reaction." [ref=f6e2216]:
+                        - generic [ref=f6e2217]:
+                          - img "👍" [ref=f6e2219]
+                          - generic [aria-hidden] [ref=f6e2220]: 1 Like reaction.
+                      - button "More reactions" [ref=f6e2222]
+            - generic [aria-hidden] [ref=f6e1375]: has context menu
+        - generic [ref=f6e1385]:
+          - generic [ref=f6e1386]:
+            - textbox "Type a message" [active] [ref=f6e1387]:
+              - paragraph [ref=f6e1388]: Type a message
+            - generic:
+              - log
+              - log
+          - generic [ref=f6e1389]:
+            - toolbar [ref=f6e1390]:
+              - button "Emoji, GIFs and Stickers" [ref=f6e1392] [cursor=pointer]
+              - button "Attach files" [ref=f6e1396] [cursor=pointer]
+              - button "Attach media" [ref=f6e1400] [cursor=pointer]
+              - button "Loop components (Ctrl+Alt+L)" [ref=f6e1404] [cursor=pointer]
+              - button "Actions and apps" [ref=f6e1409] [cursor=pointer]
+            - toolbar "Actions for new message" [ref=f6e1413]:
+              - button "Send (Ctrl+Enter)" [ref=f6e1415] [cursor=pointer]
