@@ -1,0 +1,367 @@
+const fs = require('fs');
+const path = require('path');
+const config = require('./config');
+
+function loadPlaywright() {
+  const candidates = [
+    path.join(config.rootDir, 'node_modules', 'playwright'),
+    path.join(config.rootDir, '..', 'daily-head-start', 'node_modules', 'playwright'),
+  ];
+  for (const candidate of candidates) {
+    try {
+      return require(candidate);
+    } catch {
+      // continue
+    }
+  }
+  throw new Error('Playwright not found');
+}
+
+function dhakaParts(date = new Date()) {
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Dhaka',
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    weekday: 'short',
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+  });
+  const parts = Object.fromEntries(fmt.formatToParts(date).map((p) => [p.type, p.value]));
+  return {
+    year: Number(parts.year),
+    month: Number(parts.month),
+    day: Number(parts.day),
+    weekday: parts.weekday,
+    hour12: parts.hour,
+    minute: parts.minute,
+    dayPeriod: parts.dayPeriod,
+  };
+}
+
+function getDateWindow(now = new Date()) {
+  const d = dhakaParts(now);
+  const isMonday = d.weekday === 'Mon';
+  const isWeekend = d.weekday === 'Sat' || d.weekday === 'Sun';
+  return {
+    timezone: 'Asia/Dhaka',
+    isWeekend,
+    isMonday,
+    // For filtering we keep ISO-ish labels; scraper includes recent + timestamp parse
+    label: isMonday
+      ? `Monday consolidation (Fri 18:00 → now Asia/Dhaka)`
+      : `Today only (${d.month}/${d.day}/${d.year} Asia/Dhaka)`,
+    today: { year: d.year, month: d.month, day: d.day },
+  };
+}
+
+function fromDate(date, raw) {
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Dhaka',
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: false,
+  });
+  const parts = Object.fromEntries(fmt.formatToParts(date).map((p) => [p.type, p.value]));
+  return {
+    year: Number(parts.year),
+    month: Number(parts.month),
+    day: Number(parts.day),
+    hour: Number(parts.hour) % 24,
+    minute: Number(parts.minute),
+    raw,
+    iso: date.toISOString(),
+  };
+}
+
+function parseTimestamp(text, isoDatetime) {
+  if (isoDatetime) {
+    const date = new Date(isoDatetime);
+    if (!Number.isNaN(date.getTime())) {
+      return fromDate(date, text || isoDatetime);
+    }
+  }
+
+  if (!text) return null;
+  const t = String(text).trim().replace(/\.$/, '');
+
+  // M/D/YYYY H:MM AM/PM
+  let m = t.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+  if (m) {
+    let hour = Number(m[4]) % 12;
+    if (/pm/i.test(m[6])) hour += 12;
+    return {
+      year: Number(m[3]),
+      month: Number(m[1]),
+      day: Number(m[2]),
+      hour,
+      minute: Number(m[5]),
+      raw: t,
+    };
+  }
+
+  // Weekday name, Month D, YYYY H:MM AM/PM
+  m = t.match(
+    /(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),?\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{4})\s+(\d{1,2}):(\d{2})\s*(AM|PM)/i
+  );
+  if (m) {
+    const months = {
+      january: 1,
+      february: 2,
+      march: 3,
+      april: 4,
+      may: 5,
+      june: 6,
+      july: 7,
+      august: 8,
+      september: 9,
+      october: 10,
+      november: 11,
+      december: 12,
+    };
+    let hour = Number(m[5]) % 12;
+    if (/pm/i.test(m[7])) hour += 12;
+    return {
+      year: Number(m[4]),
+      month: months[m[2].toLowerCase()],
+      day: Number(m[3]),
+      hour,
+      minute: Number(m[6]),
+      raw: t,
+    };
+  }
+
+  // Today / Yesterday [at] H:MM AM/PM
+  m = t.match(/(Today|Yesterday)(?:\s+at)?\s+(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+  if (m) {
+    const base = new Date();
+    if (/yesterday/i.test(m[1])) base.setDate(base.getDate() - 1);
+    const d = dhakaParts(base);
+    let hour = Number(m[2]) % 12;
+    if (/pm/i.test(m[4])) hour += 12;
+    return {
+      year: d.year,
+      month: d.month,
+      day: d.day,
+      hour,
+      minute: Number(m[3]),
+      raw: t,
+      relative: m[1].toLowerCase(),
+    };
+  }
+
+  return { raw: t };
+}
+
+function inDateWindow(ts, window) {
+  if (!ts || !ts.year) {
+    // Keep undated messages that are currently visible — LLM will filter noise
+    return true;
+  }
+  const { today, isMonday } = window;
+  if (isMonday) {
+    // Fri/Sat/Sun/Mon of consolidation — approximate: last 4 calendar days
+    const msg = new Date(ts.year, ts.month - 1, ts.day, ts.hour || 0, ts.minute || 0);
+    const now = new Date();
+    const diffDays = (now - msg) / (24 * 60 * 60 * 1000);
+    if (diffDays > 4) return false;
+    // Friday before 18:00 excluded roughly if weekday Fri and hour < 18
+    const wd = msg.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'Asia/Dhaka' });
+    if (wd === 'Fri' && (ts.hour ?? 0) < 18) return false;
+    return true;
+  }
+  return ts.year === today.year && ts.month === today.month && ts.day === today.day;
+}
+
+async function openChannel(page, channelName) {
+  await page.keyboard.press('Escape').catch(() => {});
+
+  // Prefer an accessible-name match so we don't click the parent "Chats" treeitem
+  // (hasText matches descendants and can select the wrong node).
+  const byName = page.getByRole('treeitem', {
+    name: new RegExp(`^\\s*${escapeRegExp(channelName)}\\b`, 'i'),
+  });
+  if (await byName.count()) {
+    await byName.first().click({ timeout: config.timeouts.action });
+    await page.waitForTimeout(3000);
+    return;
+  }
+
+  const matches = page
+    .locator('[role="treeitem"]')
+    .filter({ hasText: new RegExp(escapeRegExp(channelName), 'i') });
+  const count = await matches.count();
+  if (!count) {
+    const textItem = page.getByText(channelName, { exact: false }).first();
+    if (!(await textItem.count())) {
+      throw new Error(`Channel not found in rail: ${channelName}`);
+    }
+    await textItem.click({ timeout: config.timeouts.action });
+  } else {
+    // Last match is usually the leaf chat row, not a parent group.
+    await matches.nth(count - 1).click({ timeout: config.timeouts.action });
+  }
+  await page.waitForTimeout(3000);
+}
+
+function escapeRegExp(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+async function extractMessages(page, channelName) {
+  // Nudge viewport to load recent history
+  const pane = page.locator('[data-tid="message-pane-list-viewport"]').first();
+  if (await pane.count()) {
+    await pane.evaluate((el) => {
+      el.scrollTop = Math.max(0, el.scrollHeight - 2500);
+    }).catch(() => {});
+    await page.waitForTimeout(1200);
+  }
+
+  const raw = await page.evaluate(() => {
+    const nodes = [...document.querySelectorAll('[data-tid="chat-pane-message"]')];
+    return nodes.map((el) => {
+      const mid = el.getAttribute('data-mid') || '';
+      const authorEl = mid ? document.getElementById(`author-${mid}`) : null;
+      const tsEl = mid ? document.getElementById(`timestamp-${mid}`) : null;
+      const contentEl = mid
+        ? document.getElementById(`content-${mid}`)
+        : el.querySelector('[data-message-content], [id^="content-"]');
+      const author =
+        (authorEl && authorEl.textContent.trim()) ||
+        el.querySelector('[data-tid="message-author-name"]')?.textContent?.trim() ||
+        null;
+      const timestamp =
+        (tsEl && (tsEl.getAttribute('aria-label') || tsEl.getAttribute('title') || tsEl.textContent || '').trim()) ||
+        null;
+      const datetime = (tsEl && tsEl.getAttribute('datetime')) || null;
+      const body =
+        (contentEl && (contentEl.innerText || contentEl.getAttribute('aria-label') || '').trim()) ||
+        (el.innerText || '').trim();
+      return {
+        mid,
+        author,
+        timestamp,
+        datetime,
+        body,
+      };
+    });
+  });
+
+  return raw
+    .map((m) => ({
+      channel: channelName,
+      author: m.author,
+      timestamp: m.timestamp,
+      datetime: m.datetime,
+      parsedTimestamp: parseTimestamp(m.timestamp, m.datetime),
+      body: cleanBody(m.body),
+      mid: m.mid,
+    }))
+    .filter((m) => m.body && m.body.length > 2)
+    .filter((m) => !/^\d+\s+\w+\s+reaction\.?$/i.test(m.body));
+}
+
+function cleanBody(body) {
+  return String(body || '')
+    .replace(/\u00a0/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+async function scrapeTeams(options = {}) {
+  const { chromium } = loadPlaywright();
+  const headed = options.headed === true || process.env.TEAMS_HEADED === '1';
+  const window = getDateWindow();
+  if (window.isWeekend) {
+    return {
+      skipped: true,
+      reason: 'weekend',
+      window,
+      channels: [],
+      messages: [],
+    };
+  }
+
+  if (!fs.existsSync(config.paths.browserProfile)) {
+    throw new Error(`Missing browser profile: ${config.paths.browserProfile}`);
+  }
+
+  const context = await chromium.launchPersistentContext(config.paths.browserProfile, {
+    headless: !headed,
+    viewport: { width: 1400, height: 900 },
+  });
+
+  const page = context.pages()[0] || (await context.newPage());
+  const channelResults = [];
+  const allMessages = [];
+
+  try {
+    await page.goto(config.urls.teams, {
+      waitUntil: 'domcontentloaded',
+      timeout: config.timeouts.navigation,
+    });
+    await page.waitForTimeout(6000);
+
+    const body = await page.locator('body').innerText().catch(() => '');
+    if (/sign in|enter password|pick an account/i.test(body.slice(0, 800)) && !/Chat|Calysta/i.test(body)) {
+      throw new Error('Teams login wall — run npm run save-auth and sign in');
+    }
+
+    for (const channelName of config.channels) {
+      const result = { channel: channelName, status: 'PASS', messageCount: 0, error: null };
+      try {
+        await openChannel(page, channelName);
+        const messages = await extractMessages(page, channelName);
+        const filtered = messages.filter((m) => inDateWindow(m.parsedTimestamp, window));
+        result.messageCount = filtered.length;
+        allMessages.push(...filtered);
+      } catch (error) {
+        result.status = 'FAIL';
+        result.error = String(error.message || error);
+      }
+      channelResults.push(result);
+    }
+  } finally {
+    await context.close();
+  }
+
+  const payload = {
+    scrapedAt: new Date().toISOString(),
+    window,
+    channels: channelResults,
+    messages: allMessages,
+    stats: {
+      channelsScanned: channelResults.length,
+      channelsFailed: channelResults.filter((c) => c.status === 'FAIL').length,
+      messagesKept: allMessages.length,
+    },
+  };
+
+  fs.mkdirSync(config.paths.logsDir, { recursive: true });
+  fs.writeFileSync(config.paths.messagesJson, JSON.stringify(payload, null, 2));
+  return payload;
+}
+
+module.exports = {
+  scrapeTeams,
+  getDateWindow,
+  parseTimestamp,
+  inDateWindow,
+};
+
+if (require.main === module) {
+  scrapeTeams({ headed: process.env.TEAMS_HEADED === '1' })
+    .then((result) => {
+      console.log(JSON.stringify(result.stats || result, null, 2));
+      console.log('Wrote', config.paths.messagesJson);
+    })
+    .catch((error) => {
+      console.error(error);
+      process.exit(1);
+    });
+}

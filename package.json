@@ -1,0 +1,20 @@
+{
+  "name": "teams-slack-task-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scheduled runner for Calysta Teams → Slack daily digest",
+  "scripts": {
+    "save-auth": "node src/save-auth.js",
+    "scrape-teams": "node src/scrape-teams.js",
+    "categorize": "node src/categorize.js",
+    "post-slack": "node src/post-slack.js",
+    "run-daily": "node src/run-daily.js",
+    "run-daily:dry": "node -e \"process.env.TEAMS_DRY_RUN='1';require('./src/run-daily.js')\"",
+    "run-daily:agent": "node src/run-daily-agent.js",
+    "register-task": "powershell -ExecutionPolicy Bypass -File ./scripts/register-task.ps1"
+  },
+  "dependencies": {
+    "@cursor/sdk": "^1.0.31",
+    "playwright": "^1.62.1"
+  }
+}

@@ -1,93 +1,80 @@
-# Teams → Slack Task Automation (Claude Skill)
+# Teams → Slack Daily Digest (optimized)
 
-Convert Microsoft Teams client conversations into a categorized, prioritized daily to-do list posted to Slack `#calystaproemr`.
+Convert Microsoft Teams client chats into a categorized to-do list posted to Slack `#calystaproemr`.
 
-**Keep this repository private.** The `browser-profile/` folder contains live Teams and Slack session data (cookies, tokens).
+**Keep this repository private.** `browser-profile/`, `.env`, `auth/`, and `logs/` contain secrets/session data — never commit them.
 
-## Repository contents
+## Pipeline (cheap)
 
-| Path | Purpose |
-|------|---------|
-| `skill.yaml` | Main skill definition — channels, team, categorization, output format |
-| `docs/process-documentation.md` | Full process doc with worked example (31 Aug 2026) |
-| `cursor-skill/` | Cursor Agent Skill — install to `~/.cursor/skills/calysta-teams-slack-daily/` |
-| `browser-profile/` | Playwright persistent browser profile (Teams + Slack auth) |
-| `config/.mcp.json.example` | Playwright MCP config template |
+1. **Node + Playwright (no LLM)** — scrape today’s messages from 6 Teams chats → `logs/teams-messages.json`
+2. **Small Cursor SDK call (text only)** — categorize / prioritize / assign owners → `logs/slack-payload.txt`
+3. **Slack post** — Bot API if `SLACK_BOT_TOKEN` is set, else Playwright paste into `#calystaproemr`
 
-## Team member setup
+Scheduled task still calls `npm run run-daily` (same bat).
 
-### 1. Clone
+## Setup
 
 ```bash
-git clone https://github.com/<your-github-user>/teams-slack-task-automation.git
-cd teams-slack-task-automation
+cd C:\Users\TAMZIDA\qa-automation\teams-slack-task-automation
+copy .env.example .env
+npm install
 ```
 
-### 2. Browser profile path
+Edit `.env`:
 
-Each person uses their **own** profile directory (recommended):
+- `CURSOR_API_KEY` — required for step 2
+- `CURSOR_MODEL` — optional (default `composer-2.5`)
+- `SLACK_BOT_TOKEN` / `SLACK_CHANNEL_ID` — optional (skip browser paste)
+
+Confirm `browser-profile\` is signed into Teams + Slack:
 
 ```bash
-# Option A: use the included browser-profile folder in the clone
-# Update config/.mcp.json with your absolute path to ./browser-profile
-
-# Option B: copy browser-profile to a fixed location
-cp -r browser-profile ~/claude-browser-profile
+npm run save-auth
 ```
 
-### 3. Playwright MCP config
+Register weekday task (11:50 AM Asia/Dhaka):
 
-Copy the example and set your profile path:
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\register-task.ps1
+```
+
+## Commands
+
+| Command | What it does |
+|---------|----------------|
+| `npm run scrape-teams` | Step 1 only |
+| `npm run categorize` | Step 2 only (needs JSON) |
+| `npm run post-slack` | Step 3 only (needs payload) |
+| `npm run run-daily` | Full pipeline |
+| `npm run run-daily:dry` | Scrape + categorize, preview only |
+| `npm run run-daily:agent` | Legacy full-browser Cursor agent |
+
+Dry-run:
 
 ```bash
-cp config/.mcp.json.example config/.mcp.json
-# Edit user-data-dir to your absolute path (Windows: C:\\Users\\YOU\\...)
+set TEAMS_DRY_RUN=1
+npm run run-daily
 ```
 
-Place `.mcp.json` in your browser profile folder **or** configure Playwright MCP in Cursor Settings → MCP with the same `--user-data-dir` argument.
+## Profile rule
 
-### 4. Sign in once
+Use **only** `.\browser-profile` for Teams and Slack. Never use `C:\Users\TAMZIDA\claude-browser-profile`.
 
-1. Launch Playwright MCP / open Teams Web and Slack Web using this profile.
-2. Sign in manually to Microsoft Teams and Slack (SJ Innovation workspace).
-3. Do **not** commit new cookies after signing in on a shared clone — each teammate maintains their own session locally.
+## Channels
 
-### 5. Install Cursor skill
+- CalystaPro Support Team
+- CRM - Live
+- Calystapro EMR Web Dev
+- Calystapro EMR Feature Highlights
+- CalystaproEMR - CRM
+- CalystaPro EMR \| Rani's Requests
 
-```bash
-mkdir -p ~/.cursor/skills/calysta-teams-slack-daily
-cp cursor-skill/* ~/.cursor/skills/calysta-teams-slack-daily/
-```
+## Owners
 
-### 6. Run manually
+Tamzida · Ashik · Rajib · Rezvi · Pranav (Akramol only if explicitly assigned)
 
-In Cursor Agent chat:
+Owner sections in Slack use member mentions (`<@U…>`). Pranav only for export/quote or explicit asks; facility issues and meeting scheduling go to Tamzida.
 
-```
-Run calysta-teams-slack-daily for today. Show me the draft before posting to Slack.
-```
+## Cadence
 
-### 7. Schedule (optional)
-
-See `cursor-skill/automation-setup.md` for Cursor Automations (weekdays 11:00 AM BST).
-
-## Internal team (task owners)
-
-| Role | Person | Payload name |
-|------|--------|--------------|
-| QA | Tamzida Azad | Tamzida |
-| Developer | Md Ashikuzzaman | Ashik |
-| Developer | Rajib Chowdhury | Rajib |
-| Developer | Rezvi Alauddin | Rezvi |
-| PM | Pranav Rivankar | Pranav |
-| Manager | Akramol Hoque | Akramol *(only if explicitly assigned)* |
-
-## Output
-
-- **Slack:** `#calystaproemr` in SJ Innovation workspace
-- **Cadence:** Weekdays 11:00 AM BST (Monday includes Fri 18:00 → Mon consolidation)
-
-## Related files
-
-- Original working profile: `%USERPROFILE%\claude-browser-profile` (Tamzida's machine)
-- Skill name in Cursor: `calysta-teams-slack-daily`
+Mon–Fri **11:50 AM Asia/Dhaka** via Task Scheduler `SJ-Teams-Slack-Daily`. Mondays consolidate Fri 18:00 → Mon.

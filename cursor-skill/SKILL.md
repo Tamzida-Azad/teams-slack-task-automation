@@ -13,13 +13,17 @@ description: >-
 
 Automates intake of client Teams messages via browser, produces a prioritized to-do list, and posts to Slack `#calystaproemr` (SJ Innovation workspace).
 
-**Skill YAML:** `skill.yaml` in repo root  
+**Preferred scheduled path (cheap):** repo `npm run run-daily` — Playwright scrape (no LLM) → text-only Cursor SDK categorize → Slack Bot API or browser paste. See repo `README.md`.
+
+**Interactive / this skill path:** Playwright MCP browse + categorize in chat (higher token cost).
+
 **Full process reference:** [reference.md](reference.md)  
 **Scheduled Cursor Automation setup:** [automation-setup.md](automation-setup.md)
 
 ## Preconditions
 
-- **Browser:** Playwright MCP (`user-playwright`). Persistent profile at `<repo>/browser-profile` (or your local copy) must be signed into Teams and Slack. See repo `README.md` and `config/.mcp.json.example`.
+- **Browser profile:** `C:\Users\TAMZIDA\qa-automation\teams-slack-task-automation\browser-profile` must already be signed into Teams and Slack.
+- **Profile rule:** Use ONLY that Cursor project profile. Never use `C:\Users\TAMZIDA\claude-browser-profile` or any Claude fallback profile.
 - **Credential boundary:** Never enter passwords, MFA, or account numbers. If a login wall appears, stop and ask the user to sign in manually, then resume.
 - **Irreversible send:** Always show the full draft payload in chat and get explicit user approval before posting to Slack — unless the run is a confirmed scheduled automation with auto-send enabled.
 
@@ -94,59 +98,74 @@ Tie-breakers: new capability → Request; alter existing → Change Request; bil
 
 | Signal | Owner |
 |--------|-------|
-| Explicit @mention | Named person |
+| Explicit @mention / named ask ("Pranav please assist…") | Named person |
 | CRM behaviour, calls, reports, login | **Rajib** |
 | EMR web, payment gateway, crons, membership, API keys, Google Cloud | **Ashik** |
-| Test/verify/regression/QA estimate | **Tamzida** |
-| Timeline, quote, approvals, client communication, coordination | **Pranav** (PM) |
-| Live data fix (delete SMS, update setting) | **Tamzida** |
-| Still unclear | **Pranav** (PM) |
+| Facility issues/problems/queries (often via Jhara), live data fix, QA/test/verify/regression, schedule meetings with Rani/Rima/Hardik, general issue assistance | **Tamzida** |
+| Bulk export / any export, quote for a custom request | **Pranav** (PM) |
+| Still unclear | **Tamzida** (not Pranav) |
+
+**Pranav is not the catch-all PM.** Do not assign timeline, approvals, client communication, coordination, or unclear items to Pranav unless he was explicitly mentioned or the ask is export/quote.
 
 **Akramol Hoque** is the **team Manager** — do not route routine client tasks to him. Include an Akramol section only when he is explicitly @mentioned or assigned in the thread.
 
-One client ask may produce **parallel items** for multiple owners (e.g. QA estimate + PM communication).
+One client ask may produce **parallel items** for multiple owners when genuinely needed (e.g. Ashik build + Pranav quote).
 
 **Owner order in payload:** Tamzida → Ashik → Rajib → Rezvi → Pranav.
 
 ## Step 6 — Output format
 
-Post to Slack `#calystaproemr` using this structure (Slack bold for names/channels):
+Post to Slack `#calystaproemr` using this structure. Owner headers are Slack member mentions (`<@U…>`), not bold names. Bold channel names with `*asterisks*`.
+
+Slack member IDs: Tamzida `U03JR0Q2AAG`, Ashik `U06CGT7VDH6`, Rajib `U084FG0542K`, Rezvi `U06GSPAEB8B`, Pranav `U07EVSP002F`.
 
 ```
 Date: <Do Month YYYY>
 To-do list shared by client via Microsoft Teams[(weekend consolidation: <range>)]:
 
 
-*Tamzida:*
+<@U03JR0Q2AAG>:
 
 1. Channel: *<channel>*
    - <Category>: <actionable one-line summary>. [Status: Done/Fixed.]
+     Priority: <High|Medium|Low>
+   - <Category>: <another task in the same channel>
+     Priority: <High|Medium|Low>
 
-   Priority: <High|Medium|Low>
+2. Channel: *<other channel>*
+   - <Category>: <actionable one-line summary>
+     Priority: <High|Medium|Low>
 
 
-*Ashik:*
+<@U06CGT7VDH6>:
 ...
 
 
-*Rajib:*
+<@U084FG0542K>:
 ...
 
 
-*Rezvi:*
+<@U06GSPAEB8B>:
 
 1. No new client tasks assigned today.
 
 
-*Pranav:*
+<@U07EVSP002F>:
 ...
+
+
+
+_Tasks Synced from Microsoft Teams via Cursor Automation_
 ```
 
 Rules:
-- Restate `Channel:` before each item (items may span channels).
+- Group by **channel** under each owner: one numbered `Channel:` line per distinct channel; nest multiple task bullets under that channel.
+- Do **not** restate `Channel:` for every task when they share a channel.
+- Under each task bullet, nest `Priority:` as a sub-line.
 - Summaries must be self-contained: facility/client name, specific ask, blockers.
 - Empty owners: `1. No new client tasks assigned today.`
 - Two blank lines between owner sections.
+- After the last owner section, leave exactly three blank lines, then the italic footer: `_Tasks Synced from Microsoft Teams via Cursor Automation_`
 
 ## Step 7 — Slack delivery
 
