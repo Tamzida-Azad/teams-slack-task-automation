@@ -30,6 +30,30 @@ function mention(owner) {
   return `<@${id}>`;
 }
 
+function stripEmptyOwnerSections(payloadText) {
+  let text = payloadText;
+  for (const id of Object.values(config.slackUserIds || {})) {
+    text = text.replace(
+      new RegExp(
+        `\\n*<@${id}>:\\s*\\n+1\\.\\s*No new client tasks assigned today\\.\\s*`,
+        'gi'
+      ),
+      '\n'
+    );
+  }
+  // Also strip plain-name empty sections if the model used names instead of mentions
+  for (const name of config.owners || []) {
+    text = text.replace(
+      new RegExp(
+        `\\n*(?:\\*?${name}\\*?|<@[^>]+>):\\s*\\n+1\\.\\s*No new client tasks assigned today\\.\\s*`,
+        'gi'
+      ),
+      '\n'
+    );
+  }
+  return text.replace(/\n{4,}/g, '\n\n\n').trim();
+}
+
 function buildCategorizePrompt(scrape) {
   const compact = (scrape.messages || []).map((m, i) => ({
     id: i + 1,
@@ -55,23 +79,27 @@ ${JSON.stringify(compact, null, 2)}
 
 RULES:
 Client authors (strong signal): Aaron Yuen, Hardik Soni, Lori Gobert, Rani Houlis, Rima Shah, Jhara Mae Infante, Lucian Lekaj.
-Include client asks: issues, problems, queries, requests, change requests, support.
-Exclude pure acknowledgements ("thanks", "noted", reactions-only) and internal chatter with no client ask.
+Include client asks: issues, problems, queries, requests, change requests, support, follow-ups.
+Also include internal messages that assign work by naming a teammate (tagged OR untagged plain text).
+Exclude pure acknowledgements ("thanks", "noted", reactions-only) and internal chatter with no client ask and no teammate assignment.
 De-duplicate the same ask across channels.
-Categories: Issue | Problem | Query | Request | Change Request | Support
+Categories: Issue | Problem | Query | Request | Change Request | Support | Follow up
+- Use **Follow up** when someone is named/asked to act ("Ashik you should work on it", "Tamzida do you know…", "Pranav can you…") and no stronger category fits.
 Priority:
-- Base Medium for Request/Change Request/Problem/Query
+- Base Medium for Request/Change Request/Problem/Query/Follow up
 - Base Low for routine Support / already resolved
-- High if urgent/ASAP/immediately/now/time pressure keywords
+- High if urgent/ASAP/immediately/now/time pressure keywords ("this week", "need it by…")
 - High if author is Hardik Soni or Aaron Yuen
 - High if churn/cancel/serious financial-compliance risk
 Owners (apply in order; more specific wins):
-- Explicit @mention / named ask ("Pranav please assist…") → that person
+- Explicit @mention OR untagged plain-text name ("Ashik you should…", "Tamzida do you know…", "Pranav Rivankar can you…") → that person (category Follow up unless clearer type applies)
+- Name aliases: Ashik / Md Ashikuzzaman → Ashik; Tamzida / Tamzida Azad → Tamzida; Rajib → Rajib; Rezvi / Alauddin Rezvi → Rezvi; Pranav / Pranav Rivankar → Pranav
 - CRM behaviour/calls/reports/login → Rajib
-- EMR web/payment gateway/crons/membership/API keys/Google Cloud → Ashik
-- Facility issues/problems/queries (often via Jhara), live data fixes, QA/test/verify/regression, scheduling meetings with Rani/Rima/Hardik, general issue assistance → Tamzida
-- Bulk export / any export request, quote for a custom request → Pranav
-- Pranav is NOT the default PM catch-all: do NOT assign timeline/approvals/client communication/coordination/unclear to Pranav unless he was explicitly mentioned or the ask is export/quote
+- EMR web/payment gateway/crons/membership/API keys/Google Cloud/go-live keys → Ashik
+- Facility issues/problems/queries (user problems via Jhara that are NOT quote/custom-paid), live data fixes, QA/test/verify/regression, scheduling meetings with Rani/Rima/Hardik, general issue assistance → Tamzida
+- Jhara (call center / user-base intake) custom request, paid feature, "implement this/that", quote/pricing/cost/estimate/deadline for a user → Pranav (he emails pricing + deadline coordinating with Jhara)
+- Bulk export / any export request → Pranav
+- Pranav is NOT the default PM catch-all for vague coordination unless named, or Jhara custom/quote/export
 - If still unclear after the above → Tamzida
 - Rezvi only when explicitly assigned/mentioned
 - Akramol only if explicitly assigned
@@ -101,31 +129,16 @@ ${mTamzida}:
 ${mAshik}:
 ...
 
-
-${mRajib}:
-...
-
-
-${mRezvi}:
-...
-
-
-${mPranav}:
-...
-
-
-
-_Tasks Synced from Microsoft Teams via Cursor Automation_
-
 Rules for output:
-- Owner headers MUST be exactly these Slack mentions (with colon): ${mTamzida}: / ${mAshik}: / ${mRajib}: / ${mRezvi}: / ${mPranav}:
+- Owner headers MUST use these Slack mentions when that owner has tasks: ${mTamzida}: / ${mAshik}: / ${mRajib}: / ${mRezvi}: / ${mPranav}:
+- ONLY include an owner section if that person has at least one task. SKIP owners with zero tasks entirely — do NOT write "No new client tasks assigned today."
+- If nobody has tasks, output only the Date header lines and (after blank lines) the footer — no owner sections.
 - Group by channel under each owner: one numbered Channel line per distinct channel; nest multiple tasks under that channel
 - Do NOT restate Channel: for every task when they share a channel
 - Under each channel, each task is a bullet "- <Category>: …" and Priority is nested under that task (indented)
-- Empty owners must say: 1. No new client tasks assigned today.
-- Two blank lines between owner sections
-- Owner order: Tamzida → Ashik → Rajib → Rezvi → Pranav
-- After the last owner section, leave exactly three blank lines, then this exact italic footer (Slack mrkdwn underscores): _Tasks Synced from Microsoft Teams via Cursor Automation_
+- Two blank lines between owner sections that are present
+- Owner order when present: Tamzida → Ashik → Rajib → Rezvi → Pranav
+- After the last owner section (or after the header if none), leave exactly three blank lines, then this exact italic footer (Slack mrkdwn underscores): _Tasks Synced from Microsoft Teams via Cursor Automation_
 `;
 }
 
@@ -171,6 +184,8 @@ async function categorizeMessages(scrape, options = {}) {
     )
     .replace(/\s+$/, '');
 
+  payloadText = stripEmptyOwnerSections(payloadText);
+
   // Normalize to exactly 2 blank lines between owner mention sections.
   const ownerMentionRe = Object.values(config.slackUserIds)
     .map((id) => `<@${id}>:`)
@@ -182,13 +197,9 @@ async function categorizeMessages(scrape, options = {}) {
     );
   }
 
-  payloadText = `${payloadText}\n\n\n\n${footer}`;
+  payloadText = `${payloadText.replace(/\s+$/, '')}\n\n\n\n${footer}`;
 
-  const tamzidaMention = mention('Tamzida');
-  if (
-    !/^Date:/m.test(payloadText) ||
-    !payloadText.includes(`${tamzidaMention}:`)
-  ) {
+  if (!/^Date:/m.test(payloadText)) {
     throw new Error(`Categorize output missing expected Slack template. status=${result.status}`);
   }
 
@@ -208,6 +219,7 @@ async function categorizeMessages(scrape, options = {}) {
 module.exports = {
   categorizeMessages,
   buildCategorizePrompt,
+  stripEmptyOwnerSections,
 };
 
 if (require.main === module) {

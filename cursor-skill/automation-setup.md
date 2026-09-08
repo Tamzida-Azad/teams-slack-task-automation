@@ -35,7 +35,7 @@ Paste this as the automation prompt:
 ```
 Run the calysta-teams-slack-daily skill end-to-end.
 
-Today is the run date. Apply the correct date window (weekday = today only; Monday = Fri 18:00 through now with weekend consolidation header).
+Today is the run date. Apply the correct date window (Asia/Dhaka): Tue–Fri = previous day 12:00 PM → today 11:50 AM; Monday = previous Friday 12:10 PM → Monday 11:50 AM.
 
 Use Playwright MCP with the authenticated browser profile for Teams and Slack web.
 
@@ -50,7 +50,7 @@ If today is Saturday or Sunday, exit without posting.
 
 If Teams or Slack shows a login wall, stop and report — do not enter credentials.
 
-If no actionable client tasks were found, still post a minimal digest noting "No new client tasks today" for each owner section (Tamzida, Ashik, Rajib, Rezvi, Pranav). Omit Akramol unless he was explicitly assigned.
+If no actionable client tasks were found, still post a minimal digest (Date header + footer). Skip owner sections with zero tasks — do not print empty "no tasks today" placeholders. Omit Akramol unless he was explicitly assigned.
 ```
 
 ### 4. Name and description

@@ -40,19 +40,69 @@ function dhakaParts(date = new Date()) {
   };
 }
 
+function dhakaLocalToUtcMs(year, month, day, hour = 0, minute = 0) {
+  // Asia/Dhaka is fixed UTC+6 (no DST).
+  return Date.UTC(year, month - 1, day, hour - 6, minute, 0);
+}
+
+function addCalendarDays(parts, deltaDays) {
+  const ms = Date.UTC(parts.year, parts.month - 1, parts.day + deltaDays, 12, 0, 0);
+  const dt = new Date(ms);
+  return {
+    year: dt.getUTCFullYear(),
+    month: dt.getUTCMonth() + 1,
+    day: dt.getUTCDate(),
+  };
+}
+
 function getDateWindow(now = new Date()) {
   const d = dhakaParts(now);
   const isMonday = d.weekday === 'Mon';
   const isWeekend = d.weekday === 'Sat' || d.weekday === 'Sun';
+
+  // Scheduled digest ends at 11:50 AM Asia/Dhaka on the run day.
+  const end = {
+    year: d.year,
+    month: d.month,
+    day: d.day,
+    hour: 11,
+    minute: 50,
+  };
+
+  let start;
+  let label;
+  if (isMonday) {
+    // Previous Friday 12:10 PM → Monday 11:50 AM (Asia/Dhaka).
+    const friday = addCalendarDays(d, -3);
+    start = {
+      year: friday.year,
+      month: friday.month,
+      day: friday.day,
+      hour: 12,
+      minute: 10,
+    };
+    label = `Monday consolidation (Fri ${friday.month}/${friday.day} 12:10 PM → Mon ${d.month}/${d.day} 11:50 AM Asia/Dhaka)`;
+  } else {
+    // Previous day 12:00 PM → today 11:50 AM (Asia/Dhaka).
+    const prev = addCalendarDays(d, -1);
+    start = {
+      year: prev.year,
+      month: prev.month,
+      day: prev.day,
+      hour: 12,
+      minute: 0,
+    };
+    label = `${prev.month}/${prev.day} 12:00 PM → ${d.month}/${d.day} 11:50 AM Asia/Dhaka`;
+  }
+
   return {
     timezone: 'Asia/Dhaka',
     isWeekend,
     isMonday,
-    // For filtering we keep ISO-ish labels; scraper includes recent + timestamp parse
-    label: isMonday
-      ? `Monday consolidation (Fri 18:00 → now Asia/Dhaka)`
-      : `Today only (${d.month}/${d.day}/${d.year} Asia/Dhaka)`,
+    label,
     today: { year: d.year, month: d.month, day: d.day },
+    start,
+    end,
   };
 }
 
@@ -162,19 +212,32 @@ function inDateWindow(ts, window) {
     // Keep undated messages that are currently visible — LLM will filter noise
     return true;
   }
-  const { today, isMonday } = window;
-  if (isMonday) {
-    // Fri/Sat/Sun/Mon of consolidation — approximate: last 4 calendar days
-    const msg = new Date(ts.year, ts.month - 1, ts.day, ts.hour || 0, ts.minute || 0);
-    const now = new Date();
-    const diffDays = (now - msg) / (24 * 60 * 60 * 1000);
-    if (diffDays > 4) return false;
-    // Friday before 18:00 excluded roughly if weekday Fri and hour < 18
-    const wd = msg.toLocaleDateString('en-US', { weekday: 'short', timeZone: 'Asia/Dhaka' });
-    if (wd === 'Fri' && (ts.hour ?? 0) < 18) return false;
-    return true;
+  if (!window?.start || !window?.end) {
+    return false;
   }
-  return ts.year === today.year && ts.month === today.month && ts.day === today.day;
+
+  const msgMs = dhakaLocalToUtcMs(
+    ts.year,
+    ts.month,
+    ts.day,
+    ts.hour ?? 0,
+    ts.minute ?? 0
+  );
+  const startMs = dhakaLocalToUtcMs(
+    window.start.year,
+    window.start.month,
+    window.start.day,
+    window.start.hour,
+    window.start.minute
+  );
+  const endMs = dhakaLocalToUtcMs(
+    window.end.year,
+    window.end.month,
+    window.end.day,
+    window.end.hour,
+    window.end.minute
+  );
+  return msgMs >= startMs && msgMs <= endMs;
 }
 
 async function openChannel(page, channelName) {
@@ -213,13 +276,23 @@ function escapeRegExp(s) {
 }
 
 async function extractMessages(page, channelName) {
-  // Nudge viewport to load recent history
+  // Scroll up enough to cover prior-noon → today (and Monday Fri→Mon) history.
   const pane = page.locator('[data-tid="message-pane-list-viewport"]').first();
   if (await pane.count()) {
-    await pane.evaluate((el) => {
-      el.scrollTop = Math.max(0, el.scrollHeight - 2500);
-    }).catch(() => {});
-    await page.waitForTimeout(1200);
+    for (let i = 0; i < 6; i += 1) {
+      await pane
+        .evaluate((el) => {
+          el.scrollTop = Math.max(0, el.scrollTop - 1800);
+        })
+        .catch(() => {});
+      await page.waitForTimeout(700);
+    }
+    await pane
+      .evaluate((el) => {
+        el.scrollTop = Math.max(0, el.scrollHeight - 4000);
+      })
+      .catch(() => {});
+    await page.waitForTimeout(1000);
   }
 
   const raw = await page.evaluate(() => {

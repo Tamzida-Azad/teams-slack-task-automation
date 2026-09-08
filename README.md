@@ -77,4 +77,10 @@ Owner sections in Slack use member mentions (`<@U…>`). Pranav only for export/
 
 ## Cadence
 
-Mon–Fri **11:50 AM Asia/Dhaka** via Task Scheduler `SJ-Teams-Slack-Daily`. Mondays consolidate Fri 18:00 → Mon.
+Mon–Fri **11:50 AM Asia/Dhaka** via Task Scheduler `SJ-Teams-Slack-Daily`.
+
+Date windows (Asia/Dhaka):
+- **Tue–Fri:** previous day **12:00 PM** → today **11:50 AM**
+- **Monday:** previous Friday **12:10 PM** → Monday **11:50 AM**
+
+Owners with no tasks are omitted from the Slack post (no “no tasks today” placeholder).

@@ -83,7 +83,8 @@ Aaron Yuen · Hardik Soni · Lori Gobert · Rani Houlis · Rima Shah · Jhara Ma
 | Workspace | SJ Innovation |
 | Channel | `#calystaproemr` |
 | Cadence | Daily at **11:00 AM BST** |
-| Weekend rule | Skip Saturday/Sunday. Consolidate Friday-night → Sunday-night messages into the **Monday 11:00 AM** post. |
+| Weekend rule | Skip Saturday/Sunday. Monday covers **Friday 12:10 PM → Monday 11:50 AM** Asia/Dhaka. |
+| Tue–Fri window | **Previous day 12:00 PM → today 11:50 AM** Asia/Dhaka |
 
 ---
 

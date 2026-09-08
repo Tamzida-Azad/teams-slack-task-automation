@@ -46,13 +46,15 @@ Copy and track progress:
 
 ## Step 1 — Date window
 
+All times are **Asia/Dhaka (GMT+6)** (local PC timezone).
+
 | Run day | Window |
 |---------|--------|
-| Tue–Fri | Messages/replies from **today** only |
-| Monday | **Friday 18:00 → Monday run-time** (weekend consolidation) |
+| Tue–Fri | **Previous day 12:00 PM → today 11:50 AM** |
+| Monday | **Previous Friday 12:10 PM → Monday 11:50 AM** |
 | Saturday / Sunday | **Do not run** — skip entirely |
 
-Add weekend note to header when consolidating: `(weekend consolidation: Fri DD Mon - Mon DD Mon)`.
+Example: Tuesday 11:50 run covers Monday 12:00 PM through Tuesday 11:50 AM.
 
 ## Step 2 — Teams extraction
 
@@ -82,14 +84,15 @@ Add weekend note to header when consolidating: `(weekend consolidation: Fri DD M
 | **Request** | New capability that does not exist yet |
 | **Change Request** | Modify existing behaviour; often billable/custom |
 | **Support** | Operational help on live (data fix, setting change) |
+| **Follow up** | Teammate named/asked to act (tagged or plain text) without a stronger category |
 
 Tie-breakers: new capability → Request; alter existing → Change Request; billable/custom phrasing → Change Request; broken + blocking → Issue over Problem.
 
 ## Step 4 — Priority (apply in order; later overrides earlier)
 
-1. **Base Medium** — Request, Change Request, Problem, Query.
+1. **Base Medium** — Request, Change Request, Problem, Query, Follow up.
 2. **Base Low** — routine Support and already-resolved items.
-3. **Keyword → High** — `urgent`, `ASAP`, `immediately`, `now`, "can't have issues", "need it by …", or equivalent time pressure.
+3. **Keyword → High** — `urgent`, `ASAP`, `immediately`, `now`, "this week", "can't have issues", "need it by …", or equivalent time pressure.
 4. **Author override → High** — author is **Hardik Soni** or **Aaron Yuen** (strongest rule).
 5. **Churn-risk → High** — client signals cancellation/churn or serious financial/compliance exposure (note in review when used).
 6. Otherwise keep base level.
@@ -98,20 +101,23 @@ Tie-breakers: new capability → Request; alter existing → Change Request; bil
 
 | Signal | Owner |
 |--------|-------|
-| Explicit @mention / named ask ("Pranav please assist…") | Named person |
+| @mention **or** untagged plain-text name ("Ashik you should…", "Tamzida do you know…") | Named person (`Follow up` if no stronger type) |
 | CRM behaviour, calls, reports, login | **Rajib** |
-| EMR web, payment gateway, crons, membership, API keys, Google Cloud | **Ashik** |
-| Facility issues/problems/queries (often via Jhara), live data fix, QA/test/verify/regression, schedule meetings with Rani/Rima/Hardik, general issue assistance | **Tamzida** |
-| Bulk export / any export, quote for a custom request | **Pranav** (PM) |
+| EMR web, payment gateway, crons, membership, API keys, Google Cloud, go-live keys | **Ashik** |
+| Facility issues/problems/queries (via Jhara, not quote/custom-paid), live data fix, QA/test/verify, schedule meetings with Rani/Rima/Hardik | **Tamzida** |
+| Jhara custom/paid request, implement X, quote/pricing/cost/estimate/deadline | **Pranav** (emails pricing + deadline with Jhara) |
+| Bulk export / any export | **Pranav** |
 | Still unclear | **Tamzida** (not Pranav) |
 
-**Pranav is not the catch-all PM.** Do not assign timeline, approvals, client communication, coordination, or unclear items to Pranav unless he was explicitly mentioned or the ask is export/quote.
+**Jhara** intakes user-base / call-center asks. Custom requests are billable — route quote/pricing/deadline to **Pranav**.
+
+**Pranav is not the catch-all PM** for vague coordination unless named, or the ask is Jhara custom/quote/export.
 
 **Akramol Hoque** is the **team Manager** — do not route routine client tasks to him. Include an Akramol section only when he is explicitly @mentioned or assigned in the thread.
 
 One client ask may produce **parallel items** for multiple owners when genuinely needed (e.g. Ashik build + Pranav quote).
 
-**Owner order in payload:** Tamzida → Ashik → Rajib → Rezvi → Pranav.
+**Owner order in payload:** Tamzida → Ashik → Rajib → Rezvi → Pranav (omit any owner with zero tasks).
 
 ## Step 6 — Output format
 
@@ -121,7 +127,7 @@ Slack member IDs: Tamzida `U03JR0Q2AAG`, Ashik `U06CGT7VDH6`, Rajib `U084FG0542K
 
 ```
 Date: <Do Month YYYY>
-To-do list shared by client via Microsoft Teams[(weekend consolidation: <range>)]:
+To-do list shared by client via Microsoft Teams:
 
 
 <@U03JR0Q2AAG>:
@@ -129,25 +135,12 @@ To-do list shared by client via Microsoft Teams[(weekend consolidation: <range>)
 1. Channel: *<channel>*
    - <Category>: <actionable one-line summary>. [Status: Done/Fixed.]
      Priority: <High|Medium|Low>
-   - <Category>: <another task in the same channel>
-     Priority: <High|Medium|Low>
-
-2. Channel: *<other channel>*
-   - <Category>: <actionable one-line summary>
+   - Follow up: <named teammate ask>
      Priority: <High|Medium|Low>
 
 
 <@U06CGT7VDH6>:
 ...
-
-
-<@U084FG0542K>:
-...
-
-
-<@U06GSPAEB8B>:
-
-1. No new client tasks assigned today.
 
 
 <@U07EVSP002F>:
@@ -163,8 +156,8 @@ Rules:
 - Do **not** restate `Channel:` for every task when they share a channel.
 - Under each task bullet, nest `Priority:` as a sub-line.
 - Summaries must be self-contained: facility/client name, specific ask, blockers.
-- Empty owners: `1. No new client tasks assigned today.`
-- Two blank lines between owner sections.
+- **Skip owners with no tasks** — do not show `No new client tasks assigned today.`
+- Two blank lines between owner sections that are present.
 - After the last owner section, leave exactly three blank lines, then the italic footer: `_Tasks Synced from Microsoft Teams via Cursor Automation_`
 
 ## Step 7 — Slack delivery

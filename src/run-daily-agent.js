@@ -103,7 +103,7 @@ function buildPrompt() {
 Today's date (Asia/Dhaka): ${today}.
 This is a CONFIRMED scheduled Windows Task Scheduler run with auto-send enabled.
 
-Apply the correct date window (weekday = today only; Monday = Fri 18:00 through now with weekend consolidation header).
+Apply the correct date window (Asia/Dhaka): Tue–Fri = previous day 12:00 PM → today 11:50 AM; Monday = previous Friday 12:10 PM → Monday 11:50 AM.
 
 Use Playwright MCP with ONLY this authenticated browser profile for Teams and Slack web:
 Browser profile path: ${browserProfile}
@@ -123,7 +123,7 @@ Steps:
 
 If today is Saturday or Sunday, exit without posting.
 
-If no actionable client tasks were found, still post a minimal digest noting "No new client tasks today" for each owner section (Slack @mentions for Tamzida, Ashik, Rajib, Rezvi, Pranav). Omit Akramol unless he was explicitly assigned.
+If no actionable client tasks were found, still post a minimal digest (Date header + italic footer). Omit owner sections that have zero tasks — do not print "No new client tasks today" placeholders. Omit Akramol unless he was explicitly assigned.
 `;
 }
 
