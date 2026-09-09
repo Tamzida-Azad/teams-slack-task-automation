@@ -60,19 +60,19 @@ function getDateWindow(now = new Date()) {
   const isMonday = d.weekday === 'Mon';
   const isWeekend = d.weekday === 'Sat' || d.weekday === 'Sun';
 
-  // Scheduled digest ends at 11:50 AM Asia/Dhaka on the run day.
+  // Scheduled digest ends at 12:10 PM Asia/Dhaka on the run day.
   const end = {
     year: d.year,
     month: d.month,
     day: d.day,
-    hour: 11,
-    minute: 50,
+    hour: 12,
+    minute: 10,
   };
 
   let start;
   let label;
   if (isMonday) {
-    // Previous Friday 12:10 PM → Monday 11:50 AM (Asia/Dhaka).
+    // Previous Friday 12:10 PM → Monday 12:10 PM (Asia/Dhaka).
     const friday = addCalendarDays(d, -3);
     start = {
       year: friday.year,
@@ -81,9 +81,9 @@ function getDateWindow(now = new Date()) {
       hour: 12,
       minute: 10,
     };
-    label = `Monday consolidation (Fri ${friday.month}/${friday.day} 12:10 PM → Mon ${d.month}/${d.day} 11:50 AM Asia/Dhaka)`;
+    label = `Monday consolidation (Fri ${friday.month}/${friday.day} 12:10 PM → Mon ${d.month}/${d.day} 12:10 PM Asia/Dhaka)`;
   } else {
-    // Previous day 12:00 PM → today 11:50 AM (Asia/Dhaka).
+    // Previous day 12:00 PM → today 12:10 PM (Asia/Dhaka).
     const prev = addCalendarDays(d, -1);
     start = {
       year: prev.year,
@@ -92,7 +92,7 @@ function getDateWindow(now = new Date()) {
       hour: 12,
       minute: 0,
     };
-    label = `${prev.month}/${prev.day} 12:00 PM → ${d.month}/${d.day} 11:50 AM Asia/Dhaka`;
+    label = `${prev.month}/${prev.day} 12:00 PM → ${d.month}/${d.day} 12:10 PM Asia/Dhaka`;
   }
 
   return {

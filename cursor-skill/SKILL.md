@@ -50,11 +50,11 @@ All times are **Asia/Dhaka (GMT+6)** (local PC timezone).
 
 | Run day | Window |
 |---------|--------|
-| Tue–Fri | **Previous day 12:00 PM → today 11:50 AM** |
-| Monday | **Previous Friday 12:10 PM → Monday 11:50 AM** |
+| Tue–Fri | **Previous day 12:00 PM → today 12:10 PM** |
+| Monday | **Previous Friday 12:10 PM → Monday 12:10 PM** |
 | Saturday / Sunday | **Do not run** — skip entirely |
 
-Example: Tuesday 11:50 run covers Monday 12:00 PM through Tuesday 11:50 AM.
+Example: Tuesday 12:10 PM run covers Monday 12:00 PM through Tuesday 12:10 PM.
 
 ## Step 2 — Teams extraction
 

@@ -10,7 +10,7 @@ Canonical source: `C:\Users\TAMZIDA\qa-automation\teams-slack-task-automation\do
 | Profile rule | Cursor project profile only — never `claude-browser-profile` |
 | Teams URL | `https://teams.microsoft.com` (may redirect to `teams.live.com`) |
 | Slack URL | `https://app.slack.com` → SJ Innovation → `#calystaproemr` |
-| Cadence | Weekdays 11:50 AM Asia/Dhaka (GMT+6) via Windows Task Scheduler |
+| Cadence | Weekdays 12:10 PM Asia/Dhaka (GMT+6) via Windows Task Scheduler |
 | Config | `teams-slack-task-automation\config\.mcp.json.example` |
 
 ## Internal team

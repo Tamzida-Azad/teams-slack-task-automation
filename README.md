@@ -32,7 +32,7 @@ Confirm `browser-profile\` is signed into Teams + Slack:
 npm run save-auth
 ```
 
-Register weekday task (11:50 AM Asia/Dhaka):
+Register weekday task (12:10 PM Asia/Dhaka):
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\register-task.ps1
@@ -77,10 +77,10 @@ Owner sections in Slack use member mentions (`<@U…>`). Pranav only for export/
 
 ## Cadence
 
-Mon–Fri **11:50 AM Asia/Dhaka** via Task Scheduler `SJ-Teams-Slack-Daily`.
+Mon–Fri **12:10 PM Asia/Dhaka** via Task Scheduler `SJ-Teams-Slack-Daily`.
 
 Date windows (Asia/Dhaka):
-- **Tue–Fri:** previous day **12:00 PM** → today **11:50 AM**
-- **Monday:** previous Friday **12:10 PM** → Monday **11:50 AM**
+- **Tue–Fri:** previous day **12:00 PM** → today **12:10 PM**
+- **Monday:** previous Friday **12:10 PM** → Monday **12:10 PM**
 
 Owners with no tasks are omitted from the Slack post (no “no tasks today” placeholder).

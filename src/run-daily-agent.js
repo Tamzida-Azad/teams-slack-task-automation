@@ -103,7 +103,7 @@ function buildPrompt() {
 Today's date (Asia/Dhaka): ${today}.
 This is a CONFIRMED scheduled Windows Task Scheduler run with auto-send enabled.
 
-Apply the correct date window (Asia/Dhaka): Tue–Fri = previous day 12:00 PM → today 11:50 AM; Monday = previous Friday 12:10 PM → Monday 11:50 AM.
+Apply the correct date window (Asia/Dhaka): Tue–Fri = previous day 12:00 PM → today 12:10 PM; Monday = previous Friday 12:10 PM → Monday 12:10 PM.
 
 Use Playwright MCP with ONLY this authenticated browser profile for Teams and Slack web:
 Browser profile path: ${browserProfile}

@@ -35,7 +35,7 @@ Paste this as the automation prompt:
 ```
 Run the calysta-teams-slack-daily skill end-to-end.
 
-Today is the run date. Apply the correct date window (Asia/Dhaka): Tue–Fri = previous day 12:00 PM → today 11:50 AM; Monday = previous Friday 12:10 PM → Monday 11:50 AM.
+Today is the run date. Apply the correct date window (Asia/Dhaka): Tue–Fri = previous day 12:00 PM → today 12:10 PM; Monday = previous Friday 12:10 PM → Monday 12:10 PM.
 
 Use Playwright MCP with the authenticated browser profile for Teams and Slack web.
 
